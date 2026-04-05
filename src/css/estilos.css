@@ -6,11 +6,10 @@ html {
 body {
 	font-family: "Poppins", sans-serif;
 	margin: 0 auto;
-	background: linear-gradient(150deg, #000000, #ca2a02);
-	/*background-image: url("../imagens/yellow_esport_background.jpg");*/
+/*	background: linear-gradient(150deg, #000000, #ca2a02);*/
+	background: url("../imagens/bmw-m3-gtr.webp") center / cover no-repeat fixed;
 	justify-content: center;
 	width: 100%;
-	object-fit: cover;
 }
 
 /*
@@ -28,6 +27,7 @@ video {
 .main {
 	max-width: 1120px;
 	margin: auto;
+	background-color: rgba(21, 60, 93, 0.9);
 }
 
 .cabecalho {
@@ -149,6 +149,7 @@ video {
 	max-width: 450px;
 	text-align: center;
 	border-radius: 50%;
+	margin-right: 20px;
 }
 
 .home .container-foto img {
@@ -259,6 +260,10 @@ video {
 }
 
 .footer {
+	max-width: 1120px;
+	margin: auto;
+	background-color: rgba(21, 60, 93, 0.7);
+
 	font-family: "Raleway", sans-serif;
 	color: #ffffff;
 	padding: 50px;
