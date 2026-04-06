@@ -116,7 +116,6 @@ video {
 }
 
 .home .redes-sociais {
-	margin-top: 50px;
 	flex-wrap: wrap;
 	display: flex;
 	gap: 20px;
