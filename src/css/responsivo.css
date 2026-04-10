@@ -35,6 +35,11 @@
         height: 110px;
     }
 
+    .footer .logo {
+        width: 90px;
+        height: 60px;
+    }
+
     .home .container-foto img {
         max-width: 320px;
     }
