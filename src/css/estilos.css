@@ -152,11 +152,12 @@ body {
 	animation: gradient-animation 5s ease infinite;
 }
 
-.projetos {
+/*SERVIÇOS*/
+.servicos {
 	padding: 70px 0 70px;
 }
 
-.projetos .titulo {
+.servicos .titulo {
 	text-align: center;
 	padding: 60px 0;
 	font-size: 45px;
@@ -164,7 +165,7 @@ body {
 	text-transform: uppercase;
 }
 
-.projetos .container-projetos {
+.servicos .container-servicos {
 	display: flex;
 	gap: 20px;
 	flex-wrap: wrap;
@@ -172,23 +173,23 @@ body {
 	justify-content: center;
 }
 
-.projetos .projeto {
+.servicos .servico {
 	max-width: 260px;
 	max-height: 260px;
 	position: relative;
 	display: none;
 }
 
-.projetos .projeto.ativo {
+.servicos .servico.ativo {
 	display: block;
 }
 
-.projetos .projeto img {
+.servicos .servico img {
 	height: 100%;
 	width: 100%;
 }
 
-.projetos .projeto h3 {
+.servicos .servico h3 {
 	background-color: rgb(21, 60, 93);
 	width: 100%;
 	padding-left: 5px;
@@ -198,11 +199,11 @@ body {
 	bottom: 0;
 }
 
-.projetos .projeto p {
+.servicos .servico p {
 	font-size: 15px;
 }
 
-.projetos .projeto .informacoes-projeto {
+.servicos .servico .informacoes-servico {
 	background-color: #000000;
 	position: absolute;
 	top: 0;
@@ -214,14 +215,14 @@ body {
 	padding: 20px;
 }
 
-.projetos .container-projetos .projeto:hover .informacoes-projeto {
+.servicos .container-servicos .servico:hover .informacoes-servico {
 	opacity: 0.9;
-	background-color:  rgb(21, 60, 93);
+	background-color: rgb(21, 60, 93);
 	border: 2px solid #fff;
 }
 
-.projetos .btn-mostrar-projetos,
-.projetos .btn-ocultar-projetos {
+.servicos .btn-mostrar-servicos,
+.servicos .btn-ocultar-servicos {
 	background: none;
 	border:2px solid #fff;
 	border-radius: 15px;
@@ -237,18 +238,20 @@ body {
 	cursor: pointer;
 }
 
-.projetos .btn-mostrar-projetos:hover,
-.btn-ocultar-projetos:hover {
+.servicos .btn-mostrar-servicos:hover,
+.btn-ocultar-servicos:hover {
 	background-color: #df8b04;
 	color: #ca2a02;
 	transition: 0.3s;
 }
 
-.projetos .btn-mostrar-projetos.remover,
-.btn-ocultar-projetos.remover {
+.servicos .btn-mostrar-servicos.remover,
+.btn-ocultar-servicos.remover {
 	display: none;
 }
 
+
+/*RODAPÉ*/
 .footer {
 	max-width: 1120px;
 	margin: auto;
@@ -258,22 +261,14 @@ body {
 	color: #ffffff;
 	padding: 50px;
 	text-align: center;
-	border-top: 1px solid;
+	border-top: 2px solid;
 }
 
 .footer .logo {
 	margin-top: 0px;
 	padding: 5px;
-	width: 120px;
-	height: 90px;
-	border: 2px solid #fff;
-	transition: 0.2s;
-}
-
-.footer .logo:hover {
-	background-color: #df8b04;
-	color: #ca2a02;
-	border: 2px solid #ffffff;
+	width: 100px;
+	height: 70px;
 }
 
 .footer h2 {
