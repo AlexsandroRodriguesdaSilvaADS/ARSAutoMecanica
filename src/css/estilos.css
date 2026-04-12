@@ -6,12 +6,7 @@ html {
 body {
 	font-family: "Poppins", sans-serif;
 	margin: 0 auto;
-
-	/*background: linear-gradient(150deg, #000000, #ca2a02);*/
-
 	background: url("../imagens/bmw-m3-gtr.webp") center / cover no-repeat fixed;
-	/*justify-content: center;*/
-	/*width: 100%;*/
 }
 
 .main {
@@ -29,10 +24,9 @@ body {
 
 .cabecalho .logo {
 	margin-top: 0px;
-	padding: 5px;
+	padding: 2px;
 	width: 150px;
 	height: 140px;
-	/*	border: 2px solid #fff;*/
 	transition: 0.2s;
 }
 
@@ -44,7 +38,6 @@ body {
 
 .cabecalho .logo:hover {
 	background-color: #df8b04;
-	/*	border: 2px solid #ffffff;*/
 }
 
 .cabecalho .menu li a {
@@ -83,7 +76,7 @@ body {
 
 .home .informacoes .audio {
 	height: 30px;
-	opacity: 0.4;
+	opacity: 0.5;
 }
 
 .home .informacoes h1 {
@@ -255,7 +248,6 @@ body {
 	display: none;
 }
 
-
 /*RODAPÉ*/
 .footer {
 	max-width: 1120px;
@@ -271,7 +263,7 @@ body {
 
 .footer .logo {
 	margin-top: 0px;
-	padding: 5px;
+	padding: 2px;
 	width: 100px;
 	height: 70px;
 }
