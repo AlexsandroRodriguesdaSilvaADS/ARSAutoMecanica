@@ -103,17 +103,17 @@ body {
 	border-bottom: 1px solid #df8b04;
 }
 
-.home .redes-sociais {
+.home .agendamento {
 	flex-wrap: wrap;
 	display: flex;
 	gap: 20px;
 }
 
-.home .redes-sociais li {
+.home .agendamento li {
 	margin-bottom: 25px;
 }
 
-.home .redes-sociais a {
+.home .agendamento a {
 	color: #fff;
 	border: 2px solid #fff;
 	border-radius: 15px;
@@ -125,7 +125,7 @@ body {
 	transition: 0.3s;
 }
 
-.home .redes-sociais a:hover {
+.home .agendamento a:hover {
 	background-color: #df8b04;
 	color: #ca2a02;
 	border: 2px solid #fff;
