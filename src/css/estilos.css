@@ -248,6 +248,111 @@ body {
 	display: none;
 }
 
+/*SUGESTÕES*/
+.container {
+	margin: auto;
+	margin-top: 100px;
+	border: 1px solid #fff;
+	padding: 2rem;
+	border-radius: 15px;
+	width: 100%;
+	max-width: 500px;
+	margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 15px;
+	border-radius: 8px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+input[type="text"] {
+	margin-top: 20px;
+}
+
+textarea {
+	height: 80px;
+	resize: none;
+}
+
+.botoes {
+	display: flex;
+	gap: 10px;
+}
+
+.btn-enviar,
+.btn-limpar {
+	flex: 1;
+	padding: 12px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: all 0.3s;
+}
+
+.btn-enviar,
+.btn-limpar {
+	background: none;
+	border: 2px solid #fff;
+	border-radius: 15px;
+	color: #fff;
+}
+
+.btn-enviar:hover,
+.btn-limpar:hover {
+	background-color: #df8b04;
+	color: #ca2a02;
+	transition: 0.3s;
+}
+
+#listaSugestoes {
+	margin: auto;
+	width: 100%;
+	max-width: 500px;
+}
+
+.sugestao-card {
+	background: white;
+	padding: 15px;
+	margin-bottom: 15px;
+	border-radius: 10px;
+	border-left: 6px solid #df8b04;
+	animation: slideIn 0.4s ease-out;
+}
+
+.sugestao-nome {
+	font-weight: bold;
+	color: #df8b04;
+	display: block;
+	margin-bottom: 5px;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+}
+
+.sugestao-texto {
+	line-height: 1.5;
+	color: #4b6584;
+}
+
+@keyframes slideIn {
+	from {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
 /*RODAPÉ*/
 .footer {
 	max-width: 1120px;
