@@ -16,7 +16,7 @@
         align-items: center;
     }
 
-    .projetos .container-projetos {
+    .servicos .container-servicos {
         padding: 0 30px;
     }
 }
@@ -44,7 +44,7 @@
         max-width: 320px;
     }
 
-    .home .redes-sociais {
+    .home .agendamento {
         margin-top: 75px;
         flex-direction: column;
         gap: 10px;
