@@ -81,6 +81,19 @@ function loadTrack(index) {
 // Inicializa a primeira música
 loadTrack(currentTrack);
 
+// Modificação no evento 'ended' para criar o Auto-loop
+audioPlayer.addEventListener('ended', () => {
+    // Incrementa o índice e volta para 0 se for a última música
+    currentTrack = (currentTrack + 1) % tracks.length;
+
+    loadTrack(currentTrack);
+    audioPlayer.play(); 
+    
+    console.log("Iniciando próxima faixa: " + currentTrack);
+});
+
+
+/*
 // O PULO DO GATO: Evento que detecta o fim do áudio
 audioPlayer.addEventListener('ended', () => {
     currentTrack++; // Vai para a próxima
@@ -93,6 +106,7 @@ audioPlayer.addEventListener('ended', () => {
         // Opcional: currentTrack = 0; loadTrack(0); audioPlayer.play(); (Para loop infinito)
     }
 });
+*/
 
 // Permitir clicar na música para trocar manualmente
 for (let i = 0; i < tracks.length; i++) {

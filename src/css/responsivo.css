@@ -40,8 +40,8 @@
         height: 50px;
     }
 
-    .home .container-foto img {
-        max-width: 320px;
+    .home .container-foto {
+        max-width: 300px;
     }
 
     .home .agendamento {
