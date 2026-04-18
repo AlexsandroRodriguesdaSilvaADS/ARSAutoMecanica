@@ -35,11 +35,11 @@
 
       <div class="informacoes">
 
-        <audio class="audio" autoplay loop controls>
+        <!--<audio class="audio" autoplay loop controls>
           <source src="./src/audio/BemaSeat.mp3" type="audio/mpeg">
           <source src="./src/audio/BemaSeat.wav" type="audio/wav">
           <source src="./src/audio/BemaSeat.ogg" type="audio/ogg">
-        </audio>
+        </audio>-->
 
         <h1>Olá! Sou
           <br>Alexsandro Rodrigues da Silva
@@ -96,6 +96,27 @@
         <div class="foto sombra-interna">
           <img src="./src/imagens/foto-perfil-alfa.png" alt="foto do portifólio de Alexsandro" />
         </div>
+        <div class="player-container">
+            <audio id="audioPlayer" controls>
+              <source src="" type="audio/mpeg">
+              Seu navegador não suporta áudio HTML5.
+            </audio>
+            <ul id="playlist">
+              <li data-src="./src/audio/Adonai.mp3" class="active">Adonai</li>
+              <li data-src="./src/audio/Angel of Light.mp3">Angel of Light</li>
+              <li data-src="./src/audio/Back to The Rock.mp3">Back to the Rock</li>
+              <li data-src="./src/audio/Bema Seat.mp3">Bema Seat</li>
+              <li data-src="./src/audio/Better.mp3">Better</li>
+              <li data-src="./src/audio/Clean.mp3">Clean</li>
+              <li data-src="./src/audio/De Joelhos.mp3">De Joelhos</li>
+              <li data-src="./src/audio/Depois Da Guerra.mp3">Depois da guerra</li>
+              <li data-src="./src/audio/Grave Robber.mp3">Grave Robber</li>
+              <li data-src="./src/audio/Meus Passos.mp3">Meus Passos</li>
+              <li data-src="./src/audio/Meus Próprios Meios.mp3">Meus Próprios Meios</li>
+              <li data-src="./src/audio/Muros.mp3">Muros</li>
+              <li data-src="./src/audio/Obediência.mp3">Obediência</li>
+            </ul>
+          </div>
       </div>
     </section>
 
@@ -260,6 +281,10 @@
           </div>
         </div>
 
+        <div class="servico">
+          
+        </div>
+
       </div>
 
       <button class="btn-ocultar-servicos remover">Mostrar menos</button>
@@ -271,7 +296,6 @@
   </div>
 
   <script src="./src/js/index.js"></script>
-  <script src="./src/js/sugestoes.js"></script>
 
   <footer class="footer">
     <img class="logo" src="./src/imagens/logo-p.png" alt="Logotipo ARS">

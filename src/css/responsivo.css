@@ -44,13 +44,17 @@
         max-width: 320px;
     }
 
+    .player-container {
+        
+    }
+
     .home .agendamento {
         margin-top: 75px;
         flex-direction: column;
         gap: 10px;
     }
 
-    .projetos {
+    .servicos {
         padding: 30px;
     }
 }

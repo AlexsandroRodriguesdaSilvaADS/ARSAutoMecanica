@@ -74,10 +74,52 @@ body {
 	max-width: 50%;
 }
 
-.home .informacoes .audio {
+
+/*PLAYER*/
+.player-container {
+	margin: auto;
+	margin-top: 10px;
+	background: rgba(21, 60, 93, 0.8);
+	padding: 20px;
+	border-radius: 10px;
+	width: 340px;
+	max-width: 90%;
+}
+
+.player-container audio {
+	height: 35px;
+	max-width: 99%;
+}
+
+.player-container ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 20px;
+
+	width: 300px;
+	height: 80px;
+	overflow-y: auto;
+}
+
+
+
+.player-container li {
+	padding-left: 15px;
+	cursor: pointer;
+	border-radius: 50px;
+}
+
+.player-container li.active {
+	color: rgb(21, 60, 93);
+	font-weight: bold;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+/*.home .informacoes .audio {
 	height: 30px;
 	opacity: 0.5;
-}
+}*/
 
 .home .informacoes h1 {
 	font-family: "Raleway", sans-serif;
