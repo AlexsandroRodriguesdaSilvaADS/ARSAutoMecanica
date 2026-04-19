@@ -350,6 +350,7 @@ body {
 	}
 }
 
+
 ul#album-fotos {
 	width: 1000px;
 	margin: auto;
@@ -366,7 +367,7 @@ ul#album-fotos li {
 	border: 5px solid rgba(0, 0, 0, .4);
 	background-color: #ffffff;
 	box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
-	-webkit-transition: all .4s ease-in;
+	transition: all .4s ease-in;
 }
 
 ul#album-fotos li span {
@@ -380,7 +381,7 @@ ul#album-fotos li span {
 }
 
 ul#album-fotos li:hover {
-	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
 }
 
 ul#album-fotos li:hover span {
