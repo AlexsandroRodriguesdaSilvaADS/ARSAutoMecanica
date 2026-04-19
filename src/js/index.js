@@ -56,7 +56,6 @@ function ocultarProjetos() {
 }
 
 
-
 //CONTROLE DAS MÚSICAS
 
 const audioPlayer = document.getElementById('audioPlayer');
@@ -92,7 +91,6 @@ audioPlayer.addEventListener('ended', () => {
     console.log("Iniciando próxima faixa: " + currentTrack);
 });
 
-
 /*
 // O PULO DO GATO: Evento que detecta o fim do áudio
 audioPlayer.addEventListener('ended', () => {
@@ -115,4 +113,10 @@ for (let i = 0; i < tracks.length; i++) {
         loadTrack(currentTrack);
         audioPlayer.play();
     });
+}
+
+//MUDA FOTO
+
+function mudaFoto (foto) {
+	document.getElementById("icone").src = foto;
 }
