@@ -50,6 +50,14 @@
         gap: 10px;
     }
 
+    .player-container li {
+        padding-left: 2px;
+    }
+
+    .player-container li.active {
+        max-width: 100%;
+    }
+
     .servicos {
         padding: 30px;
     }
