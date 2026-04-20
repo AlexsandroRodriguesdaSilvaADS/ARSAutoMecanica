@@ -13,7 +13,6 @@ body {
 	max-width: 1120px;
 	margin: auto;
 	background-color: rgba(21, 60, 93, 0.7);
-
 }
 
 .cabecalho {
@@ -188,11 +187,20 @@ body {
 	border-radius: 50%;
 }
 
-.home .foto.sombra-interna {
+.home video {
+	max-height: 480px;
+	min-width: 410px;
+	position: absolute;
+	z-index: -1;
+/*	border-radius: 50%;*/
+}
+/*
+.home .foto .sombra-interna {
 	background: linear-gradient(to right, #800101, #ca2a02, #df8b04);
 	background-size: 180% 180%;
 	animation: gradient-animation 3s ease infinite;
 }
+*/
 
 /*SERVIÇOS*/
 .servicos {
