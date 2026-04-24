@@ -180,13 +180,15 @@ body {
 .home .container-foto .foto img {
 	width: 85%;
 	border-radius: 50%;
+	position: relative;
+	z-index: 2;
 }
 
 .home .container-foto .video video {
 	border: 3px #fff solid;
 	width: 450px;
 	position: absolute;
-	z-index: -1;
+	z-index: 1;
 	border-radius: 50%;
 }
 
