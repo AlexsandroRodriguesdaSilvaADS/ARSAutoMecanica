@@ -31,10 +31,6 @@ body {
 	height: 140px;
 }
 
-/*.cabecalho .logo:hover {
-	background-color: #df8b04;
-}*/
-
 .cabecalho a:hover {
 	background-color: #df8b04;
 	color: #ca2a02;
@@ -98,7 +94,6 @@ body {
 .player-container ul {
 	padding: 0;
 	margin-top: 20px;
-
 	max-width: 300px;
 	height: 100px;
 	overflow-y: auto;
@@ -188,7 +183,7 @@ body {
 }
 
 .home .container-foto .video video {
-	border: 1px #fff solid;
+	border: 3px #fff solid;
 	width: 450px;
 	position: absolute;
 	z-index: -1;
