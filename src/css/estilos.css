@@ -185,7 +185,6 @@ body {
 }
 
 .home .container-foto .video video {
-	border: 3px #fff solid;
 	width: 450px;
 	position: absolute;
 	z-index: 1;
