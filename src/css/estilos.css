@@ -82,6 +82,11 @@ body {
 	max-width: 100%;
 }
 
+.player-container audio {
+	width: 100%;
+	opacity: 0.7;
+}
+
 .player-container h3 {
 	text-align: center;
 }
