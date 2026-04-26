@@ -10,8 +10,9 @@ body {
 }
 
 .main {
-	max-width: 1120px;
+	max-width: 1320px;
 	margin: auto;
+	padding: 0 100px;
 	background-color: rgba(21, 60, 93, 0.7);
 }
 
@@ -303,8 +304,9 @@ body {
 
 /*RODAPÉ*/
 .footer {
-	max-width: 1120px;
+	max-width: 1320px;
 	margin: auto;
+	padding: 0 100px;
 	background-color: rgba(21, 60, 93, 0.7);
 
 	font-family: "Raleway", sans-serif;

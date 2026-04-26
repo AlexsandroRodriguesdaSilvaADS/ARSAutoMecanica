@@ -1,4 +1,9 @@
 @media(max-width: 1280px) {
+
+    .main {
+        padding: 0;
+    }
+
     .cabecalho {
         padding: 30px;
     }
