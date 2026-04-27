@@ -74,10 +74,38 @@ body {
 }
 
 /*PLAYER*/
+ .painel-lateral {
+    position: fixed;
+    top: 150px;
+    right: -350px; /* Esconde o painel à direita */
+    width: 350px;
+	padding: auto;
+    height: 50%;
+    color: white;
+    transition: 0.3s; /* Suaviza a transição */
+	z-index: 3;
+  }
+
+  /* Classe para mostrar o painel */
+  .painel-lateral.ativo {
+    transform: translateX(-450px);
+  }
+
+  .playlist-button {
+	position: fixed;
+	top: 70px;
+	right: 120px;
+  }
+
+  .playlist-button img {
+	background-color: rgba(255, 255, 255, 0.1);
+	width: 50px;
+  }
+
 .player-container {
+	background-color: rgba(21, 60, 93, 0.7);
 	border: 1px #fff solid;
 	margin: auto;
-	margin-top: 70px;
 	padding: 20px;
 	border-radius: 10px;
 	width: 400px;
@@ -91,6 +119,7 @@ body {
 
 .player-container h3 {
 	text-align: center;
+	padding-bottom: 10px;
 }
 
 .player-container audio {
@@ -99,10 +128,11 @@ body {
 }
 
 .player-container ul {
+	background-color: rgba(21, 60, 93, 0.1);
 	padding: 0;
 	margin-top: 20px;
 	max-width: 400px;
-	height: 120px;
+	height: 140px;
 	overflow-y: auto;
 }
 
@@ -209,11 +239,12 @@ body {
 .popup form label {
 	margin-top: 10px;
 	font-size: 15px;
+	text-transform: uppercase;
 }
 
 .popup form input {
 	background-color: #fff;
-	height: 40px;
+	height: 30px;
 	padding: 5px;
 	font-size: 15px;
 }
@@ -222,10 +253,6 @@ body {
 	background-color: #fff;
 	padding: 5px;
 	font-size: 15px;
-}
-
-.popup form label {
-	text-transform: uppercase;
 }
 
 .popup form button {

@@ -24,6 +24,9 @@
       <img class="logo" src="./src/imagens/logo.png" title="Soluções integradas para o seu veículo"
         alt="Logo de ARS Mecânico Automotivo">
       <nav class="menu">
+
+        <button class="playlist-button" onclick="toggleMenu()"><img src="./src/imagens/seta.png" alt=""></button>
+
         <ul>
           <li>
             <a href="#servicos">Meus Serviços</a>
@@ -96,13 +99,13 @@
             <h2>Agendamento</h2>
             <form id="formulario">
               <label for="name">Nome Completo</label>
-              <input type="text" name="name" id="txtName">
+              <input type="text" name="name" id="txtName" required>
               <label for="email">E-mail</label>
-              <input type="email" name="email" id="txtEmail">
+              <input type="email" name="email" id="txtEmail" required>
               <label for="contato">Telefone para Contato</label>
-              <input type="text" name="contato" id="txtContact">
+              <input type="text" name="contato" id="txtContact" required>
               <label for="data">Data para o Serviço</label>
-              <input type="date" name="date" id="txtDate">
+              <input type="date" name="date" id="txtDate" required>
               <label for="character">Observações</label>
               <textarea name="character" cols="30" rows="5" id="txtCharacter"
                 placeholder="Decreva os problemas que você percebeu"></textarea>
@@ -124,6 +127,8 @@
           </div>
         </div>
 
+        <button onclick="toggleMenu()">Abrir/Fechar</button>
+<div class="painel-lateral" id="meuPainel">
         <div class="player-container">
           <h3>My playlist</h3>
           <audio id="audioPlayer" controls autoplay>
@@ -155,6 +160,7 @@
             <li data-src="./src/audio/Vertigo.mp3">Vertigo</li>
           </ul>
         </div>
+</div>
       </div>
     </section>
 

@@ -143,4 +143,7 @@ document.getElementById('formulario').addEventListener('submit', function (event
     document.getElementById('formulario').reset();
 });
 
- 
+ // Menu escondido
+    function toggleMenu() {
+      document.getElementById("meuPainel").classList.toggle("ativo");
+    }
