@@ -181,17 +181,6 @@ body {
 	padding-top: 25px;
 }
 
-.header {
-	display: flex;
-	gap: 100px;
-	justify-content: center;
-}
-
-.header a {
-	text-decoration: none;
-/*	border: 1px #fff solid;*/
-}
-
 .overlay {
 	width: 30%;
 	top: 100px;
@@ -206,6 +195,17 @@ body {
 	border: 1px #fff solid;
 	padding: 20px;
 	margin: 5px;
+}
+
+.header {
+	display: flex;
+	gap: 100px;
+	justify-content: center;
+}
+
+.header .close {
+	text-decoration: none;
+/*	border: 1px #fff solid;*/
 }
 
 .popup form {
