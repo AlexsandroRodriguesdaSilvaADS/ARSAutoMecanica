@@ -177,6 +177,86 @@ body {
 	font-weight: bolder;
 }
 
+.home #agendamento {
+	padding-top: 25px;
+}
+
+.header {
+	display: flex;
+	gap: 100px;
+	justify-content: center;
+}
+
+.header a {
+	text-decoration: none;
+/*	border: 1px #fff solid;*/
+}
+
+.overlay {
+	width: 30%;
+	top: 100px;
+	position: fixed;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 3;
+}
+
+.popup {
+	background-color: rgba(21, 60, 93, 0.9);
+	border: 1px #fff solid;
+	padding: 20px;
+	margin: 5px;
+}
+
+.popup form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+}
+
+.popup form label {
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+.popup form input {
+	background-color: #bee911;
+	height: 40px;
+	padding: 5px;
+	font-size: 15px;
+}
+
+.popup form textarea {
+	background-color: #bee911;
+	padding: 5px;
+	font-size: 15px;
+}
+
+.popup button {
+	background-color: rgba(255, 255, 255, 0);
+	font-weight: bolder;
+	color: #fff;
+	font-size: 15px;
+	border: 1px solid #fff;
+	border-radius: 15px;
+	text-transform: capitalize;
+	padding: 5px 10px;
+	transition: 0.2s;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.popup button:hover {
+	background-color: #FE9E00;
+	color: #CA2A02;
+}
+
+#popup1:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+
 .home .container-foto .foto {
 	max-width: 450px;
 	text-align: center;
@@ -197,8 +277,7 @@ body {
 	border-radius: 50%;
 }
 
-/*
-.home .foto.sombra-interna {
+/*.home .foto.sombra-interna {
 	background: linear-gradient(to right, #800101, #ca2a02, #df8b04);
 	background-size: 180% 180%;
 	animation: gradient-animation 3s ease infinite;

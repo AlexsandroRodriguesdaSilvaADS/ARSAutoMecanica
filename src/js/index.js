@@ -86,8 +86,8 @@ audioPlayer.addEventListener('ended', () => {
     currentTrack = (currentTrack + 1) % tracks.length;
 
     loadTrack(currentTrack);
-    audioPlayer.play(); 
-    
+    audioPlayer.play();
+
     console.log("Iniciando próxima faixa: " + currentTrack);
 });
 
@@ -115,8 +115,27 @@ for (let i = 0; i < tracks.length; i++) {
     });
 }
 
-//MUDA FOTO
 
-function mudaFoto (foto) {
-	document.getElementById("icone").src = foto;
-}
+//ENVIAR DADOS DO FORMULARIO PEI WHATSAPP
+
+document.getElementById('formulario').addEventListener('submit', function (event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
+
+    // Coleta dos dados
+    var nome = document.getElementById('txtName').value;
+    var telefone = document.getElementById('txtContact').value;
+    var email = document.getElementById('txtEmail').value;
+    var data = document.getElementById('txtDate').value;
+    var mensagem = document.getElementById('txtCharacter').value;
+
+    // Configuração do WhatsApp
+    var numeroWhatsapp = "5581998090037"; // Coloque o número com DDD
+
+    var mensagem = "Olá, meu nome é " + nome + " o meu contato é " + telefone + ", meu e-mail é " + email + ", a data escolhida é " + data + " e o problema relatado é " + mensagem;
+
+    // Criação do link
+    var url = "https://wa.me/" + numeroWhatsapp + "?text=" + encodeURIComponent(mensagem);
+
+    // Redireciona
+    window.open(url, '_blank');
+});

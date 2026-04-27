@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./src/css/reset.css" />
   <link rel="stylesheet" href="./src/css/estilos.css" />
   <link rel="stylesheet" href="./src/css/responsivo.css" />
+  <link rel="stylesheet" href="./src/css/formulario.cs" />
 
 </head>
 
@@ -48,48 +49,80 @@
         <p>Em domicílio <a href="https://wa.me/5581998090037" title="Ir para agendamento" target="_blank">(81) 9
             9809-0037</a></p>
         <p>Ou no
-          <a href="https://www.google.com/maps/place/8%C2%B016'29.8%22S+35%C2%B056'44.3%22W/@-8.2749445,-35.9482186,820m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d-8.2749498!4d-35.9456437!5m1!1e3?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D"
-            title="Ir para endereço" target="_blank">nosso endereço</a>
+          <a href="https://maps.app.goo.gl/FGYMDUrY44topPQx7" title="Ir para endereço" target="_blank">nosso
+            endereço</a>
         </p>
 
-        <ul class="agendamento">
-          <li>
-            <a href="https://wa.me/5581998090037" title="Ir para agendamento" target="_blank">
-              Embreagem
-            </a>
-          </li>
+        <div id="agendamento">
+          <ul class="agendamento">
+            <li>
+              <a href="#popup1" title="Ir para agendamento">
+                Embreagem
+              </a>
+            </li>
 
-          <li>
-            <a href="https://wa.me/5581998090037" title="Ir para agendamento" target="_blank">
-              Suspensão
-            </a>
-          </li>
+            <li>
+              <a href="#popup1" title="Ir para agendamento">
+                Suspensão
+              </a>
+            </li>
 
-          <li>
-            <a href="https://wa.me/5581998090037" title="Ir para agendamento" target="_blank">
-              Freios
-            </a>
-          </li>
+            <li>
+              <a href="#popup1" title="Ir para agendamento">
+                Freios
+              </a>
+            </li>
 
-          <li>
-            <a href="https://wa.me/5581998090037" title="Ir para agendamento" target="_blank">
-              Tração
-            </a>
-          </li>
+            <li>
+              <a href="#popup1" title="Ir para agendamento">
+                Tração
+              </a>
+            </li>
 
-          <li>
-            <a href="https://wa.me/5581998090037" title="Ir para agendamento" target="_blank">
-              Arrefecimento
-            </a>
-          </li>
+            <li>
+              <a href="#popup1" title="Ir para agendamento">
+                Arrefecimento
+              </a>
+            </li>
 
-          <li>
-            <a href="https://wa.me/5581998090037" title="Ir para agendamento" target="_blank">
-              Manutenção
-            </a>
-          </li>
+            <li>
+              <a href="#popup1" title="Ir para agendamento">
+                Manutenção
+              </a>
+            </li>
 
-        </ul>
+          </ul>
+        </div>
+
+        <div class="overlay" id="popup1">
+          <div class="popup">
+            <div class="header">
+              <h2>Agendamento</h2>
+              <a class="close" href="#agendamento">x</a>
+            </div>
+            <form id="formulario">
+              <label for="name">Nome Completo</label>
+              <input type="text" name="name" id="txtName">
+
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="txtEmail">
+
+              <label for="contato">Telefone para Contato</label>
+              <input type="text" name="contato" id="txtContact">
+
+              <label for="data">Data do serviço</label>
+              <input type="date" name="date" id="txtDate">
+
+              <label for="character">Observações</label>
+              <textarea name="character" cols="30" rows="5" id="txtCharacter"
+                placeholder="Decreva os problemas que você percebeu"></textarea>
+              <button type="submit" id="btnSubscribe">Enviar</button>
+            </form>
+
+          </div>
+        </div>
+        </form>
+
       </div>
 
       <div class="container-foto">
@@ -102,8 +135,8 @@
         </div>
 
         <div class="player-container">
-          <h3>Minha playlist</h3>
-          <audio id="audioPlayer" controls autoplay>
+          <h3>My playlist</h3>
+          <audio id="audioPlayer" controls autopla>
             <source src="" type="audio/mpeg">
             Seu navegador não suporta áudio HTML5.
           </audio>
@@ -124,7 +157,8 @@
             <li data-src="./src/audio/Invisible.mp3">Invisible</li>
             <li data-src="./src/audio/Muros.mp3">Muros</li>
             <li data-src="./src/audio/Grave-Robber.mp3">Grave Robber</li>
-            <li data-src="./src/audio/I-Still-Haven't-Found-What-I'm-Looking-For.mp3">I Still Haven't Found What I'm Looking For</li>
+            <li data-src="./src/audio/I-Still-Haven't-Found-What-I'm-Looking-For.mp3">I Still Haven't Found What I'm
+              Looking For</li>
             <li data-src="./src/audio/Obediência.mp3">Obediência</li>
             <li data-src="./src/audio/Pride.mp3">Pride</li>
             <li data-src="./src/audio/Until-The-End-Of-The-World.mp3">Until The End Of The World</li>
@@ -292,6 +326,16 @@
             <p>Quando substituir?</p>
             <p>1. Desgaste das borrachas.
               <br>2. Vibração excessiva do motor ao arrancar ou na marcha ré.
+            </p>
+          </div>
+        </div>
+
+        <div class="servico">
+          <img src="./src/imagens/correia-e-rolamento.webp" alt="Coxins do motor" />
+          <h3>Correia e rolamento tensor</h3>
+          <div class="informacoes-servico">
+            <p>Quando substituir?</p>
+            <p>1. Desgaste da correia e rolamento; barulho extranho.
             </p>
           </div>
         </div>
