@@ -15,8 +15,6 @@
   <link rel="stylesheet" href="./src/css/reset.css" />
   <link rel="stylesheet" href="./src/css/estilos.css" />
   <link rel="stylesheet" href="./src/css/responsivo.css" />
-  <link rel="stylesheet" href="./src/css/formulario.cs" />
-
 </head>
 
 <body cz-shortcut-listen="true">
@@ -46,10 +44,10 @@
         <p>Sábados e Feriados
           <br>das 7h às 19h
         </p>
-        <p>Em domicílio <a href="https://wa.me/5581998090037" title="Ir para agendamento" target="_blank">(81) 9
+        <p>Em domicílio <a class="referencia" href="#popup1" title="Ir para agendamento">(81) 9
             9809-0037</a></p>
         <p>Ou no
-          <a href="https://maps.app.goo.gl/FGYMDUrY44topPQx7" title="Ir para endereço" target="_blank">nosso
+          <a class="referencia" href="https://maps.app.goo.gl/FGYMDUrY44topPQx7" title="Ir para endereço" target="_blank">nosso
             endereço</a>
         </p>
 
@@ -96,10 +94,7 @@
 
         <div class="overlay" id="popup1">
           <div class="popup">
-            <div class="header">
-              <h2>Agendamento</h2>
-              <a class="close" href="#agendamento">x</a>
-            </div>
+            <h2>Agendamento</h2>
             <form id="formulario">
               <label for="name">Nome Completo</label>
               <input type="text" name="name" id="txtName">
@@ -116,7 +111,12 @@
               <label for="character">Observações</label>
               <textarea name="character" cols="30" rows="5" id="txtCharacter"
                 placeholder="Decreva os problemas que você percebeu"></textarea>
-              <button type="submit" id="btnSubscribe">Enviar</button>
+
+              <div class="foot">
+                <button type="submit" id="btnSubscribe">Enviar</button>
+                <a href="#agendamento"><img src="./src/imagens/close.png" alt=""></a>
+              </div>
+
             </form>
 
           </div>
