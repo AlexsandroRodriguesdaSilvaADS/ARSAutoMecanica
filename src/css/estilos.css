@@ -148,17 +148,17 @@ body {
 	border-bottom: 1px solid #df8b04;
 }
 
-.home .agendamento {
+.home .agendamento-ul {
 	flex-wrap: wrap;
 	display: flex;
 	gap: 20px;
 }
 
-.home .agendamento li {
+.home .agendamento-ul li {
 	margin-bottom: 25px;
 }
 
-.home .agendamento a {
+.home .agendamento-ul a {
 	color: #fff;
 	border: 1px solid #fff;
 	border-radius: 15px;
@@ -178,13 +178,13 @@ body {
 	font-weight: bolder;
 }
 
-.home #agendamento {
+.home .agendamento {
 	padding-top: 25px;
 }
 
-.home .overlay {
+.overlay {
 	width: 30%;
-	top: 100px;
+	top: 50px;
 	position: fixed;
 	opacity: 0;
 	pointer-events: none;

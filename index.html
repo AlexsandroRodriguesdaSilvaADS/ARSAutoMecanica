@@ -40,7 +40,7 @@
         <p>Mecânico Automotivo
           <br>Certificando SENAI 2027
         </p>
-        <h1>Serviços por Agendamento</h1>
+        <h1 id="agendamento">Serviços por Agendamento</h1>
         <p>Sábados e Feriados
           <br>das 7h às 19h
         </p>
@@ -51,8 +51,8 @@
             endereço</a>
         </p>
 
-        <div id="agendamento">
-          <ul class="agendamento">
+        <div class="agendamento">
+          <ul class="agendamento-ul">
             <li>
               <a href="#popup1" title="Ir para agendamento">
                 Embreagem
@@ -88,7 +88,6 @@
                 Manutenção
               </a>
             </li>
-
           </ul>
         </div>
 
@@ -98,31 +97,22 @@
             <form id="formulario">
               <label for="name">Nome Completo</label>
               <input type="text" name="name" id="txtName">
-
               <label for="email">E-mail</label>
               <input type="email" name="email" id="txtEmail">
-
               <label for="contato">Telefone para Contato</label>
               <input type="text" name="contato" id="txtContact">
-
               <label for="data">Data para o Serviço</label>
               <input type="date" name="date" id="txtDate">
-
               <label for="character">Observações</label>
               <textarea name="character" cols="30" rows="5" id="txtCharacter"
                 placeholder="Decreva os problemas que você percebeu"></textarea>
-
               <div class="foot">
                 <button type="submit" id="btnSubscribe" title="Enviar os dados">Enviar</button>
                 <a href="#agendamento"><img src="./src/imagens/close.png" alt="Ícone de fechar"></a>
               </div>
-
             </form>
-
           </div>
         </div>
-        </form>
-
       </div>
 
       <div class="container-foto">
@@ -165,14 +155,11 @@
             <li data-src="./src/audio/Vertigo.mp3">Vertigo</li>
           </ul>
         </div>
-
       </div>
     </section>
 
     <section class="servicos">
       <h2 class="titulo" id="servicos">Meus Serviços</h2>
-      <div>
-      </div>
       <div class="container-servicos">
         <div class="servico ativo">
           <img src="./src/imagens/embreagem.webp" alt="Kit de embreagem" />

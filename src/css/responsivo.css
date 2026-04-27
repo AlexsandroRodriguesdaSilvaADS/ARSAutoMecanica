@@ -25,6 +25,10 @@
         padding: 0 30px;
     }
 
+.servicos h3 {
+    font-size: 14px;
+}    
+
     .overlay {
         width: 95%;
     }
@@ -36,7 +40,7 @@
     }
 
     .home .informacoes p {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .cabecalho .logo {
@@ -57,8 +61,7 @@
         width: 300px;
     }
 
-    .home .agendamento {
-        margin-top: 75px;
+    .home .agendamento-ul {
         flex-direction: column;
         gap: 10px;
     }
@@ -74,6 +77,10 @@
     .servicos {
         padding: 30px;
     }
+
+    .servicos h3 {
+        font-size: 12;
+    }
 }
 
 @media(max-width: 321px) {
@@ -87,6 +94,6 @@
     }
 
     .servicos .servico p {
-        font-size: 13px;
+        font-size: 12px;
     }
 }
