@@ -138,4 +138,9 @@ document.getElementById('formulario').addEventListener('submit', function (event
 
     // Redireciona
     window.open(url, '_blank');
+
+    // Limpar o formulário
+    document.getElementById('formulario').reset();
 });
+
+ 
