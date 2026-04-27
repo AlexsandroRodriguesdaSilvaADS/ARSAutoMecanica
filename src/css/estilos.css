@@ -213,7 +213,6 @@ body {
 
 .popup form input {
 	background-color: #fff;
-	opacity: 0.7;
 	height: 40px;
 	padding: 5px;
 	font-size: 15px;
@@ -221,9 +220,12 @@ body {
 
 .popup form textarea {
 	background-color: #fff;
-	opacity: 0.7;
 	padding: 5px;
 	font-size: 15px;
+}
+
+.popup form label {
+	text-transform: uppercase;
 }
 
 .popup form button {
@@ -238,6 +240,7 @@ body {
 	transition: 0.2s;
 	/*margin: auto;*/
 	margin-top: 10px;
+	height: 35px;
 }
 
 .popup button:hover {
@@ -253,10 +256,10 @@ body {
 
 .popup form img {
 	border: 1px #fff solid;
-	margin-top: 12px;
+	margin-top: 10px;
 	padding: 2px;
 	border-radius: 20%;
-	width: 35px;
+	height: 35px;
 }
 
 .popup form img:hover {
