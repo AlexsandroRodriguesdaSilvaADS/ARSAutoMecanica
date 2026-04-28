@@ -10,7 +10,7 @@ body {
 }
 
 .main {
-	max-width: 1320px;
+	max-width: 1300px;
 	margin: auto;
 	padding: 0 100px;
 	background-color: rgba(21, 60, 93, 0.7);
@@ -55,7 +55,7 @@ body {
 	font-weight: bolder;
 }
 
-/*HOME*/
+/* HOME */
 .home {
 	display: flex;
 	min-height: calc(100vh - 125px);
@@ -64,51 +64,44 @@ body {
 	justify-content: space-between;
 }
 
-.home .informacoes {
+/* PLAYER */
+.painel-lateral {
 	display: flex;
-	flex-direction: column;
-	gap: 15px;
-	letter-spacing: 2px;
-	padding: 0 15px;
-	max-width: 50%;
+	position: fixed;
+	top: 75px;
+	right: -360px;
+	width: 400px;
+	margin-right: 10px;
+	height: 50%;
+	color: #fff;
+	transition: 0.3s;
+	z-index: 3;
 }
 
-/*PLAYER*/
- .painel-lateral {
-    position: fixed;
-    top: 150px;
-    right: -350px; /* Esconde o painel à direita */
-    width: 350px;
-	padding: auto;
-    height: 50%;
-    color: white;
-    transition: 0.3s; /* Suaviza a transição */
-	z-index: 3;
-  }
+.painel-lateral.ativo {
+	transform: translateX(-300px);
+}
 
-  /* Classe para mostrar o painel */
-  .painel-lateral.ativo {
-    transform: translateX(-450px);
-  }
-
-  .playlist-button {
+/*.playlist-button {
 	position: fixed;
-	top: 70px;
-	right: 120px;
-  }
+	top: 1%;
+	right: 16%;
+}*/
 
-  .playlist-button img {
-	background-color: rgba(255, 255, 255, 0.1);
+.playlist-button {
+	background-color: rgba(225, 225, 225, 0.001);
 	width: 50px;
-  }
+	height: 50px;
+}
 
 .player-container {
-	background-color: rgba(21, 60, 93, 0.7);
+	background-color: rgba(21, 60, 93, 1);
 	border: 1px #fff solid;
-	margin: auto;
+	margin: 0;
 	padding: 20px;
 	border-radius: 10px;
-	width: 400px;
+	width: 300px;
+	height: 300px;
 	max-width: 100%;
 }
 
@@ -128,7 +121,6 @@ body {
 }
 
 .player-container ul {
-	background-color: rgba(21, 60, 93, 0.1);
 	padding: 0;
 	margin-top: 20px;
 	max-width: 400px;
@@ -152,6 +144,15 @@ body {
 	font-weight: bold;
 	background-color: rgba(255, 255, 255, 0.7);
 	max-width: 99%;
+}
+
+.home .informacoes {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	letter-spacing: 2px;
+	padding: 0 15px;
+	max-width: 50%;
 }
 
 .home .informacoes h1 {
@@ -179,6 +180,7 @@ body {
 }
 
 .home .agendamento-ul {
+	padding-top: 25px;
 	flex-wrap: wrap;
 	display: flex;
 	gap: 20px;
@@ -200,7 +202,7 @@ body {
 	transition: 0.3s;
 }
 
-.home .agendamento a:hover {
+.home .agendamento-ul a:hover {
 	background-color: #df8b04;
 	color: #ca2a02;
 	border: 1px solid #fff;
@@ -208,10 +210,7 @@ body {
 	font-weight: bolder;
 }
 
-.home .agendamento {
-	padding-top: 25px;
-}
-
+/* FORMULÁRIO */
 .overlay {
 	width: 30%;
 	top: 50px;
@@ -265,7 +264,6 @@ body {
 	text-transform: capitalize;
 	padding: 5px 10px;
 	transition: 0.2s;
-	/*margin: auto;*/
 	margin-top: 10px;
 	height: 35px;
 }
@@ -298,33 +296,27 @@ body {
 	pointer-events: auto;
 }
 
-.home .container-foto .foto {
+.home .container-foto .foto-video {
 	max-width: 450px;
 	text-align: center;
 	justify-content: center;
 }
 
-.home .container-foto .foto img {
+.home .container-foto .foto-video video {
+	width: 450px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+}
+
+.home .container-foto .foto-video img {
 	max-width: 100%;
 	border-radius: 50%;
 	position: relative;
 	z-index: 2;
 }
 
-.home .container-foto .video video {
-	width: 450px;
-	position: absolute;
-	z-index: 1;
-	border-radius: 50%;
-}
-
-/*.home .foto.sombra-interna {
-	background: linear-gradient(to right, #800101, #ca2a02, #df8b04);
-	background-size: 180% 180%;
-	animation: gradient-animation 3s ease infinite;
-}*/
-
-/*SERVIÇOS*/
+/* SERVIÇOS */
 .servicos {
 	padding: 70px 0 70px;
 }
@@ -422,7 +414,7 @@ body {
 	display: none;
 }
 
-/*RODAPÉ*/
+/* RODAPÉ */
 .footer {
 	max-width: 1320px;
 	margin: auto;
