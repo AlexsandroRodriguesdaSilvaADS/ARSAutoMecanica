@@ -126,12 +126,13 @@ document.getElementById('formulario').addEventListener('submit', function (event
     var telefone = document.getElementById('contato').value;
     var email = document.getElementById('email').value;
     var data = document.getElementById('dataAgendamento').value;
+    var hora = document.getElementById('horaAgendamento').value;
     var mensagem = document.getElementById('mensagem').value;
 
     // Configuração do WhatsApp
     var numeroWhatsapp = "5581998090037"; // Coloque o número com DDD
 
-    var mensagem = "Olá, meu nome é " + nome + " o meu contato é " + telefone + ", meu e-mail é " + email + ", a data escolhida é " + data + " e o problema relatado é " + mensagem;
+    var mensagem = "Olá, meu nome é " + nome + ", o meu contato é " + telefone + ", o meu e-mail é " + email + ", a data e horário escolhidos são " + data + " às " + hora + " e os problemas relatados são: " + mensagem;
 
     // Criação do link
     var url = "https://wa.me/" + numeroWhatsapp + "?text=" + encodeURIComponent(mensagem);

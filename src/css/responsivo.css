@@ -35,6 +35,7 @@
 }
 
 @media(max-width: 426px) {
+
     .home .informacoes h1 {
         font-size: 30px;
     }
@@ -88,6 +89,7 @@
 }
 
 @media(max-width: 321px) {
+    
     .cabecalho .logo {
         width: 100px;
         height: 90px;

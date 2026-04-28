@@ -95,8 +95,11 @@
               <input type="email" name="email" id="email" required>
               <label for="contato">Telefone para Contato</label>
               <input type="text" name="contato" id="contato" required>
-              <label for="dataAgendamento">Escolha a data:</label>
+              <label for="dataAgendamento">Data e horário:</label>
+              <div id="dataHora">
               <input type="date" id="dataAgendamento" name="dataAgendamento" required>
+              <input type="time" id="horaAgendamento" name="horaAgendamento" required>
+              </div>
               <label for="character">Observações</label>
               <textarea name="character" cols="30" rows="5" id="mensagem"
                 placeholder="Decreva os problemas ou alterações que você percebeu"></textarea>
@@ -117,41 +120,6 @@
           <img src="./src/imagens/foto-perfil-alfa.png" alt="foto do portifólio de Alexsandro" />
         </div>
 
-<<<<<<< HEAD
-        <button class="playlist-button" onclick="toggleMenu()"><img src="./src/imagens/seta.png" alt=""></button>
-
-        <div class="painel-lateral" id="meuPainel">
-        <div class="player-container">
-          <h3>My playlist</h3>
-          <audio id="audioPlayer" controls autoplay>
-            <source src="" type="audio/mpeg">
-            Seu navegador não suporta áudio HTML5.
-          </audio>
-          <ul id="playlist">
-            <li data-src="./src/audio/Adonai.mp3" class="active">Adonai</li>
-            <li data-src="./src/audio/Bullet-The-Blue-Sky.mp3">Bullet The Blue Sky</li>
-            <li data-src="./src/audio/De-Joelhos.mp3">De Joelhos</li>
-            <li data-src="./src/audio/Angel-Of-Light.mp3">Angel Of Light</li>
-            <li data-src="./src/audio/City-Of-Blinding-Lights.mp3">City Of Blinding Lights</li>
-            <li data-src="./src/audio/Depois-Da-Guerra.mp3">Depois Da Guerra</li>
-            <li data-src="./src/audio/Back-To-The-Rock.mp3">Back To the Rock</li>
-            <li data-src="./src/audio/Elevation.mp3">Elevation</li>
-            <li data-src="./src/audio/Meus-Passos.mp3">Meus Passos</li>
-            <li data-src="./src/audio/Bema-Seat.mp3">Bema Seat</li>
-            <li data-src="./src/audio/Every-Breaking-Wave.mp3">Every Breaking Wave</li>
-            <li data-src="./src/audio/Meus-Próprios-Meios.mp3">Meus Próprios Meios</li>
-            <li data-src="./src/audio/Clean.mp3">Clean</li>
-            <li data-src="./src/audio/Invisible.mp3">Invisible</li>
-            <li data-src="./src/audio/Muros.mp3">Muros</li>
-            <li data-src="./src/audio/Grave-Robber.mp3">Grave Robber</li>
-            <li data-src="./src/audio/I-Still-Haven't-Found-What-I'm-Looking-For.mp3">I Still Haven't Found What I'm
-              Looking For</li>
-            <li data-src="./src/audio/Obediência.mp3">Obediência</li>
-            <li data-src="./src/audio/Pride.mp3">Pride</li>
-            <li data-src="./src/audio/Until-The-End-Of-The-World.mp3">Until The End Of The World</li>
-            <li data-src="./src/audio/Vertigo.mp3">Vertigo</li>
-          </ul>
-=======
         <div class="painel-lateral" id="meuPainel">
           <button class="playlist-button" onclick="toggleMenu()">
               <img src="./src/imagens/seta.png" alt="">
@@ -187,7 +155,6 @@
               <li data-src="./src/audio/Vertigo.mp3">Vertigo</li>
             </ul>
           </div>
->>>>>>> 13e63d986c36a165ccca04b74278c9b0bc021e5b
         </div>
       </div>
     </section>

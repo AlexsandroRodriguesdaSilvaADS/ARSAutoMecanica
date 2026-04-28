@@ -248,6 +248,11 @@ body {
 	font-size: 15px;
 }
 
+#dataHora {
+	max-width: 100%;
+	display: inline-block;
+}
+
 .popup form textarea {
 	background-color: #fff;
 	padding: 5px;
