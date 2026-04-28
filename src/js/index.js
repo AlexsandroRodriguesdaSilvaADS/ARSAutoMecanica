@@ -122,11 +122,11 @@ document.getElementById('formulario').addEventListener('submit', function (event
     event.preventDefault(); // Impede o envio padrão do formulário
 
     // Coleta dos dados
-    var nome = document.getElementById('txtName').value;
-    var telefone = document.getElementById('txtContact').value;
-    var email = document.getElementById('txtEmail').value;
-    var data = document.getElementById('txtDate').value;
-    var mensagem = document.getElementById('txtCharacter').value;
+    var nome = document.getElementById('nome').value;
+    var telefone = document.getElementById('contato').value;
+    var email = document.getElementById('email').value;
+    var data = document.getElementById('dataAgendamento').value;
+    var mensagem = document.getElementById('mensagem').value;
 
     // Configuração do WhatsApp
     var numeroWhatsapp = "5581998090037"; // Coloque o número com DDD
@@ -143,7 +143,22 @@ document.getElementById('formulario').addEventListener('submit', function (event
     document.getElementById('formulario').reset();
 });
 
- // Menu escondido
+
+ // MENU ESCONDIDO
     function toggleMenu() {
       document.getElementById("meuPainel").classList.toggle("ativo");
     }
+
+
+    //AGENDAMENTO FUTURO
+
+    document.addEventListener("DOMContentLoaded", function() {
+    // 1. Obter a data atual no formato YYYY-MM-DD
+    const hoje = new Date().toISOString().split('T')[0];
+    
+    // 2. Selecionar o campo de data pelo ID
+    const campoData = document.getElementById('dataAgendamento');
+    
+    // 3. Definir o atributo 'min' do campo para a data de hoje
+    campoData.setAttribute('min', hoje);
+    });

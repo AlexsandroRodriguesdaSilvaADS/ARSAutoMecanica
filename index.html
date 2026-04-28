@@ -96,16 +96,16 @@
             <h2>Agendamento</h2>
             <form id="formulario">
               <label for="name">Nome Completo</label>
-              <input type="text" name="name" id="txtName" required>
+              <input type="text" name="name" id="nome" required>
               <label for="email">E-mail</label>
-              <input type="email" name="email" id="txtEmail" required>
+              <input type="email" name="email" id="email" required>
               <label for="contato">Telefone para Contato</label>
-              <input type="text" name="contato" id="txtContact" required>
-              <label for="data">Data para o Serviço</label>
-              <input type="date" name="date" id="txtDate" required>
+              <input type="text" name="contato" id="contato" required>
+              <label for="dataAgendamento">Escolha a data:</label>
+              <input type="date" id="dataAgendamento" name="dataAgendamento" required>
               <label for="character">Observações</label>
-              <textarea name="character" cols="30" rows="5" id="txtCharacter"
-                placeholder="Decreva os problemas que você percebeu"></textarea>
+              <textarea name="character" cols="30" rows="5" id="mensagem"
+                placeholder="Decreva os problemas ou alterações que você percebeu"></textarea>
               <div class="foot">
                 <button type="submit" id="btnSubscribe" title="Enviar os dados">Enviar</button>
                 <a href="#agendamento"><img src="./src/imagens/close.png" alt="Ícone de fechar"></a>
@@ -125,7 +125,8 @@
         </div>
 
         <button class="playlist-button" onclick="toggleMenu()"><img src="./src/imagens/seta.png" alt=""></button>
-<div class="painel-lateral" id="meuPainel">
+
+        <div class="painel-lateral" id="meuPainel">
         <div class="player-container">
           <h3>My playlist</h3>
           <audio id="audioPlayer" controls autoplay>
