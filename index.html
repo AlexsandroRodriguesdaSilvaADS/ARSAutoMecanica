@@ -34,62 +34,56 @@
     <section class="home">
 
       <div class="informacoes">
-        <h1>Olá! Sou
+        <h1 id="agendamento">Olá! Sou
           <br>Alexsandro Rodrigues da Silva
         </h1>
         <p>Mecânico Automotivo
           <br>Certificando SENAI 2027
         </p>
-        <h1 id="agendamento">Serviços por Agendamento</h1>
+        <h1>Serviços por Agendamento</h1>
         <p>Sábados e Feriados
           <br>das 7h às 19h
         </p>
         <p>Em domicílio <a class="referencia" href="#popup1" title="Ir para agendamento">(81) 9
             9809-0037</a></p>
         <p>Ou no
-          <a class="referencia" href="https://maps.app.goo.gl/FGYMDUrY44topPQx7" title="Ir para endereço" target="_blank">nosso
+          <a class="referencia" href="https://maps.app.goo.gl/FGYMDUrY44topPQx7" title="Ir para endereço"
+            target="_blank">nosso
             endereço</a>
         </p>
 
-        <div class="agendamento">
-          <ul class="agendamento-ul">
-            <li>
-              <a href="#popup1" title="Ir para agendamento">
-                Embreagem
-              </a>
-            </li>
-
-            <li>
-              <a href="#popup1" title="Ir para agendamento">
-                Suspensão
-              </a>
-            </li>
-
-            <li>
-              <a href="#popup1" title="Ir para agendamento">
-                Freios
-              </a>
-            </li>
-
-            <li>
-              <a href="#popup1" title="Ir para agendamento">
-                Tração
-              </a>
-            </li>
-
-            <li>
-              <a href="#popup1" title="Ir para agendamento">
-                Arrefecimento
-              </a>
-            </li>
-
-            <li>
-              <a href="#popup1" title="Ir para agendamento">
-                Manutenção
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="agendamento-ul">
+          <li>
+            <a href="#popup1" title="Ir para agendamento">
+              Embreagem
+            </a>
+          </li>
+          <li>
+            <a href="#popup1" title="Ir para agendamento">
+              Suspensão
+            </a>
+          </li>
+          <li>
+            <a href="#popup1" title="Ir para agendamento">
+              Freios
+            </a>
+          </li>
+          <li>
+            <a href="#popup1" title="Ir para agendamento">
+              Tração
+            </a>
+          </li>
+          <li>
+            <a href="#popup1" title="Ir para agendamento">
+              Arrefecimento
+            </a>
+          </li>
+          <li>
+            <a href="#popup1" title="Ir para agendamento">
+              Manutenção
+            </a>
+          </li>
+        </ul>
 
         <div class="overlay" id="popup1">
           <div class="popup">
@@ -116,14 +110,14 @@
       </div>
 
       <div class="container-foto">
-        <div class="video">
+        <div class="foto-video">
           <video src="./src/video/skyline-gtr-r34.mp4" autoplay muted loop
-            alt="@ric_lambo (https://www.youtube.com/shorts/krrsP_xThbQ)"></video>
-          <div class="foto sombra-interna">
-            <img src="./src/imagens/foto-perfil-alfa.png" alt="foto do portifólio de Alexsandro" />
-          </div>
+            alt="@ric_lambo (https://www.youtube.com/shorts/krrsP_xThbQ)">
+          </video>
+          <img src="./src/imagens/foto-perfil-alfa.png" alt="foto do portifólio de Alexsandro" />
         </div>
 
+<<<<<<< HEAD
         <button class="playlist-button" onclick="toggleMenu()"><img src="./src/imagens/seta.png" alt=""></button>
 
         <div class="painel-lateral" id="meuPainel">
@@ -157,8 +151,44 @@
             <li data-src="./src/audio/Until-The-End-Of-The-World.mp3">Until The End Of The World</li>
             <li data-src="./src/audio/Vertigo.mp3">Vertigo</li>
           </ul>
+=======
+        <div class="painel-lateral" id="meuPainel">
+          <button class="playlist-button" onclick="toggleMenu()">
+              <img src="./src/imagens/seta.png" alt="">
+            </button>
+          <div class="player-container">
+            <h3>My playlist</h3>
+            <audio id="audioPlayer" controls autoplay>
+              <source src="" type="audio/mpeg">
+              Seu navegador não suporta áudio HTML5.
+            </audio>
+            <ul id="playlist">
+              <li data-src="./src/audio/Adonai.mp3" class="active">Adonai</li>
+              <li data-src="./src/audio/Bullet-The-Blue-Sky.mp3">Bullet The Blue Sky</li>
+              <li data-src="./src/audio/De-Joelhos.mp3">De Joelhos</li>
+              <li data-src="./src/audio/Angel-Of-Light.mp3">Angel Of Light</li>
+              <li data-src="./src/audio/City-Of-Blinding-Lights.mp3">City Of Blinding Lights</li>
+              <li data-src="./src/audio/Depois-Da-Guerra.mp3">Depois Da Guerra</li>
+              <li data-src="./src/audio/Back-To-The-Rock.mp3">Back To the Rock</li>
+              <li data-src="./src/audio/Elevation.mp3">Elevation</li>
+              <li data-src="./src/audio/Meus-Passos.mp3">Meus Passos</li>
+              <li data-src="./src/audio/Bema-Seat.mp3">Bema Seat</li>
+              <li data-src="./src/audio/Every-Breaking-Wave.mp3">Every Breaking Wave</li>
+              <li data-src="./src/audio/Meus-Próprios-Meios.mp3">Meus Próprios Meios</li>
+              <li data-src="./src/audio/Clean.mp3">Clean</li>
+              <li data-src="./src/audio/Invisible.mp3">Invisible</li>
+              <li data-src="./src/audio/Muros.mp3">Muros</li>
+              <li data-src="./src/audio/Grave-Robber.mp3">Grave Robber</li>
+              <li data-src="./src/audio/I-Still-Haven't-Found-What-I'm-Looking-For.mp3">I Still Haven't Found What I'm
+                Looking For</li>
+              <li data-src="./src/audio/Obediência.mp3">Obediência</li>
+              <li data-src="./src/audio/Pride.mp3">Pride</li>
+              <li data-src="./src/audio/Until-The-End-Of-The-World.mp3">Until The End Of The World</li>
+              <li data-src="./src/audio/Vertigo.mp3">Vertigo</li>
+            </ul>
+          </div>
+>>>>>>> 13e63d986c36a165ccca04b74278c9b0bc021e5b
         </div>
-</div>
       </div>
     </section>
 

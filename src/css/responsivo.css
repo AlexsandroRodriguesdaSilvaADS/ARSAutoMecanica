@@ -25,9 +25,9 @@
         padding: 0 30px;
     }
 
-.servicos h3 {
-    font-size: 14px;
-}    
+    .servicos h3 {
+        font-size: 14px;
+    }
 
     .overlay {
         width: 95%;
@@ -40,7 +40,7 @@
     }
 
     .home .informacoes p {
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .cabecalho .logo {
@@ -53,17 +53,21 @@
         height: 50px;
     }
 
-    .home .container-foto {
+    .home .container-foto .foto-video {
         max-width: 300px;
     }
 
-    .home .container-foto .video video {
+    .home .container-foto .foto-video video {
         width: 300px;
     }
 
     .home .agendamento-ul {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .painel-lateral {
+        top: 60px;
     }
 
     .player-container li {
@@ -91,6 +95,14 @@
 
     .cabecalho .menu li a {
         font-size: 15px;
+    }
+
+    .painel-lateral {
+        top: 55px;
+    }
+
+    .painel-lateral.ativo {
+        transform: translateX(-280px);
     }
 
     .servicos .servico p {
