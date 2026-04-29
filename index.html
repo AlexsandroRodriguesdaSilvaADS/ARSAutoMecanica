@@ -96,10 +96,12 @@
               <label for="contato">Telefone para Contato</label>
               <input type="text" name="contato" id="contato" required>
               <label for="dataAgendamento">Data e horário:</label>
+
               <div id="dataHora">
               <input type="date" id="dataAgendamento" name="dataAgendamento" required>
-              <input type="time" id="horaAgendamento" name="horaAgendamento" required>
+              <input type="time" id="horaAgendamento" name="horaAgendamento" min="08:00" max="18:00" required>
               </div>
+              
               <label for="character">Observações</label>
               <textarea name="character" cols="30" rows="5" id="mensagem"
                 placeholder="Decreva os problemas ou alterações que você percebeu"></textarea>
@@ -121,9 +123,11 @@
         </div>
 
         <div class="painel-lateral" id="meuPainel">
-          <button class="playlist-button" onclick="toggleMenu()">
-              <img src="./src/imagens/seta.png" alt="">
+          <div id="botao-lateral">
+            <button onclick="toggleMenu()">
+              <img src="./src/imagens/seta.png" alt="botao da barra lateral">
             </button>
+          </div>
           <div class="player-container">
             <h3>My playlist</h3>
             <audio id="audioPlayer" controls autoplay>

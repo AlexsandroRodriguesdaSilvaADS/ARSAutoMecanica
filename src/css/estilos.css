@@ -4,9 +4,10 @@ html {
 }
 
 body {
+	background: url("../imagens/bmw-m3-gtr.webp") center / cover no-repeat fixed;
 	font-family: "Poppins", sans-serif;
 	margin: 0 auto;
-	background: url("../imagens/bmw-m3-gtr.webp") center / cover no-repeat fixed;
+
 }
 
 .main {
@@ -65,36 +66,33 @@ body {
 }
 
 /* PLAYER */
-.painel-lateral {
+.home .painel-lateral {
 	display: flex;
 	position: fixed;
-	top: 75px;
+	top: 30px;
 	right: -360px;
 	width: 400px;
 	margin-right: 10px;
-	height: 50%;
+	height: 35%;
 	color: #fff;
 	transition: 0.3s;
 	z-index: 3;
 }
 
-.painel-lateral.ativo {
+.home .painel-lateral.ativo {
 	transform: translateX(-300px);
 }
 
-/*.playlist-button {
-	position: fixed;
-	top: 1%;
-	right: 16%;
-}*/
-
-.playlist-button {
-	background-color: rgba(225, 225, 225, 0.001);
-	width: 50px;
-	height: 50px;
+.home .painel-lateral #botao-lateral {
+	padding: 5px;
 }
 
-.player-container {
+.home .painel-lateral #botao-lateral img {
+	width: 40px;
+	height: 40px;
+}
+
+.home .player-container {
 	background-color: rgba(21, 60, 93, 1);
 	border: 1px #fff solid;
 	margin: 0;
@@ -105,22 +103,19 @@ body {
 	max-width: 100%;
 }
 
-.player-container audio {
+.home .player-container audio {
+	height: 35px;
+	max-width: 100%;
 	width: 100%;
 	opacity: 0.7;
 }
 
-.player-container h3 {
+.home .player-container h3 {
 	text-align: center;
 	padding-bottom: 10px;
 }
 
-.player-container audio {
-	height: 35px;
-	max-width: 100%;
-}
-
-.player-container ul {
+.home .player-container ul {
 	padding: 0;
 	margin-top: 20px;
 	max-width: 400px;
@@ -128,18 +123,18 @@ body {
 	overflow-y: auto;
 }
 
-.player-container ul h2 {
+.home .player-container ul h2 {
 	font-size: 18px;
 	text-transform: uppercase;
 }
 
-.player-container li {
+.home .player-container li {
 	padding-left: 5px;
 	cursor: pointer;
 	border-radius: 50px;
 }
 
-.player-container li.active {
+.home .player-container li.active {
 	color: rgb(21, 60, 93);
 	font-weight: bold;
 	background-color: rgba(255, 255, 255, 0.7);
@@ -211,55 +206,55 @@ body {
 }
 
 /* FORMULÁRIO */
-.overlay {
+.home .overlay {
 	width: 30%;
-	top: 50px;
+	top: 30px;
 	position: fixed;
 	opacity: 0;
 	pointer-events: none;
 	z-index: 3;
 }
 
-.popup {
+.home .popup {
 	background-color: rgba(21, 60, 93, 0.9);
 	border: 1px #fff solid;
 	padding: 20px;
-	margin: 5px;
+	margin: 5px 0;
 	text-align: center;
 }
 
-.popup form {
+.home .popup form {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: left;
 }
 
-.popup form label {
+.home .popup form label {
 	margin-top: 10px;
 	font-size: 15px;
 	text-transform: uppercase;
 }
 
-.popup form input {
+.home .popup form input {
 	background-color: #fff;
 	height: 30px;
 	padding: 5px;
 	font-size: 15px;
 }
 
-#dataHora {
+.home #dataHora {
 	max-width: 100%;
 	display: inline-block;
 }
 
-.popup form textarea {
+.home .popup form textarea {
 	background-color: #fff;
 	padding: 5px;
 	font-size: 15px;
 }
 
-.popup form button {
+.home .popup form button {
 	background-color: rgba(255, 255, 255, 0);
 	font-weight: bolder;
 	color: #fff;
@@ -273,18 +268,18 @@ body {
 	height: 35px;
 }
 
-.popup button:hover {
+.home .popup button:hover {
 	background-color: #FE9E00;
 	color: #CA2A02;
 }
 
-.popup .foot {
+.home .popup .foot {
 	display: flex;
 	gap: 100px;
 	justify-content: center;
 }
 
-.popup form img {
+.home .popup form img {
 	border: 1px #fff solid;
 	margin-top: 10px;
 	padding: 2px;
@@ -292,11 +287,11 @@ body {
 	height: 35px;
 }
 
-.popup form img:hover {
+.home .popup form img:hover {
 	background-color: #FE9E00;
 }
 
-#popup1:target {
+.home #popup1:target {
 	opacity: 1;
 	pointer-events: auto;
 }
