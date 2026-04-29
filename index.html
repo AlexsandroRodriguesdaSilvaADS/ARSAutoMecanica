@@ -99,7 +99,7 @@
 
               <div id="dataHora">
               <input type="date" id="dataAgendamento" name="dataAgendamento" required>
-              <input type="time" id="horaAgendamento" name="horaAgendamento" min="08:00" max="18:00" required>
+              <input type="time" min="08:00" max="18:00" id="horaAgendamento" name="horaAgendamento" required>
               </div>
               
               <label for="character">Observações</label>
@@ -123,11 +123,11 @@
         </div>
 
         <div class="painel-lateral" id="meuPainel">
-          <div id="botao-lateral">
+
             <button onclick="toggleMenu()">
               <img src="./src/imagens/seta.png" alt="botao da barra lateral">
             </button>
-          </div>
+
           <div class="player-container">
             <h3>My playlist</h3>
             <audio id="audioPlayer" controls autoplay>

@@ -70,11 +70,10 @@ body {
 	display: flex;
 	position: fixed;
 	top: 30px;
-	right: -360px;
+	right: -410px;
 	width: 400px;
 	margin-right: 10px;
 	height: 35%;
-	color: #fff;
 	transition: 0.3s;
 	z-index: 3;
 }
@@ -83,13 +82,21 @@ body {
 	transform: translateX(-300px);
 }
 
-.home .painel-lateral #botao-lateral {
-	padding: 5px;
+.home .painel-lateral.ativo img {
+	 transform: rotate(180deg);
+ 	 transition: transform 0.5s ease;
 }
 
-.home .painel-lateral #botao-lateral img {
+.home .painel-lateral img {
+	position: absolute;
+	right: 100%;
 	width: 40px;
 	height: 40px;
+	border: 1px #fff solid;
+	border-radius: 50%;
+	margin: 5px;
+	transform: rotate(0deg);
+ 	transition: transform 0.5s ease;
 }
 
 .home .player-container {
