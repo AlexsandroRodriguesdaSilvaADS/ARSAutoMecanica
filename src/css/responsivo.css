@@ -67,6 +67,10 @@
         gap: 10px;
     }
 
+    .home .popup .botoes {
+        gap: 100px;
+    }
+
     .player-container li {
         padding-left: 2px;
     }
@@ -85,7 +89,7 @@
 }
 
 @media(max-width: 321px) {
-    
+
     .cabecalho .logo {
         width: 100px;
         height: 90px;
@@ -96,13 +100,13 @@
     }
 
     .home .painel-lateral.ativo {
-        transform: translateX(-270px);
+        transform: translateX(-275px);
     }
 
     .home .player-container {
         width: 270px;
     }
- 
+
     .servicos .servico p {
         font-size: 12px;
     }

@@ -18,338 +18,338 @@
 </head>
 
 <body cz-shortcut-listen="true">
+  <section class="background">
+    <div class="main">
+      <header class="cabecalho">
+        <img class="logo" src="./src/imagens/logo.png" title="Soluções integradas para o seu veículo"
+          alt="Logo de ARS Mecânico Automotivo">
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="#servicos">Meus Serviços</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="home">
 
-  <div class="main">
-    <header class="cabecalho">
-      <img class="logo" src="./src/imagens/logo.png" title="Soluções integradas para o seu veículo"
-        alt="Logo de ARS Mecânico Automotivo">
-      <nav class="menu">
-        <ul>
-          <li>
-            <a href="#servicos">Meus Serviços</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section class="home">
+        <div class="informacoes">
+          <h1 id="agendamento">Olá! Sou
+            <br>Alexsandro Rodrigues da Silva
+          </h1>
+          <p>Mecânico Automotivo
+            <br>Certificando SENAI 2027
+          </p>
+          <h1>Serviços por Agendamento</h1>
+          <p>Sábados e Feriados
+            <br>das 7h às 19h
+          </p>
+          <p>Em domicílio <a class="referencia" href="#popup1" title="Ir para agendamento">(81) 9
+              9809-0037</a></p>
+          <p>Ou no
+            <a class="referencia" href="https://maps.app.goo.gl/FGYMDUrY44topPQx7" title="Ir para endereço"
+              target="_blank">nosso endereço</a>
+          </p>
 
-      <div class="informacoes">
-        <h1 id="agendamento">Olá! Sou
-          <br>Alexsandro Rodrigues da Silva
-        </h1>
-        <p>Mecânico Automotivo
-          <br>Certificando SENAI 2027
-        </p>
-        <h1>Serviços por Agendamento</h1>
-        <p>Sábados e Feriados
-          <br>das 7h às 19h
-        </p>
-        <p>Em domicílio <a class="referencia" href="#popup1" title="Ir para agendamento">(81) 9
-            9809-0037</a></p>
-        <p>Ou no
-          <a class="referencia" href="https://maps.app.goo.gl/FGYMDUrY44topPQx7" title="Ir para endereço"
-            target="_blank">nosso
-            endereço</a>
-        </p>
+          <ul class="agendamento-ul">
+            <li>
+              <a href="#popup1" title="Ir para agendamento">
+                Embreagem
+              </a>
+            </li>
+            <li>
+              <a href="#popup1" title="Ir para agendamento">
+                Suspensão
+              </a>
+            </li>
+            <li>
+              <a href="#popup1" title="Ir para agendamento">
+                Freios
+              </a>
+            </li>
+            <li>
+              <a href="#popup1" title="Ir para agendamento">
+                Tração
+              </a>
+            </li>
+            <li>
+              <a href="#popup1" title="Ir para agendamento">
+                Arrefecimento
+              </a>
+            </li>
+            <li>
+              <a href="#popup1" title="Ir para agendamento">
+                Manutenção
+              </a>
+            </li>
+          </ul>
 
-        <ul class="agendamento-ul">
-          <li>
-            <a href="#popup1" title="Ir para agendamento">
-              Embreagem
-            </a>
-          </li>
-          <li>
-            <a href="#popup1" title="Ir para agendamento">
-              Suspensão
-            </a>
-          </li>
-          <li>
-            <a href="#popup1" title="Ir para agendamento">
-              Freios
-            </a>
-          </li>
-          <li>
-            <a href="#popup1" title="Ir para agendamento">
-              Tração
-            </a>
-          </li>
-          <li>
-            <a href="#popup1" title="Ir para agendamento">
-              Arrefecimento
-            </a>
-          </li>
-          <li>
-            <a href="#popup1" title="Ir para agendamento">
-              Manutenção
-            </a>
-          </li>
-        </ul>
+          <div class="overlay" id="popup1">
+            <div class="popup">
+              <h2>Agendamento</h2>
+              <form id="formulario">
+                <label for="name">Nome Completo</label>
+                <input type="text" name="name" id="nome" required>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>
+                <label for="contato">Telefone para Contato</label>
+                <input type="text" name="contato" id="contato" required>
+                <label for="dataAgendamento">Data e horário (das 8:00h às 18:00h)</label>
 
-        <div class="overlay" id="popup1">
-          <div class="popup">
-            <h2>Agendamento</h2>
-            <form id="formulario">
-              <label for="name">Nome Completo</label>
-              <input type="text" name="name" id="nome" required>
-              <label for="email">E-mail</label>
-              <input type="email" name="email" id="email" required>
-              <label for="contato">Telefone para Contato</label>
-              <input type="text" name="contato" id="contato" required>
-              <label for="dataAgendamento">Data e horário (das 8:00h às 18:00h)</label>
+                <div id="dataHora">
+                  <input type="date" id="dataAgendamento" name="dataAgendamento" required>
+                  <input type="time" min="08:00" max="18:00" id="horaAgendamento" name="horaAgendamento" required>
+                </div>
 
-              <div id="dataHora">
-              <input type="date" id="dataAgendamento" name="dataAgendamento" required>
-              <input type="time" min="08:00" max="18:00" id="horaAgendamento" name="horaAgendamento" required>
-              </div>
-              
-              <label for="character">Observações</label>
-              <textarea name="character" cols="30" rows="5" id="mensagem"
-                placeholder="Decreva os problemas ou alterações que você percebeu"></textarea>
-              <div class="foot">
-                <button type="submit" id="btnSubscribe" title="Enviar os dados">Enviar</button>
-                <a href="#agendamento"><img src="./src/imagens/close.png" alt="Ícone de fechar"></a>
-              </div>
-            </form>
+                <label for="character">Observações</label>
+                <textarea name="character" cols="30" rows="5" id="mensagem"
+                  placeholder="Decreva os problemas ou alterações que você percebeu"></textarea>
+                <div class="botoes">
+                  <button type="submit" id="btnSubscribe" title="Enviar os dados">Enviar</button>
+                  <button><a href="#agendamento">Fechar</a></button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="container-foto">
-        <div class="foto-video">
-          <video src="./src/video/skyline-gtr-r34.mp4" autoplay muted loop
-            alt="@ric_lambo (https://www.youtube.com/shorts/krrsP_xThbQ)">
-          </video>
-          <img src="./src/imagens/foto-perfil-alfa.png" alt="foto do portifólio de Alexsandro" />
-        </div>
+        <div class="container-foto">
+          <div class="foto-video">
+            <video src="./src/video/skyline-gtr-r34.mp4" autoplay muted loop
+              alt="@ric_lambo (https://www.youtube.com/shorts/krrsP_xThbQ)">
+            </video>
+            <img src="./src/imagens/foto-perfil-alfa.png" alt="foto do portifólio de Alexsandro" />
+          </div>
 
-        <div class="painel-lateral" id="meuPainel">
+          <div class="painel-lateral" id="meuPainel">
 
             <button onclick="toggleMenu()">
               <img src="./src/imagens/seta.png" alt="botao da barra lateral">
             </button>
 
-          <div class="player-container">
-            <h3>My playlist</h3>
-            <audio id="audioPlayer" controls autoplay>
-              <source src="" type="audio/mpeg">
-              Seu navegador não suporta áudio HTML5.
-            </audio>
-            <ul id="playlist">
-              <li data-src="./src/audio/Adonai.mp3" class="active">Adonai</li>
-              <li data-src="./src/audio/Bullet-The-Blue-Sky.mp3">Bullet The Blue Sky</li>
-              <li data-src="./src/audio/De-Joelhos.mp3">De Joelhos</li>
-              <li data-src="./src/audio/Angel-Of-Light.mp3">Angel Of Light</li>
-              <li data-src="./src/audio/City-Of-Blinding-Lights.mp3">City Of Blinding Lights</li>
-              <li data-src="./src/audio/Depois-Da-Guerra.mp3">Depois Da Guerra</li>
-              <li data-src="./src/audio/Back-To-The-Rock.mp3">Back To the Rock</li>
-              <li data-src="./src/audio/Elevation.mp3">Elevation</li>
-              <li data-src="./src/audio/Meus-Passos.mp3">Meus Passos</li>
-              <li data-src="./src/audio/Bema-Seat.mp3">Bema Seat</li>
-              <li data-src="./src/audio/Every-Breaking-Wave.mp3">Every Breaking Wave</li>
-              <li data-src="./src/audio/Meus-Próprios-Meios.mp3">Meus Próprios Meios</li>
-              <li data-src="./src/audio/Clean.mp3">Clean</li>
-              <li data-src="./src/audio/Invisible.mp3">Invisible</li>
-              <li data-src="./src/audio/Muros.mp3">Muros</li>
-              <li data-src="./src/audio/Grave-Robber.mp3">Grave Robber</li>
-              <li data-src="./src/audio/I-Still-Haven't-Found-What-I'm-Looking-For.mp3">I Still Haven't Found What I'm
-                Looking For</li>
-              <li data-src="./src/audio/Obediência.mp3">Obediência</li>
-              <li data-src="./src/audio/Pride.mp3">Pride</li>
-              <li data-src="./src/audio/Until-The-End-Of-The-World.mp3">Until The End Of The World</li>
-              <li data-src="./src/audio/Vertigo.mp3">Vertigo</li>
-            </ul>
+            <div class="player-container">
+              <h3>My playlist</h3>
+              <audio id="audioPlayer" controls autoplay>
+                <source src="" type="audio/mpeg">
+                Seu navegador não suporta áudio HTML5.
+              </audio>
+              <ul id="playlist">
+                <li data-src="./src/audio/Adonai.mp3" class="active">Adonai</li>
+                <li data-src="./src/audio/Bullet-The-Blue-Sky.mp3">Bullet The Blue Sky</li>
+                <li data-src="./src/audio/De-Joelhos.mp3">De Joelhos</li>
+                <li data-src="./src/audio/Angel-Of-Light.mp3">Angel Of Light</li>
+                <li data-src="./src/audio/City-Of-Blinding-Lights.mp3">City Of Blinding Lights</li>
+                <li data-src="./src/audio/Depois-Da-Guerra.mp3">Depois Da Guerra</li>
+                <li data-src="./src/audio/Back-To-The-Rock.mp3">Back To the Rock</li>
+                <li data-src="./src/audio/Elevation.mp3">Elevation</li>
+                <li data-src="./src/audio/Meus-Passos.mp3">Meus Passos</li>
+                <li data-src="./src/audio/Bema-Seat.mp3">Bema Seat</li>
+                <li data-src="./src/audio/Every-Breaking-Wave.mp3">Every Breaking Wave</li>
+                <li data-src="./src/audio/Meus-Próprios-Meios.mp3">Meus Próprios Meios</li>
+                <li data-src="./src/audio/Clean.mp3">Clean</li>
+                <li data-src="./src/audio/Invisible.mp3">Invisible</li>
+                <li data-src="./src/audio/Muros.mp3">Muros</li>
+                <li data-src="./src/audio/Grave-Robber.mp3">Grave Robber</li>
+                <li data-src="./src/audio/I-Still-Haven't-Found-What-I'm-Looking-For.mp3">I Still Haven't Found What I'm
+                  Looking For</li>
+                <li data-src="./src/audio/Obediência.mp3">Obediência</li>
+                <li data-src="./src/audio/Pride.mp3">Pride</li>
+                <li data-src="./src/audio/Until-The-End-Of-The-World.mp3">Until The End Of The World</li>
+                <li data-src="./src/audio/Vertigo.mp3">Vertigo</li>
+              </ul>
+            </div>
+
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="servicos">
-      <h2 class="titulo" id="servicos">Meus Serviços</h2>
-      <div class="container-servicos">
-        <div class="servico ativo">
-          <img src="./src/imagens/embreagem.webp" alt="Kit de embreagem" />
-          <h3>Embreagens</h3>
-          <div class="informacoes-servico">
-            <p>Quando substituir?</p>
-            <p>1. Embreagem deslizando ou patinando; perda de aderência do disco.
-              <br>2. Quebra do colar de embreagem ou da mola membrana; barrulho extranho.
-            </p>
+      <section class="servicos">
+        <h2 class="titulo" id="servicos">Meus Serviços</h2>
+        <div class="container-servicos">
+          <div class="servico ativo">
+            <img src="./src/imagens/embreagem.webp" alt="Kit de embreagem" />
+            <h3>Embreagens</h3>
+            <div class="informacoes-servico">
+              <p>Quando substituir?</p>
+              <p>1. Embreagem deslizando ou patinando; perda de aderência do disco.
+                <br>2. Quebra do colar de embreagem ou da mola membrana; barrulho extranho.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="servico ativo">
-          <img src="./src/imagens/amortecedor.webp" alt="Amortecedores" />
-          <h3>Amortecedores</h3>
-          <div class="informacoes-servico">
-            <p>Quando substituir?</p>
-            <p>1. Perda da compressão; vazamento do óleo, sem controle das oscilações das molas.
-              <br>2. Travamento; suspensão com poca ou nenhuma oscilações das molas.
-            </p>
+          <div class="servico ativo">
+            <img src="./src/imagens/amortecedor.webp" alt="Amortecedores" />
+            <h3>Amortecedores</h3>
+            <div class="informacoes-servico">
+              <p>Quando substituir?</p>
+              <p>1. Perda da compressão; vazamento do óleo, sem controle das oscilações das molas.
+                <br>2. Travamento; suspensão com poca ou nenhuma oscilações das molas.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="servico ativo">
-          <img src="./src/imagens/coxins-batedores-coifas.webp" alt="Coxim e kit batedor" />
-          <h3>Coxins e batedores</h3>
-          <div class="informacoes-servico">
-            <p>Quando substituir?</p>
-            <p>1. Desgaste do batedor; esfarelamento.
-              <br>2. Desgaste do coxin; barrulho extranho na extremidade da aste do amortecedor.
-            </p>
+          <div class="servico ativo">
+            <img src="./src/imagens/coxins-batedores-coifas.webp" alt="Coxim e kit batedor" />
+            <h3>Coxins e batedores</h3>
+            <div class="informacoes-servico">
+              <p>Quando substituir?</p>
+              <p>1. Desgaste do batedor; esfarelamento.
+                <br>2. Desgaste do coxin; barrulho extranho na extremidade da aste do amortecedor.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="servico ativo">
-          <img src="./src/imagens/bandeja.webp" alt="Bandejas" />
-          <h3>Bandejas</h3>
-          <div class="informacoes-servico">
-            <p>Quando substituir?</p>
-            <p>1. Buchas estragadas.
-              <br>2. Pivô com folga; necesário elevação do veículo.
-            </p>
+          <div class="servico ativo">
+            <img src="./src/imagens/bandeja.webp" alt="Bandejas" />
+            <h3>Bandejas</h3>
+            <div class="informacoes-servico">
+              <p>Quando substituir?</p>
+              <p>1. Buchas estragadas.
+                <br>2. Pivô com folga; necesário elevação do veículo.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="servico">
-          <img src="./src/imagens/bucha-traseira.webp" alt="Embuchamento do eixo traseiro" />
-          <h3>Buchas do eixo traseiro</h3>
-          <div class="informacoes-servico">
-            <p>Quando substituir?</p>
-            <p>1. Buchas estragadas; necesário elevação do veículo.</p>
+          <div class="servico">
+            <img src="./src/imagens/bucha-traseira.webp" alt="Embuchamento do eixo traseiro" />
+            <h3>Buchas do eixo traseiro</h3>
+            <div class="informacoes-servico">
+              <p>Quando substituir?</p>
+              <p>1. Buchas estragadas; necesário elevação do veículo.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="servico">
-          <img src="./src/imagens/discos-de-freio.webp" alt="Discos de freio" />
-          <h3>Discos de Freio</h3>
-          <div class="informacoes-servico">
-            <p>Quando substituir?</p>
-            <p>1. Desgaste execivo; as paredes do disco ficam mais finas e com irregularidades. É possível retificar</p>
+          <div class="servico">
+            <img src="./src/imagens/discos-de-freio.webp" alt="Discos de freio" />
+            <h3>Discos de Freio</h3>
+            <div class="informacoes-servico">
+              <p>Quando substituir?</p>
+              <p>1. Desgaste execivo; as paredes do disco ficam mais finas e com irregularidades. É possível retificar
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="servico">
-          <img src="./src/imagens/pastilhas-de-freio.webp" alt="Pastilhas de freio" />
-          <h3>Pastilhas de freio</h3>
-          <div class="informacoes-servico">
-            <p>Quando substituir?</p>
-            <p>1. Desgaste natural; é comum ouvir um barulho metálico (do limitador) quando estão no momento da troca.
-              Algumas possuem um sensor eletrônico.</p>
+          <div class="servico">
+            <img src="./src/imagens/pastilhas-de-freio.webp" alt="Pastilhas de freio" />
+            <h3>Pastilhas de freio</h3>
+            <div class="informacoes-servico">
+              <p>Quando substituir?</p>
+              <p>1. Desgaste natural; é comum ouvir um barulho metálico (do limitador) quando estão no momento da troca.
+                Algumas possuem um sensor eletrônico.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="servico">
-          <img src="./src/imagens/lonas-de-freio.webp" alt="Lonas de freio" />
-          <h3>Lonas de freio</h3>
-          <div class="informacoes-servico">
-            <p>Quando substituir?</p>
-            <p>1. Desgaste natural; o freio de mão fica aparentemente desrregulado ou não estaciona o veículo.
-              <br>Relação de troca 2x1 em função da troca das pastilha; trocar na segunda troca das pastilhas.
-            </p>
+          <div class="servico">
+            <img src="./src/imagens/lonas-de-freio.webp" alt="Lonas de freio" />
+            <h3>Lonas de freio</h3>
+            <div class="informacoes-servico">
+              <p>Quando substituir?</p>
+              <p>1. Desgaste natural; o freio de mão fica aparentemente desrregulado ou não estaciona o veículo.
+                <br>Relação de troca 2x1 em função da troca das pastilha; trocar na segunda troca das pastilhas.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="servico">
-          <img src="./src/imagens/cilindro-mestre.webp" alt="Cilindro mestre de freio" />
-          <h3>Cilindro mestre</h3>
-          <div class="informacoes-servico">
-            <p>Quando substituir?</p>
-            <p>1. Desgaste de o'rings e/ou vazamento de fluído; o pedal de freio fica sem pressão, quase encostando no
-              açoalho. É possível ver vazamento de fluído de freio.
-            </p>
+          <div class="servico">
+            <img src="./src/imagens/cilindro-mestre.webp" alt="Cilindro mestre de freio" />
+            <h3>Cilindro mestre</h3>
+            <div class="informacoes-servico">
+              <p>Quando substituir?</p>
+              <p>1. Desgaste de o'rings e/ou vazamento de fluído; o pedal de freio fica sem pressão, quase encostando no
+                açoalho. É possível ver vazamento de fluído de freio.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="servico">
-          <img src="./src/imagens/servo-freio.webp" alt="Servo freio" />
-          <h3>Servo freio</h3>
-          <div class="informacoes-servico">
-            <p>Quando substituir?</p>
-            <p>1. Pedal do freio fica "pesado"; é necessário mais esforço para frear. É possível ouvir um barulho de ar
-              escapando.</p>
+          <div class="servico">
+            <img src="./src/imagens/servo-freio.webp" alt="Servo freio" />
+            <h3>Servo freio</h3>
+            <div class="informacoes-servico">
+              <p>Quando substituir?</p>
+              <p>1. Pedal do freio fica "pesado"; é necessário mais esforço para frear. É possível ouvir um barulho de
+                ar
+                escapando.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="servico">
-          <img src="./src/imagens/junta-homocinetica.webp" alt="Junta homocinética" />
-          <h3>Junta homocinética</h3>
-          <div class="informacoes-servico">
-            <p>Quando substituir?</p>
-            <p>1. Barulho de "estalo" ao esterçar a direção; o barulho é mais evidente quando numa curva em velocidade
-              lenta.</p>
+          <div class="servico">
+            <img src="./src/imagens/junta-homocinetica.webp" alt="Junta homocinética" />
+            <h3>Junta homocinética</h3>
+            <div class="informacoes-servico">
+              <p>Quando substituir?</p>
+              <p>1. Barulho de "estalo" ao esterçar a direção; o barulho é mais evidente quando numa curva em velocidade
+                lenta.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="servico">
-          <img src="./src/imagens/homocinetica-e-deslizante.webp" alt="Tração maior completa" />
-          <h3>Eixo completo</h3>
-          <div class="informacoes-servico">
-            <p>Quando substituir?</p>
-            <p>1. Barulho de "estalo" ao esterçar a direção ou quando em linha reta em média velocidade.</p>
+          <div class="servico">
+            <img src="./src/imagens/homocinetica-e-deslizante.webp" alt="Tração maior completa" />
+            <h3>Eixo completo</h3>
+            <div class="informacoes-servico">
+              <p>Quando substituir?</p>
+              <p>1. Barulho de "estalo" ao esterçar a direção ou quando em linha reta em média velocidade.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="servico">
-          <img src="./src/imagens/deslizante-e-trizeta.webp" alt="Junta deslizante" />
-          <h3>Deslizante e trizeta</h3>
-          <div class="informacoes-servico">
-            <p>Quando substituir?</p>
-            <p>1. Barulho de "estalo" quando em linha reta em média velocidade.</p>
+          <div class="servico">
+            <img src="./src/imagens/deslizante-e-trizeta.webp" alt="Junta deslizante" />
+            <h3>Deslizante e trizeta</h3>
+            <div class="informacoes-servico">
+              <p>Quando substituir?</p>
+              <p>1. Barulho de "estalo" quando em linha reta em média velocidade.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="servico">
-          <img src="./src/imagens/kit-radiador.webp" alt="Kit radiador" />
-          <h3>Kit radiador</h3>
-          <div class="informacoes-servico">
-            <p>Quando substituir?</p>
-            <p>1. Vazamento no radiador ou no recipiente de expansão.
-              <br>2. Defeito na tampa no recipiente de expansão.
-              <br>3. Mal funcionamento do eletro ventilador.
-              <br>4. Elevação da temperatura do motor.
-            </p>
+          <div class="servico">
+            <img src="./src/imagens/kit-radiador.webp" alt="Kit radiador" />
+            <h3>Kit radiador</h3>
+            <div class="informacoes-servico">
+              <p>Quando substituir?</p>
+              <p>1. Vazamento no radiador ou no recipiente de expansão.
+                <br>2. Defeito na tampa no recipiente de expansão.
+                <br>3. Mal funcionamento do eletro ventilador.
+                <br>4. Elevação da temperatura do motor.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="servico">
-          <img src="./src/imagens/coxins-do-motor.webp" alt="Coxins do motor" />
-          <h3>Coxins do motor</h3>
-          <div class="informacoes-servico">
-            <p>Quando substituir?</p>
-            <p>1. Desgaste das borrachas.
-              <br>2. Vibração excessiva do motor ao arrancar ou na marcha ré.
-            </p>
+          <div class="servico">
+            <img src="./src/imagens/coxins-do-motor.webp" alt="Coxins do motor" />
+            <h3>Coxins do motor</h3>
+            <div class="informacoes-servico">
+              <p>Quando substituir?</p>
+              <p>1. Desgaste das borrachas.
+                <br>2. Vibração excessiva do motor ao arrancar ou na marcha ré.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="servico">
-          <img src="./src/imagens/correia-e-rolamento.webp" alt="Coxins do motor" />
-          <h3>Correia e rolamento tensor</h3>
-          <div class="informacoes-servico">
-            <p>Quando substituir?</p>
-            <p>1. Desgaste da correia e rolamento; barulho extranho.
-            </p>
+          <div class="servico">
+            <img src="./src/imagens/correia-e-rolamento.webp" alt="Coxins do motor" />
+            <h3>Correia e rolamento tensor</h3>
+            <div class="informacoes-servico">
+              <p>Quando substituir?</p>
+              <p>1. Desgaste da correia e rolamento; barulho extranho.
+              </p>
+            </div>
           </div>
-        </div>
 
-      </div>
-      <button class="btn-mostrar-servicos ativo">Mostrar mais</button>
-      <button class="btn-ocultar-servicos remover">Mostrar menos</button>
-  </div>
+        </div>
+        <button class="btn-mostrar-servicos ativo">Mostrar mais</button>
+        <button class="btn-ocultar-servicos remover">Mostrar menos</button>
+      </section>
+
+    </div>
+    <script src="./src/js/index.js"></script>
+
+    <footer class="footer">
+      <img class="logo" src="./src/imagens/logo-p.png" alt="Logotipo ARS">
+      <h2>Alexsandro Rodrigues da Silva | Mecânico Automotivo</h2>
+      <h1>© Copyright 2026. Made by <a href="https://alexsandrorodriguesdasilvaads.github.io/portifolio/"
+          target="_blank">Alexsandro R da Silva</a></h1>
+    </footer>
 
   </section>
-
-  </div>
-
-  <script src="./src/js/index.js"></script>
-
-  <footer class="footer">
-    <img class="logo" src="./src/imagens/logo-p.png" alt="Logotipo ARS">
-    <h2>Alexsandro Rodrigues da Silva | Mecânico Automotivo</h2>
-    <h1>© Copyright 2026. Made by <a href="https://alexsandrorodriguesdasilvaads.github.io/portifolio/"
-        target="_blank">Alexsandro R da Silva</a></h1>
-  </footer>
-
 </body>
 
 </html>

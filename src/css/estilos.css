@@ -4,10 +4,17 @@ html {
 }
 
 body {
-	background: url("../imagens/bmw-m3-gtr.webp") center / cover no-repeat fixed;
+	background: linear-gradient(150deg, #CA2A02, #df8b04);
+	background-size: 120% 120%;
 	font-family: "Poppins", sans-serif;
 	margin: 0 auto;
 
+}
+
+.background {
+	background: url("../imagens/bmw-m3-gtr.webp") center / cover no-repeat fixed;
+	max-width: 1300px;
+	margin: auto;
 }
 
 .main {
@@ -79,16 +86,17 @@ body {
 }
 
 .home .painel-lateral.ativo {
-	transform: translateX(-300px);
+	transform: translateX(-310px);
 }
 
 .home .painel-lateral.ativo img {
-	 transform: rotate(180deg);
- 	 transition: transform 0.5s ease;
+	transform: rotate(180deg);
+	transition: transform 0.5s ease;
 }
 
 .home .painel-lateral img {
 	position: absolute;
+	top: 0;
 	right: 100%;
 	width: 40px;
 	height: 40px;
@@ -96,7 +104,7 @@ body {
 	border-radius: 50%;
 	margin: 5px;
 	transform: rotate(0deg);
- 	transition: transform 0.5s ease;
+	transition: transform 0.5s ease;
 }
 
 .home .player-container {
@@ -235,12 +243,12 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	text-align: left;
+	height: 100%;
 }
 
 .home .popup form label {
 	margin-top: 10px;
 	font-size: 15px;
-	text-transform: uppercase;
 }
 
 .home .popup form input {
@@ -261,41 +269,27 @@ body {
 	font-size: 15px;
 }
 
+.home .popup .botoes {
+	display: flex;
+	gap: 200px;
+	justify-content: center;
+	padding-top: 10px;
+}
+
 .home .popup form button {
 	background-color: rgba(255, 255, 255, 0);
-	font-weight: bolder;
 	color: #fff;
 	font-size: 15px;
 	border: 1px solid #fff;
 	border-radius: 15px;
 	text-transform: capitalize;
 	padding: 5px 10px;
-	transition: 0.2s;
-	margin-top: 10px;
 	height: 35px;
 }
 
-.home .popup button:hover {
+.home .popup form button:hover {
 	background-color: #FE9E00;
 	color: #CA2A02;
-}
-
-.home .popup .foot {
-	display: flex;
-	gap: 100px;
-	justify-content: center;
-}
-
-.home .popup form img {
-	border: 1px #fff solid;
-	margin-top: 10px;
-	padding: 2px;
-	border-radius: 20%;
-	height: 35px;
-}
-
-.home .popup form img:hover {
-	background-color: #FE9E00;
 }
 
 .home #popup1:target {
@@ -423,13 +417,10 @@ body {
 
 /* RODAPÉ */
 .footer {
-	max-width: 1320px;
+	max-width: 1300px;
 	margin: auto;
-	padding: 0 100px;
 	background-color: rgba(21, 60, 93, 0.7);
-
 	font-family: "Raleway", sans-serif;
-	color: #ffffff;
 	padding: 50px;
 	text-align: center;
 	border-top: 1px #fff solid;
