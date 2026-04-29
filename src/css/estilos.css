@@ -230,6 +230,10 @@ body {
 	z-index: 3;
 }
 
+.home .oberlay.activo {
+	transform: translateX(310px);
+}
+
 .home .popup {
 	background-color: rgba(21, 60, 93, 0.9);
 	border: 1px #fff solid;
