@@ -99,14 +99,14 @@
         font-size: 15px;
     }
 
-    .painel-lateral {
-        top: 55px;
+    .home .painel-lateral.ativo {
+        transform: translateX(-270px);
     }
 
-    .painel-lateral.ativo {
-        transform: translateX(-280px);
+    .home .player-container {
+        width: 270px;
     }
-
+ 
     .servicos .servico p {
         font-size: 12px;
     }
