@@ -221,14 +221,13 @@ body {
 
 /* FORMULÁRIO */
 .home .overlay {
-	background: url("../imagens/logo-p.png") center / cover no-repeat fixed;
+	background: url("../imagens/logo-p.png") center / cover no-repeat;
 	width: 30%;
 	top: 30px;
 	position: fixed;
 	opacity: 0;
 	pointer-events: none;
 	z-index: 3;
-	transition: transform 0.5s ease;
 }
 
 .home .popup {
