@@ -25,6 +25,10 @@
         padding: 0 30px;
     }
 
+    .servicos .servico #hand {
+        display: unset;
+    }
+
     .servicos h3 {
         font-size: 14px;
     }

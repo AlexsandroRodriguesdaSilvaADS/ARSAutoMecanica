@@ -353,6 +353,16 @@ body {
 	width: 100%;
 }
 
+.servicos .servico #hand {
+	display: none;
+	height: 15%;
+	width: 15%;
+	margin: 5px;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+
 .servicos .servico h3 {
 	background-color: rgb(21, 60, 93);
 	width: 100%;
