@@ -4,8 +4,7 @@ html {
 }
 
 body {
-	background: linear-gradient(150deg, #CA2A02, #df8b04);
-	background-size: 120% 120%;
+	background: url("../imagens/logo-p.png") center / cover no-repeat fixed;
 	font-family: "Poppins", sans-serif;
 	margin: 0 auto;
 
@@ -222,23 +221,20 @@ body {
 
 /* FORMULÁRIO */
 .home .overlay {
+	background: url("../imagens/logo-p.png") center / cover no-repeat fixed;
 	width: 30%;
 	top: 30px;
 	position: fixed;
 	opacity: 0;
 	pointer-events: none;
 	z-index: 3;
-}
-
-.home .oberlay.activo {
-	transform: translateX(310px);
+	transition: transform 0.5s ease;
 }
 
 .home .popup {
-	background-color: rgba(21, 60, 93, 0.9);
+	background-color: rgba(21, 60, 93, 0.7);
 	border: 1px #fff solid;
 	padding: 20px;
-	margin: 5px 0;
 	text-align: center;
 }
 
@@ -433,8 +429,8 @@ body {
 .footer .logo {
 	margin-top: 0px;
 	padding: 2px;
-	width: 100px;
-	height: 70px;
+	width: 80px;
+	height: 50px;
 }
 
 .footer .logo:hover {
