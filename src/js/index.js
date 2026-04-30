@@ -127,6 +127,8 @@ document.getElementById('formulario').addEventListener('submit', function (event
 
     // Limpar o formulário
     document.getElementById('formulario').reset();
+
+    localStorage.clear();
 });
 
 
