@@ -87,6 +87,10 @@
         padding: 30px;
     }
 
+    .servicos .servico .informacoes-servico {
+        padding: 5px;
+    }
+
     .servicos h3 {
         font-size: 12;
     }
@@ -114,4 +118,10 @@
     .servicos .servico p {
         font-size: 12px;
     }
+
+    .servicos .servico .informacoes-servico .link-agendamento {
+        bottom: 0;
+        font-size: 12px;
+    }
+
 }
