@@ -76,11 +76,12 @@
     }
 
     .home .overlay {
-        top: 10px;
+        top: 15px;
+        margin: 0 10px 0 10px;
     }
 
     .home .overlay.ativo {
-        transform: translateX(600px);
+        transform: translateX(590px);
     }
 
     .player-container li {

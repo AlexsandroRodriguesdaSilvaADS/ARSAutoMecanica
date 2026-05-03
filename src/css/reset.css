@@ -18,3 +18,8 @@ ul {
 img {
     max-width: 100%;
 }
+
+button {
+    font-family: "Raleway", sans-serif;
+    background: none;
+}
