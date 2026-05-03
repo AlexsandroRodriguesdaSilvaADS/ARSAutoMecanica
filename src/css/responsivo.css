@@ -38,7 +38,7 @@
     }
 }
 
-@media(max-width: 426px) {
+@media(max-width: 425px) {
 
     .home .informacoes h1 {
         font-size: 30px;
@@ -75,9 +75,12 @@
         gap: 100px;
     }
 
+    .home .overlay {
+        top: 10px;
+    }
+
     .home .overlay.ativo {
         transform: translateX(600px);
-        /*margin: 5px;*/
     }
 
     .player-container li {
