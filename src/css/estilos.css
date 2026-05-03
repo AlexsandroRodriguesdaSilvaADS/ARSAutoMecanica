@@ -78,7 +78,6 @@ body {
 	top: 160px;
 	right: -410px;
 	width: 400px;
-/*	margin-right: 10px;*/
 	height: 35%;
 	transition: 0.3s;
 	z-index: 3;
@@ -96,7 +95,7 @@ body {
 	height: 40px;
 	border: 1px #fff solid;
 	border-radius: 50%;
-	margin-right: 10px;
+	margin-right: 15px;
 	transform: rotate(0deg);
 	transition: transform 0.7s ease;
 }
@@ -110,7 +109,7 @@ body {
 	background-color: rgba(21, 60, 93, 1);
 	border: 1px #fff solid;
 	margin: 0;
-	padding: 20px;
+	padding: 10px;
 	border-radius: 10px;
 	width: 300px;
 	height: 300px;
@@ -394,6 +393,8 @@ body {
 }
 
 .servicos .servico .informacoes-servico .link-agendamento {
+	background-color: rgb(21, 60, 93);
+	font-size: 15px;
 	text-decoration: underline;
 	position: absolute;
 	bottom: 5px;
@@ -402,7 +403,7 @@ body {
 
 .servicos .servico .informacoes-servico .link-agendamento:hover {
 	color: #df8b04;
-	font-weight: bold;
+	font-weight: bolder;
 }
 
 .servicos .btn-mostrar-servicos,
