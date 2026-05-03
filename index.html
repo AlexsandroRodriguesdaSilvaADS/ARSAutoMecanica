@@ -44,7 +44,7 @@
           <p>Sábados e Feriados
             <br>das 8h às 18h
           </p>
-          <p>Em domicílio <a class="referencia" href="#popup1" title="Ir para agendamento">(81) 9
+          <p>Em domicílio <a class="referencia" onclick="toggleMenu2()" title="Ir para agendamento">(81) 9
               9809-0037</a></p>
           <p>Ou no
             <a class="referencia" href="https://maps.app.goo.gl/FGYMDUrY44topPQx7" title="Ir para endereço"
@@ -53,38 +53,38 @@
 
           <ul class="agendamento-ul">
             <li>
-              <a href="#popup1" title="Ir para agendamento">
+              <a onclick="toggleMenu2()" title="Ir para agendamento">
                 Embreagem
               </a>
             </li>
             <li>
-              <a href="#popup1" title="Ir para agendamento">
+              <a onclick="toggleMenu2()" title="Ir para agendamento">
                 Suspensão
               </a>
             </li>
             <li>
-              <a href="#popup1" title="Ir para agendamento">
+              <a onclick="toggleMenu2()" title="Ir para agendamento">
                 Freios
               </a>
             </li>
             <li>
-              <a href="#popup1" title="Ir para agendamento">
+              <a onclick="toggleMenu2()" title="Ir para agendamento">
                 Tração
               </a>
             </li>
             <li>
-              <a href="#popup1" title="Ir para agendamento">
+              <a onclick="toggleMenu2()" title="Ir para agendamento">
                 Arrefecimento
               </a>
             </li>
             <li>
-              <a href="#popup1" title="Ir para agendamento">
+              <a onclick="toggleMenu2()" title="Ir para agendamento">
                 Manutenção
               </a>
             </li>
           </ul>
 
-          <div class="overlay" id="popup1">
+          <div class="overlay" id="overlay">
             <div class="popup">
               <h2>Agendamento</h2>
               <form id="formulario">
@@ -107,7 +107,7 @@
                   placeholder="Decreva os problemas ou alterações que você percebeu"></textarea>
                 <div class="botoes">
                   <button type="submit" id="btnSubscribe" title="Enviar os dados">Enviar</button>
-                  <button><a href="#agendamento">Fechar</a></button>
+                  <button><a onclick="toggleMenu2()">Fechar</a></button>
                 </div>
               </form>
             </div>
@@ -124,7 +124,7 @@
 
           <div class="painel-lateral" id="meuPainel">
 
-            <button onclick="toggleMenu()">
+            <button onclick="toggleMenu1()">
               <img src="./src/imagens/seta.png" alt="botao da barra lateral">
             </button>
 
@@ -177,7 +177,7 @@
               <p>1. Embreagem deslizando ou patinando; perda de aderência do disco.
                 <br>2. Quebra do colar de embreagem ou da mola membrana; barrulho extranho.
               </p>
-              <a class="link-agendamento" href="#popup1">Ir para agendamento</a>
+              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
             </div>
           </div>
           <div class="servico ativo">
@@ -188,7 +188,7 @@
               <p>1. Perda da compressão; vazamento do óleo, sem controle das oscilações das molas.
                 <br>2. Travamento; suspensão com poca ou nenhuma oscilações das molas.
               </p>
-              <a class="link-agendamento" href="#popup1">Ir para agendamento</a>
+              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
             </div>
           </div>
 
@@ -200,7 +200,7 @@
               <p>1. Desgaste do batedor; esfarelamento.
                 <br>2. Desgaste do coxin; barrulho extranho na extremidade da aste do amortecedor.
               </p>
-              <a class="link-agendamento" href="#popup1">Ir para agendamento</a>
+              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
             </div>
           </div>
 
@@ -212,7 +212,7 @@
               <p>1. Buchas estragadas.
                 <br>2. Pivô com folga; necesário elevação do veículo.
               </p>
-              <a class="link-agendamento" href="#popup1">Ir para agendamento</a>
+              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
             </div>
           </div>
 
@@ -222,7 +222,7 @@
             <div class="informacoes-servico">
               <p>Quando substituir?</p>
               <p>1. Buchas estragadas; necesário elevação do veículo.</p>
-              <a class="link-agendamento" href="#popup1">Ir para agendamento</a>
+              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
             </div>
           </div>
 
@@ -233,7 +233,7 @@
               <p>Quando substituir?</p>
               <p>1. Desgaste execivo; as paredes do disco ficam mais finas e com irregularidades. É possível retificar
               </p>
-              <a class="link-agendamento" href="#popup1">Ir para agendamento</a>
+              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
             </div>
           </div>
 
@@ -244,7 +244,7 @@
               <p>Quando substituir?</p>
               <p>1. Desgaste natural; é comum ouvir um barulho metálico (do limitador) quando estão no momento da troca.
                 Algumas possuem um sensor eletrônico.</p>
-                <a class="link-agendamento" href="#popup1">Ir para agendamento</a>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
             </div>
           </div>
 
@@ -256,7 +256,7 @@
               <p>1. Desgaste natural; o freio de mão fica aparentemente desrregulado ou não estaciona o veículo.
                 <br>Relação de troca 2x1 em função da troca das pastilha; trocar na segunda troca das pastilhas.
               </p>
-              <a class="link-agendamento" href="#popup1">Ir para agendamento</a>
+              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
             </div>
           </div>
 
@@ -268,7 +268,7 @@
               <p>1. Desgaste de o'rings e/ou vazamento de fluído; o pedal de freio fica sem pressão, quase encostando no
                 açoalho. É possível ver vazamento de fluído de freio.
               </p>
-              <a class="link-agendamento" href="#popup1">Ir para agendamento</a>
+              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
             </div>
           </div>
 
@@ -279,7 +279,7 @@
               <p>Quando substituir?</p>
               <p>1. Pedal do freio fica "pesado"; é necessário mais esforço para frear. É possível ouvir um barulho de
                 ar escapando.</p>
-                <a class="link-agendamento" href="#popup1">Ir para agendamento</a>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
             </div>
           </div>
 
@@ -290,7 +290,7 @@
               <p>Quando substituir?</p>
               <p>1. Barulho de "estalo" ao esterçar a direção; o barulho é mais evidente quando numa curva em velocidade
                 lenta.</p>
-                <a class="link-agendamento" href="#popup1">Ir para agendamento</a>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
             </div>
           </div>
 
@@ -300,7 +300,7 @@
             <div class="informacoes-servico">
               <p>Quando substituir?</p>
               <p>1. Barulho de "estalo" ao esterçar a direção ou quando em linha reta em média velocidade.</p>
-              <a class="link-agendamento" href="#popup1">Ir para agendamento</a>
+              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
             </div>
           </div>
 
@@ -310,7 +310,7 @@
             <div class="informacoes-servico">
               <p>Quando substituir?</p>
               <p>1. Barulho de "estalo" quando em linha reta em média velocidade.</p>
-              <a class="link-agendamento" href="#popup1">Ir para agendamento</a>
+              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
             </div>
           </div>
 
@@ -324,7 +324,7 @@
                 <br>3. Mal funcionamento do eletro ventilador.
                 <br>4. Elevação da temperatura do motor.
               </p>
-              <a class="link-agendamento" href="#popup1">Ir para agendamento</a>
+              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
             </div>
           </div>
 
@@ -336,7 +336,7 @@
               <p>1. Desgaste das borrachas.
                 <br>2. Vibração excessiva do motor ao arrancar ou na marcha ré.
               </p>
-              <a class="link-agendamento" href="#popup1">Ir para agendamento</a>
+              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
             </div>
           </div>
 
@@ -347,7 +347,7 @@
               <p>Quando substituir?</p>
               <p>1. Desgaste da correia e rolamento; barulho extranho.
               </p>
-              <a class="link-agendamento" href="#popup1">Ir para agendamento</a>
+              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
             </div>
           </div>
 

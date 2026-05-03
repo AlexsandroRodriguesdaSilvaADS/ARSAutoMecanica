@@ -220,14 +220,18 @@ body {
 }
 
 /* FORMULÁRIO */
-.home .overlay {
+.home .overlay {	
 	background: url("../imagens/logo-p.png") center / cover no-repeat;
-	width: 30%;
-	top: 150px;
 	position: fixed;
-	opacity: 0;
-	pointer-events: none;
+	top: 150px;
+	left: -600px;
+	width: 450px;
+	transition: 0.3s;
 	z-index: 3;
+}
+
+.home .overlay.ativo {
+	transform: translateX(1015px);
 }
 
 .home .popup {
@@ -289,11 +293,6 @@ body {
 .home .popup form button:hover {
 	background-color: #FE9E00;
 	color: #CA2A02;
-}
-
-.home #popup1:target {
-	opacity: 1;
-	pointer-events: auto;
 }
 
 .home .container-foto .foto-video {

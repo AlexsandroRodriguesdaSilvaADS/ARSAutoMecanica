@@ -34,7 +34,11 @@
     }
 
     .home .overlay {
-        width: 95%;
+        left: -450px;
+    }
+
+    .home .overlay.ativo {
+        transform: translateX(550px);
     }
 }
 
@@ -75,6 +79,15 @@
         gap: 100px;
     }
 
+    .home .overlay {
+        left: -450px;
+        width: 400px;
+    }
+
+    .home .overlay.ativo {
+        transform: translateX(465px);
+    }
+
     .player-container li {
         padding-left: 2px;
     }
@@ -96,7 +109,17 @@
     }
 }
 
-@media(max-width: 321px) {
+@media(max-width: 375px) {
+    .home .overlay {
+        width: 350px;
+    }
+}
+
+
+@media(max-width: 320px) {
+    .home .overlay {
+        width: 290px;
+    }
 
     .cabecalho .logo {
         width: 100px;

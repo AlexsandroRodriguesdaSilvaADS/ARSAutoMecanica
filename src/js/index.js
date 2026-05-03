@@ -133,8 +133,13 @@ document.getElementById('formulario').addEventListener('submit', function (event
 
 
 // MENU ESCONDIDO
-function toggleMenu() {
+
+function toggleMenu1() {
     document.getElementById("meuPainel").classList.toggle("ativo");
+}
+
+function toggleMenu2() {
+    document.getElementById("overlay").classList.toggle("ativo");
 }
 
 
