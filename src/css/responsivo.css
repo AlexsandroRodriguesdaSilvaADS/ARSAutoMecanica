@@ -71,17 +71,20 @@
         gap: 10px;
     }
 
+    .home .popup {
+        margin: 0 5px 0 5px;
+    }
+
     .home .popup .botoes {
         gap: 100px;
     }
 
     .home .overlay {
         top: 15px;
-        margin: 0 10px 0 10px;
     }
 
     .home .overlay.ativo {
-        transform: translateX(590px);
+        transform: translateX(600px);
     }
 
     .player-container li {

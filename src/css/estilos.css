@@ -287,7 +287,7 @@ body {
 	font-size: 15px;
 	border: 1px solid #fff;
 	border-radius: 15px;
-/*	text-transform: capitalize;*/
+	text-transform: capitalize;
 	padding: 5px 10px;
 }
 
