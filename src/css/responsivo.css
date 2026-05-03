@@ -33,18 +33,8 @@
         font-size: 14px;
     }
 
-    .home .overlay {
-        left: -450px;
-    }
-
     .home .overlay.ativo {
-        transform: translateX(550px);
-    }
-}
-
-@media(min-width:426px) and (max-width: 720px) {
-    .home .overlay {
-        width: 330px;
+        transform: translateX(650px);
     }
 }
 
@@ -85,13 +75,9 @@
         gap: 100px;
     }
 
-    .home .overlay {
-        left: -450px;
-        width: 400px;
-    }
-
     .home .overlay.ativo {
-        transform: translateX(465px);
+        transform: translateX(600px);
+        /*margin: 5px;*/
     }
 
     .player-container li {
@@ -115,18 +101,7 @@
     }
 }
 
-@media(max-width: 375px) {
-    .home .overlay {
-        width: 350px;
-    }
-}
-
-
 @media(max-width: 320px) {
-    .home .overlay {
-        width: 290px;
-    }
-
     .cabecalho .logo {
         width: 100px;
         height: 90px;

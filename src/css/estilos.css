@@ -226,6 +226,7 @@ body {
 	top: 150px;
 	left: -600px;
 	width: 450px;
+	max-width: 100%;
 	transition: 0.3s;
 	z-index: 3;
 }
