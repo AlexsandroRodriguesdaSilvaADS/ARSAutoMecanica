@@ -75,10 +75,10 @@ body {
 .home .painel-lateral {
 	display: flex;
 	position: fixed;
-	top: 150px;
+	top: 160px;
 	right: -410px;
 	width: 400px;
-	margin-right: 10px;
+/*	margin-right: 10px;*/
 	height: 35%;
 	transition: 0.3s;
 	z-index: 3;
@@ -223,10 +223,9 @@ body {
 .home .overlay {
 	background: url("../imagens/logo-p.png") center / cover no-repeat;
 	position: fixed;
-	top: 150px;
+	top: 180px;
 	left: -600px;
 	width: 450px;
-	max-width: 100%;
 	transition: 0.3s;
 	z-index: 3;
 }
@@ -276,7 +275,7 @@ body {
 .home .popup form .botoes {
 	font-family: "Raleway", sans-serif;
 	display: flex;
-	gap: 100px;
+	gap: 200px;
 	justify-content: center;
 	padding-top: 10px;
 }
@@ -295,6 +294,7 @@ body {
 .home .popup form a:hover {
 	background-color: #FE9E00;
 	color: #CA2A02;
+	font-weight: bolder;
 }
 
 .home .container-foto .foto-video {
