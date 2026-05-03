@@ -42,6 +42,12 @@
     }
 }
 
+@media(min-width:426px) and (max-width: 720px) {
+    .home .overlay {
+        width: 330px;
+    }
+}
+
 @media(max-width: 426px) {
 
     .home .informacoes h1 {
