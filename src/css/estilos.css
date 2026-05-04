@@ -68,7 +68,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	position: fixed;
-	top: 100px;
+	top: 30px;
 	right: -420px;
 	width: 400px;
 	margin-right: 15px;
