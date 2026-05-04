@@ -1,5 +1,4 @@
 @media(max-width: 1280px) {
-
     .main {
         padding: 0;
     }
@@ -31,10 +30,6 @@
 
     .servicos h3 {
         font-size: 14px;
-    }
-
-    .home .overlay.ativo {
-        transform: translateX(650px);
     }
 }
 
@@ -69,15 +64,6 @@
     .home .agendamento-ul {
         flex-direction: column;
         gap: 10px;
-    }
-
-    .home .overlay {
-        top: 150px;
-        width: 100vw;
-    }
-
-    .home .overlay.ativo {
-        transform: translateX(600px);
     }
 
      .home .popup form .botoes {
