@@ -31,18 +31,10 @@ body {
 }
 
 .cabecalho .logo {
-	background: linear-gradient(to right, #800101, #ca2a02, #df8b04);
-	background-size: 180% 180%;
-	animation: gradient-animation 3s ease infinite;
-	padding: 4px;
+	padding: 2px;
 	width: 170px;
 	height: 140px;
-}
-
-.cabecalho a:hover {
-	background-color: #df8b04;
-	color: #ca2a02;
-	border: 2px solid #ffffff;
+	box-shadow: 0 0 10px #fff;
 }
 
 .cabecalho .menu li a {
@@ -74,11 +66,13 @@ body {
 /* PLAYER */
 .home .painel-lateral {
 	display: flex;
+	flex-direction: column;
 	position: fixed;
-	top: 160px;
-	right: -410px;
+	top: 100px;
+	right: -420px;
 	width: 400px;
-	height: 35%;
+	margin-right: 15px;
+	height: 85vh;
 	transition: 0.3s;
 	z-index: 3;
 }
@@ -94,6 +88,7 @@ body {
 	width: 40px;
 	height: 40px;
 	border: 1px #fff solid;
+	box-shadow: 0 0 10px #fff;
 	border-radius: 50%;
 	margin-right: 15px;
 	transform: rotate(0deg);
@@ -108,11 +103,22 @@ body {
 .home .player-container {
 	background-color: rgba(21, 60, 93, 1);
 	border: 1px #fff solid;
-	margin: 0;
+	margin-bottom: 10px;
 	padding: 10px;
 	border-radius: 10px;
-	width: 300px;
+	width: 290px;
 	height: 300px;
+	max-width: 100%;
+}
+
+.home .text-container {
+	background-color: rgba(21, 60, 93, 1);
+	border: 1px #fff solid;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	width: 290px;
+	height: 100%;
 	max-width: 100%;
 }
 
@@ -123,7 +129,8 @@ body {
 	opacity: 0.7;
 }
 
-.home .player-container h3 {
+.home .player-container h3,
+.home .text-container h3 {
 	text-align: center;
 	padding-bottom: 10px;
 }
@@ -338,6 +345,7 @@ body {
 }
 
 .servicos .servico {
+	box-shadow: 0 0 10px #fff;
 	max-width: 260px;
 	max-height: 260px;
 	position: relative;
@@ -451,10 +459,7 @@ body {
 	padding: 2px;
 	width: 80px;
 	height: 50px;
-}
-
-.footer .logo:hover {
-	background-color: #df8b04;
+	box-shadow: 0 0 10px #fff;
 }
 
 .footer h2 {
