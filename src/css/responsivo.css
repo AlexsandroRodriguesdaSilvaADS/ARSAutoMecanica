@@ -76,7 +76,8 @@
     .player-container li.active {
         max-width: 100%;
     }
-/*
+    
+    /*
     .home .overlay {
         width: 415px;
     }*/
@@ -107,7 +108,8 @@
     .home .painel-lateral.ativo {
         transform: translateX(-275px);
     }
-/*
+    
+    /*
     .home .overlay {
         width: 310px;
     }*/
