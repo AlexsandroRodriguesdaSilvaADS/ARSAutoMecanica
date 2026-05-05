@@ -247,14 +247,8 @@ body {
 
 .home .overlay {
 	background: url("../imagens/logo-p.png") center / cover no-repeat;
-<<<<<<< HEAD
 	position: fixed;
 	display: none;
-=======
-	display: none;
-	position: fixed;
-	max-width: 500px;
->>>>>>> 1682ba1f7bf2cab182dcbb2f423080220cb06b4b
 	top: 30px;
 	z-index: 3;
 }
@@ -268,11 +262,7 @@ body {
 	border: 1px #fff solid;
 	padding: 20px;
 	text-align: center;
-<<<<<<< HEAD
 	max-width: 98vw;
-=======
-	max-width: 100%;
->>>>>>> 1682ba1f7bf2cab182dcbb2f423080220cb06b4b
 }
 
 .home .popup form {
