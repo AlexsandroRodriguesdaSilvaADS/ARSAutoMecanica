@@ -38,7 +38,6 @@ function mostrarMaisProjetos() {
     });
 }
 
-
 botaoOcultarProjetos.addEventListener('click', () => {
     ocultarProjetos();
     mostrarBotao();
@@ -76,7 +75,6 @@ function loadTrack(index) {
     audioPlayer.src = track.getAttribute('data-src');
     audioPlayer.load();
 }
-
 // Inicializa a primeira música
 loadTrack(currentTrack);
 
@@ -84,10 +82,8 @@ loadTrack(currentTrack);
 audioPlayer.addEventListener('ended', () => {
     // Incrementa o índice e volta para 0 se for a última música
     currentTrack = (currentTrack + 1) % tracks.length;
-
     loadTrack(currentTrack);
     audioPlayer.play();
-
     console.log("Iniciando próxima faixa: " + currentTrack);
 });
 
@@ -115,8 +111,7 @@ document.getElementById('formulario').addEventListener('submit', function (event
     var mensagem = document.getElementById('mensagem').value;
 
     // Configuração do WhatsApp
-    var numeroWhatsapp = "5581998090037"; // Coloque o número com DDD
-
+    var numeroWhatsapp = "5581998090037";
     var mensagem = "Olá, meu nome é " + nome + ", o meu contato é " + telefone + ", o meu e-mail é " + email + ", a data e horário escolhidos são " + data + " às " + hora + " e os problemas relatados são: " + mensagem;
 
     // Criação do link
@@ -127,7 +122,6 @@ document.getElementById('formulario').addEventListener('submit', function (event
 
     // Limpar o formulário
     document.getElementById('formulario').reset();
-
     localStorage.clear();
 });
 

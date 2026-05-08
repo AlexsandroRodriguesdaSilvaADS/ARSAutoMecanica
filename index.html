@@ -83,35 +83,34 @@
               </a>
             </li>
           </ul>
-          
-            <div class="overlay" id="overlay">
-              <div class="popup">
-                <h2>Agendamento</h2>
-                <form id="formulario">
-                  <label for="name">Nome Completo*</label>
-                  <input type="text" name="name" id="nome" required>
-                  <label for="email">E-mail</label>
-                  <input type="email" name="email" id="email">
-                  <label for="contato">Telefone para Contato*</label>
-                  <input type="text" name="contato" id="contato" required>
-                  <label for="dataAgendamento">Data e horário*
-                    <br>(das 8:00h às 18:00h)</label>
 
-                  <div id="dataHora">
-                    <input type="date" id="dataAgendamento" name="dataAgendamento" required>
-                    <input type="time" min="08:00" max="18:00" id="horaAgendamento" name="horaAgendamento" required>
-                  </div>
+          <div class="overlay" id="overlay">
+            <div class="popup">
+              <h2>Agendamento</h2>
+              <form id="formulario">
+                <label for="name">Nome Completo*</label>
+                <input type="text" name="name" id="nome" required>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <label for="contato">Telefone para Contato*</label>
+                <input type="text" name="contato" id="contato" required>
+                <label for="dataAgendamento">Data e horário*
+                  <br>(das 8:00h às 18:00h)</label>
 
-                  <label for="character">Observações</label>
-                  <textarea name="character" cols="30" rows="5" id="mensagem"
-                    placeholder="Decreva os problemas ou alterações que você percebeu"></textarea>
-                  <label for="informacoes">*itens obrigatórios</label>
-                  <div class="botoes">
-                    <button type="submit" id="btnSubscribe" title="Enviar os dados">Enviar</button>
-                    <a id="btnFechar" onclick="toggleMenu2()">Fechar</a>
-                  </div>
-                </form>
-              </div>
+                <div id="dataHora">
+                  <input type="date" id="dataAgendamento" name="dataAgendamento" required>
+                  <input type="time" min="08:00" max="18:00" id="horaAgendamento" name="horaAgendamento" required>
+                </div>
+
+                <label for="character">Observações</label>
+                <textarea name="character" cols="30" rows="5" id="mensagem"
+                  placeholder="Decreva os problemas ou alterações que você percebeu"></textarea>
+                <label for="informacoes">*itens obrigatórios</label>
+                <div class="botoes">
+                  <button type="submit" id="btnSubscribe" title="Enviar os dados">Enviar</button>
+                  <a id="btnFechar" onclick="toggleMenu2()">Fechar</a>
+                </div>
+              </form>
             </div>
         </div>
 
@@ -162,9 +161,8 @@
             </div>
 
             <div class="text-container">
-              <a href="https://www.bibliatodo.com/pt/recursos/" target="_blank">
-                <h3 title="https://www.bibliatodo.com/pt/recursos/">Bible</h3>
-              </a>
+              <a href="https://www.bibliatodo.com/pt/recursos/" title="https://www.bibliatodo.com/pt/recursos/"
+                target="_blank">Bible</a>
               <iframe id="versiculo-del-dia" src="https://www.bibliatodo.com/pt/online/versiculo-del-dia-texto-2"
                 frameborder="0" scrolling="no">
               </iframe>
