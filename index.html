@@ -31,8 +31,8 @@
           </ul>
         </nav>
       </header>
-      <section class="home">
 
+      <section class="home">
         <div id="agendamento" class="informacoes">
           <h1>Olá! Sou
             <br>Alexsandro Rodrigues da Silva
@@ -83,35 +83,36 @@
               </a>
             </li>
           </ul>
+        </div>
 
-          <div class="overlay" id="overlay">
-            <div class="popup">
-              <h2>Agendamento</h2>
-              <form id="formulario">
-                <label for="name">Nome Completo*</label>
-                <input type="text" name="name" id="nome" required>
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email">
-                <label for="contato">Telefone para Contato*</label>
-                <input type="text" name="contato" id="contato" required>
-                <label for="dataAgendamento">Data e horário*
-                  <br>(das 8:00h às 18:00h)</label>
+        <div class="overlay" id="overlay">
+          <div class="popup">
+            <h2>Agendamento</h2>
+            <form id="formulario">
+              <label for="name">Nome Completo*</label>
+              <input type="text" name="name" id="nome" required>
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email">
+              <label for="contato">Telefone para Contato*</label>
+              <input type="text" name="contato" id="contato" required>
+              <label for="dataAgendamento">Data e horário*
+                <br>(das 8:00h às 18:00h)</label>
 
-                <div id="dataHora">
-                  <input type="date" id="dataAgendamento" name="dataAgendamento" required>
-                  <input type="time" min="08:00" max="18:00" id="horaAgendamento" name="horaAgendamento" required>
-                </div>
+              <div id="dataHora">
+                <input type="date" id="dataAgendamento" name="dataAgendamento" required>
+                <input type="time" min="08:00" max="18:00" id="horaAgendamento" name="horaAgendamento" required>
+              </div>
 
-                <label for="character">Observações</label>
-                <textarea name="character" cols="30" rows="5" id="mensagem"
-                  placeholder="Decreva os problemas ou alterações que você percebeu"></textarea>
-                <label for="informacoes">*itens obrigatórios</label>
-                <div class="botoes">
-                  <button type="submit" id="btnSubscribe" title="Enviar os dados">Enviar</button>
-                  <a id="btnFechar" onclick="toggleMenu2()">Fechar</a>
-                </div>
-              </form>
-            </div>
+              <label for="character">Observações</label>
+              <textarea name="character" cols="30" rows="5" id="mensagem"
+                placeholder="Decreva os problemas ou alterações que você percebeu"></textarea>
+              <label for="informacoes">*itens obrigatórios</label>
+              <div class="botoes">
+                <button type="submit" id="btnSubscribe" title="Enviar os dados">Enviar</button>
+                <a id="btnFechar" onclick="toggleMenu2()">Fechar</a>
+              </div>
+            </form>
+          </div>
         </div>
 
         <div class="container-foto">
@@ -121,53 +122,49 @@
             </video>
             <img src="./src/imagens/foto-perfil-alfa.png" alt="foto do portifólio de Alexsandro" />
           </div>
+        </div>
 
-          <div class="painel-lateral" id="meuPainel">
-
-            <button onclick="toggleMenu1()">
-              <img src="./src/imagens/seta.png" alt="botao da barra lateral">
-            </button>
-
-            <div class="player-container">
-              <h3>My playlist</h3>
-              <audio id="audioPlayer" controls autoplay>
-                <source src="" type="audio/mpeg">
-                Seu navegador não suporta áudio HTML5.
-              </audio>
-              <ul id="playlist">
-                <li data-src="./src/audio/Adonai.mp3" class="active">Adonai</li>
-                <li data-src="./src/audio/Bullet-The-Blue-Sky.mp3">Bullet The Blue Sky</li>
-                <li data-src="./src/audio/De-Joelhos.mp3">De Joelhos</li>
-                <li data-src="./src/audio/Angel-Of-Light.mp3">Angel Of Light</li>
-                <li data-src="./src/audio/City-Of-Blinding-Lights.mp3">City Of Blinding Lights</li>
-                <li data-src="./src/audio/Depois-Da-Guerra.mp3">Depois Da Guerra</li>
-                <li data-src="./src/audio/Back-To-The-Rock.mp3">Back To the Rock</li>
-                <li data-src="./src/audio/Elevation.mp3">Elevation</li>
-                <li data-src="./src/audio/Meus-Passos.mp3">Meus Passos</li>
-                <li data-src="./src/audio/Bema-Seat.mp3">Bema Seat</li>
-                <li data-src="./src/audio/Every-Breaking-Wave.mp3">Every Breaking Wave</li>
-                <li data-src="./src/audio/Meus-Próprios-Meios.mp3">Meus Próprios Meios</li>
-                <li data-src="./src/audio/Clean.mp3">Clean</li>
-                <li data-src="./src/audio/Invisible.mp3">Invisible</li>
-                <li data-src="./src/audio/Muros.mp3">Muros</li>
-                <li data-src="./src/audio/Grave-Robber.mp3">Grave Robber</li>
-                <li data-src="./src/audio/I-Still-Haven't-Found-What-I'm-Looking-For.mp3">I Still Haven't Found What I'm
-                  Looking For</li>
-                <li data-src="./src/audio/Obediência.mp3">Obediência</li>
-                <li data-src="./src/audio/Pride.mp3">Pride</li>
-                <li data-src="./src/audio/Until-The-End-Of-The-World.mp3">Until The End Of The World</li>
-                <li data-src="./src/audio/Vertigo.mp3">Vertigo</li>
-              </ul>
-            </div>
-
-            <div class="text-container">
-              <a href="https://www.bibliatodo.com/pt/recursos/" title="https://www.bibliatodo.com/pt/recursos/"
-                target="_blank">Bible</a>
-              <iframe id="versiculo-del-dia" src="https://www.bibliatodo.com/pt/online/versiculo-del-dia-texto-2"
-                frameborder="0" scrolling="no">
-              </iframe>
-            </div>
-
+        <div class="painel-lateral" id="meuPainel">
+          <button onclick="toggleMenu1()">
+            <img src="./src/imagens/seta.png" alt="botao da barra lateral">
+          </button>
+          <div class="player-container">
+            <h3>My playlist</h3>
+            <audio id="audioPlayer" controls autoplay>
+              <source src="" type="audio/mpeg">
+              Seu navegador não suporta áudio HTML5.
+            </audio>
+            <ul id="playlist">
+              <li data-src="./src/audio/Adonai.mp3" class="active">Adonai</li>
+              <li data-src="./src/audio/Bullet-The-Blue-Sky.mp3">Bullet The Blue Sky</li>
+              <li data-src="./src/audio/De-Joelhos.mp3">De Joelhos</li>
+              <li data-src="./src/audio/Angel-Of-Light.mp3">Angel Of Light</li>
+              <li data-src="./src/audio/City-Of-Blinding-Lights.mp3">City Of Blinding Lights</li>
+              <li data-src="./src/audio/Depois-Da-Guerra.mp3">Depois Da Guerra</li>
+              <li data-src="./src/audio/Back-To-The-Rock.mp3">Back To the Rock</li>
+              <li data-src="./src/audio/Elevation.mp3">Elevation</li>
+              <li data-src="./src/audio/Meus-Passos.mp3">Meus Passos</li>
+              <li data-src="./src/audio/Bema-Seat.mp3">Bema Seat</li>
+              <li data-src="./src/audio/Every-Breaking-Wave.mp3">Every Breaking Wave</li>
+              <li data-src="./src/audio/Meus-Próprios-Meios.mp3">Meus Próprios Meios</li>
+              <li data-src="./src/audio/Clean.mp3">Clean</li>
+              <li data-src="./src/audio/Invisible.mp3">Invisible</li>
+              <li data-src="./src/audio/Muros.mp3">Muros</li>
+              <li data-src="./src/audio/Grave-Robber.mp3">Grave Robber</li>
+              <li data-src="./src/audio/I-Still-Haven't-Found-What-I'm-Looking-For.mp3">I Still Haven't Found What I'm
+                Looking For</li>
+              <li data-src="./src/audio/Obediência.mp3">Obediência</li>
+              <li data-src="./src/audio/Pride.mp3">Pride</li>
+              <li data-src="./src/audio/Until-The-End-Of-The-World.mp3">Until The End Of The World</li>
+              <li data-src="./src/audio/Vertigo.mp3">Vertigo</li>
+            </ul>
+          </div>
+          <div class="text-container">
+            <a href="https://www.bibliatodo.com/pt/recursos/" title="https://www.bibliatodo.com/pt/recursos/"
+              target="_blank">Bible</a>
+            <iframe id="versiculo-del-dia" src="https://www.bibliatodo.com/pt/online/versiculo-del-dia-texto-2"
+              frameborder="0" scrolling="no">
+            </iframe>
           </div>
         </div>
       </section>
