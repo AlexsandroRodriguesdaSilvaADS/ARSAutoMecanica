@@ -69,25 +69,23 @@
         gap: 10px;
     }
 
-    .player-container li {
-        padding-left: 2px;
-    }
-
     .home .painel-lateral {
         flex-direction: column;
         top: -600px;
-        right: -125px;
         width: 400px;
         height: 600px;
-        gap: 0;
     }
 
     .home .painel-lateral.ativo {
-        transform: translateY(600px);
+        transform: translateY(630px);
     }
 
     .home .painel-lateral img {
-        left: 125px;
+        right: 35px;
+    }
+
+    .player-container li {
+        padding-left: 2px;
     }
 
     .player-container li.active {
@@ -97,7 +95,7 @@
     .overlay {
         box-sizing: border-box;
         width: 95%;
-        margin: 0 10px 0 10px;
+        margin: 15px 10px 0 10px;
     }
 
     .popup form .botoes {

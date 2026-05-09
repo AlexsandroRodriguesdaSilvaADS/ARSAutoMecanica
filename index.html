@@ -95,9 +95,6 @@
         </div>
 
         <div class="painel-lateral" id="meuPainel">
-          <button onclick="toggleMenu1()">
-            <img src="./src/imagens/seta.png" alt="botao da barra lateral">
-          </button>
           <div class="player-container">
             <h3>My playlist</h3>
             <audio id="audioPlayer" controls autoplay>
@@ -131,11 +128,14 @@
           </div>
           <div class="text-container">
             <a href="https://www.bibliatodo.com/pt/recursos/" title="https://www.bibliatodo.com/pt/recursos/"
-              target="_blank">Bible</a>
+              target="_blank">Bíblia</a>
             <iframe id="versiculo-del-dia" src="https://www.bibliatodo.com/pt/online/versiculo-del-dia-texto-2"
               frameborder="0" scrolling="no">
             </iframe>
           </div>
+          <button onclick="toggleMenu1()">
+            <img src="./src/imagens/seta.png" alt="botao da barra lateral" />
+          </button>
         </div>
       </section>
 
@@ -371,6 +371,7 @@
     </footer>
 
   </section>
+  <script defer src="https://cdn.bibliatodo.com/assets/js/verselinker.js" lang="pt" version="ACF"></script>
 </body>
 
 </html>
