@@ -20,6 +20,10 @@
         align-items: center;
     }
 
+    .home .painel-lateral img {
+        right: 175px;
+    }
+
     .servicos .container-servicos {
         padding: 0 30px;
     }
@@ -69,6 +73,23 @@
         padding-left: 2px;
     }
 
+    .home .painel-lateral {
+        flex-direction: column;
+        top: -600px;
+        right: -125px;
+        width: 400px;
+        height: 600px;
+        gap: 0;
+    }
+
+    .home .painel-lateral.ativo {
+        transform: translateY(600px);
+    }
+
+    .home .painel-lateral img {
+        left: 125px;
+    }
+
     .player-container li.active {
         max-width: 100%;
     }
@@ -110,6 +131,7 @@
         gap: 100px;
     }
 
+    /*
     .home .painel-lateral {
         width: 360px;
         right: -400px;
@@ -118,7 +140,7 @@
     .home .painel-lateral.ativo img {
         margin-right: 5px;
     }
-
+*/
     .servicos .servico p {
         font-size: 12px;
     }
