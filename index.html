@@ -85,36 +85,6 @@
           </ul>
         </div>
 
-        <div class="overlay" id="overlay">
-          <div class="popup">
-            <h2>Agendamento</h2>
-            <form id="formulario">
-              <label for="name">Nome Completo*</label>
-              <input type="text" name="name" id="nome" required>
-              <label for="email">E-mail</label>
-              <input type="email" name="email" id="email">
-              <label for="contato">Telefone para Contato*</label>
-              <input type="text" name="contato" id="contato" required>
-              <label for="dataAgendamento">Data e horário*
-                <br>(das 8:00h às 18:00h)</label>
-
-              <div id="dataHora">
-                <input type="date" id="dataAgendamento" name="dataAgendamento" required>
-                <input type="time" min="08:00" max="18:00" id="horaAgendamento" name="horaAgendamento" required>
-              </div>
-
-              <label for="character">Observações</label>
-              <textarea name="character" cols="30" rows="5" id="mensagem"
-                placeholder="Decreva os problemas ou alterações que você percebeu"></textarea>
-              <label for="informacoes">*itens obrigatórios</label>
-              <div class="botoes">
-                <button type="submit" id="btnSubscribe" title="Enviar os dados">Enviar</button>
-                <a id="btnFechar" onclick="toggleMenu2()">Fechar</a>
-              </div>
-            </form>
-          </div>
-        </div>
-
         <div class="container-foto">
           <div class="foto-video">
             <video src="./src/video/skyline-gtr-r34.mp4" autoplay muted loop
@@ -168,6 +138,36 @@
           </div>
         </div>
       </section>
+
+      <div class="overlay" id="overlay">
+        <div class="popup">
+          <h2>Agendamento</h2>
+          <form id="formulario">
+            <label for="name">Nome Completo*</label>
+            <input type="text" name="name" id="nome" required>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+            <label for="contato">Telefone para Contato*</label>
+            <input type="text" name="contato" id="contato" required>
+            <label for="dataAgendamento">Data e horário*
+              <br>(das 8:00h às 18:00h)</label>
+
+            <div id="dataHora">
+              <input type="date" id="dataAgendamento" name="dataAgendamento" required>
+              <input type="time" min="08:00" max="18:00" id="horaAgendamento" name="horaAgendamento" required>
+            </div>
+
+            <label for="character">Observações</label>
+            <textarea name="character" cols="30" rows="5" id="mensagem"
+              placeholder="Decreva os problemas ou alterações que você percebeu"></textarea>
+            <label for="informacoes">*itens obrigatórios</label>
+            <div class="botoes">
+              <button type="submit" id="btnSubscribe" title="Enviar os dados">Enviar</button>
+              <a id="btnFechar" onclick="toggleMenu2()">Fechar</a>
+            </div>
+          </form>
+        </div>
+      </div>
 
       <section class="servicos">
         <h2 class="titulo" id="servicos">Meus Serviços</h2>
