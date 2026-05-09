@@ -1,8 +1,4 @@
 @media(max-width: 1280px) {
-    .background {
-        background: url("../imagens/bmw-m3-gtr.webp") center / cover no-repeat scroll;
-    }
-
     .main {
         padding: 0;
     }
