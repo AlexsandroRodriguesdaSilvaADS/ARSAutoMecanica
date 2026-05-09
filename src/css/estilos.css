@@ -11,7 +11,7 @@ body {
 }
 
 .background {
-	background: url("../imagens/bmw-m3-gtr.webp") center / cover no-repeat;
+	background: url("../imagens/bmw-m3-gtr.webp") center / cover no-repeat fixed;
 	max-width: 1300px;
 	min-height: 100vh;
 	margin: auto;
