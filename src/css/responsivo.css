@@ -1,4 +1,8 @@
 @media(max-width: 1280px) {
+    body {
+        background: url("../imagens/logo-p.png") center / scroll no-repeat fixed;
+    }
+
     .main {
         padding: 0;
     }
