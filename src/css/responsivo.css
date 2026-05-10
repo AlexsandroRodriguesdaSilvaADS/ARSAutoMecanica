@@ -19,9 +19,9 @@
         text-align: center;
         align-items: center;
     }
-
+    
     .home .painel-lateral img {
-        right: 175px;
+        right: 210px;
     }
 
     .servicos .container-servicos {
@@ -81,7 +81,7 @@
     }
 
     .home .painel-lateral img {
-        right: 35px;
+        right: 50px;
     }
 
     .player-container li {
