@@ -125,6 +125,10 @@
         font-size: 15px;
     }
 
+    .overlay {
+        margin: 15px 8px 0 8px;
+    }
+
     .popup form .botoes {
         gap: 100px;
     }
