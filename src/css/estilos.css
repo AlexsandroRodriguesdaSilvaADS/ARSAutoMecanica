@@ -130,8 +130,8 @@ body {
 
 /* DIV OVERLAY-FORMULÁRIO */
 .overlay {
-	display: none;
 	background: url("../imagens/logo-p.png") center / cover no-repeat;
+	display: none;
 	position: fixed;
 	width: 500px;
 	top: 30px;
