@@ -64,6 +64,7 @@ body {
 }
 
 .home .informacoes {
+	font-family: "Raleway", sans-serif;
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
@@ -73,13 +74,11 @@ body {
 }
 
 .home .informacoes h1 {
-	font-family: "Raleway", sans-serif;
 	font-size: 45px;
 	margin-bottom: 20px;
 }
 
 .home .informacoes p {
-	font-family: "Raleway", sans-serif;
 	font-size: 24px;
 	margin-bottom: 20px;
 }
@@ -267,8 +266,7 @@ body {
 	padding: 10px;
 	border-radius: 10px;
 	width: 300px;
-	height: 300px;
-	max-width: 100%;
+	height: 280px;
 }
 
 .home .painel-lateral .player-container audio {
@@ -310,20 +308,19 @@ body {
 }
 
 .home .painel-lateral .text-container {
-	background-color: rgba(21, 60, 93, 1);
+	background-color: rgb(21, 60, 93);
 	border: 1px #fff solid;
-	margin-bottom: 10px;
 	padding: 2px;
 	margin: 5px;
 	border-radius: 10px;
-	width: 300px;
-	height: 300px;
+	min-width: 36vw;
+	height: 280px;
 	text-align: center;
 }
 
 .home .painel-lateral .text-container iframe#versiculo-del-dia {
 	width: 100%;
-	height: 89%;
+	height: 35vh;
 	pointer-events: none;
 }
 
