@@ -80,9 +80,9 @@
         transform: translateY(625px);
     }
 
-    .home .painel-lateral img {
-        right: 50px;
-    }
+.cabecalho #seta {
+    right: 8%;
+}
 
     .player-container li {
         padding-left: 2px;

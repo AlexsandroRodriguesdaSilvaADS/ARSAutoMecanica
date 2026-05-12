@@ -149,3 +149,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // 3. Definir o atributo 'min' do campo para a data de hoje
     campoData.setAttribute('min', hoje);
 });
+
+
+//ROTACIONAR IMAGEM
+
+const imagem = document.getElementById('seta');
+imagem.addEventListener('click', function() {
+  imagem.classList.toggle('girar');
+});
