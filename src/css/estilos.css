@@ -55,7 +55,7 @@ body {
 }
 
 .cabecalho #seta {
-	position: absolute;
+	position: fixed;
 	top: 5px;
 	right: 15%;
 	width: 30px;
