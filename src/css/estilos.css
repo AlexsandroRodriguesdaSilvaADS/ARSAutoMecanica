@@ -46,6 +46,7 @@ body {
 	text-transform: capitalize;
 	padding: 10px 20px;
 	transition: 0.2s;
+	box-shadow: 0 0 10px #fff;
 }
 
 .cabecalho .menu li a:hover {
@@ -121,6 +122,7 @@ body {
 	text-align: center;
 	font-size: 24px;
 	transition: 0.3s;
+	box-shadow: 0 0 10px #fff;
 }
 
 .home .informacoes a#endereço:hover {
@@ -465,6 +467,7 @@ body {
 .servicos .btn-ocultar-servicos {
 	background: none;
 	border: 1px solid #fff;
+	box-shadow: 0 0 10px #fff;
 	border-radius: 15px;
 	color: #fff;
 	width: 180px;
