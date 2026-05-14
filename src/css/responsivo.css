@@ -42,6 +42,15 @@
         font-size: 18px;
     }
 
+    .home .informacoes div#endereço {
+        background-color: rgba(21, 60, 93, 0.8);
+        width: 250px;
+        position: fixed;
+        bottom: 6px;
+        font-size: 18px;
+        z-index: 2;
+    }
+
     .cabecalho .logo {
         width: 120px;
         height: 110px;
@@ -110,9 +119,10 @@
         font-size: 12;
     }
     
-.servicos .servico .informacoes-servico .link-agendamento {
+    .servicos .servico .informacoes-servico .link-agendamento {
 	font-size: 16px;
-}
+    }
+
 }
 
 @media(max-width: 320px) {
