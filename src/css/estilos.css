@@ -379,10 +379,12 @@ body {
 /* SESSÃO DOS SERVIÇOS */
 
 .carrossel {
+	background-color: #ca2a02;
+	width: 1100px;
 	max-width: 400px;
 	overflow: hidden;
 	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	/*	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);*/
 }
 
 .slides {
@@ -391,14 +393,16 @@ body {
 }
 
 .slides img {
-	max-width: 100%;
+	width: 100%;
+
+	/*max-width: 100%;*/
 	object-fit: contain;
 	display: block;
 }
 
-button {
-	position: absolute;
-	top: 50%;
+.button {
+	position: relative;
+	/*top: 50%;*/
 	transform: translateY(-50%);
 	width: 35px;
 	height: 35px;
@@ -411,17 +415,18 @@ button {
 	transition: background-color 0.2s ease;
 }
 
-button:hover {
+.button:hover {
 	background-color: rgba(0, 0, 0, 0.75);
 }
 
-.esquerda {
+#esquerda {
 	left: 10px;
 }
 
-.direita {
+#direita {
 	right: 10px;
 }
+
 
 .servicos {
 	padding: 70px 0 70px;
