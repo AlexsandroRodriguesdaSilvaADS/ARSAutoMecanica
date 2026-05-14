@@ -377,6 +377,52 @@ body {
 }
 
 /* SESSÃO DOS SERVIÇOS */
+
+.carrossel {
+	max-width: 400px;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.slides {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+	max-width: 100%;
+	object-fit: contain;
+	display: block;
+}
+
+button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	border: none;
+	background: black;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+button:hover {
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+.esquerda {
+	left: 10px;
+}
+
+.direita {
+	right: 10px;
+}
+
 .servicos {
 	padding: 70px 0 70px;
 }
