@@ -283,14 +283,14 @@ body {
 	width: 450px;
 	border-radius: 50%;
 	position: absolute;
-	z-index: 1;
+	/*z-index: 1;*/
 }
 
 .home .container-foto .foto-video img {
 	max-width: 100%;
 	border-radius: 50%;
 	position: relative;
-	z-index: 2;
+	z-index: 1;
 }
 
 /* DIV PAINEL-LATERAL */
