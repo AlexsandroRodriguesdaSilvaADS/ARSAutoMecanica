@@ -20,6 +20,12 @@
         align-items: center;
     }
 
+    .home .agendamento-ul {
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    /*
     .servicos .container-servicos {
         padding: 0 30px;
     }
@@ -30,7 +36,7 @@
 
     .servicos h3 {
         font-size: 14px;
-    }
+    }*/
 }
 
 @media(max-width: 425px) {
@@ -115,6 +121,11 @@
         max-width: 300px;
         max-height: 300px;
         margin: auto;
+    }
+
+    .thumb {
+        width: 55px;
+        height: 55px;
     }
 
     /*
