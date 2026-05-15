@@ -497,7 +497,69 @@ body {
 }
 
 
-/*OPINIÕES*/
+/*CARROSSEL*/
+.carousel-container {
+	padding: 70px 0 70px;
+	position: relative;
+	max-width: 1100px;
+	margin: auto;
+	text-align: center;
+	/*overflow: hidden;*/
+}
+
+.carousel-slide img {
+	height: 360px;
+	width: 360px;
+	border-radius: 8px;
+}
+
+.nav-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	border: none;
+	padding: 16px;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+#prevBtn {
+	left:370px;
+}
+
+#nextBtn {
+	right: 370px;
+}
+
+.carousel-thumbnails {
+	width: 100%;
+	margin-top: 15px;
+	display: flex;
+	padding: auto;
+	justify-content: center;
+	gap: 10px;
+}
+
+.thumb {
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+	opacity: 0.6;
+	border-radius: 4px;
+	transition: opacity 0.3s ease;
+}
+
+.thumb.active,
+.thumb:hover {
+	opacity: 1;
+	border: 2px solid #007bff;
+	transform: scale(1.1);
+}
+
+
+/*
 .carrossel {
 	background-color: #ca2a02;
 	max-width: 260px;
@@ -541,7 +603,8 @@ body {
 
 #direita {
 	right: 10px;
-}
+}*/
+
 
 /* RODAPÉ */
 .footer {

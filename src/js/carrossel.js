@@ -1,3 +1,4 @@
+/*
 const slides = document.querySelector('.slides');
 const imagens = document.querySelectorAll('.slides img');
 const btnEsq = document.querySelector('.esquerdo');
@@ -22,4 +23,75 @@ btnEsq.addEventListener('click', () => {
 setInterval(() => {
   index = (index + 1) % imagens.length;
   mostrarSlide();
-}, 3000);
+}, 3000);*/
+
+// Lista com as URLs das imagens principais
+const images = [
+  "./src/imagens/embreagem.webp",
+  "./src/imagens/amortecedores.webp",
+  "./src/imagens/coxins-batedores-coifas.webp",
+  "./src/imagens/bandeja.webp",
+  "./src/imagens/bucha-traseira.webp",
+  "./src/imagens/discos-de-freio.webp",
+  "./src/imagens/pastilhas-de-freio.webp",
+  "./src/imagens/lonas-de-freio.webp",
+  "./src/imagens/cilindro-mestre.webp",
+  "./src/imagens/servo-freio.webp",
+  "./src/imagens/junta-homocinetica.webp",
+  "./src/imagens/deslizante-e-trizeta.webp",
+  "./src/imagens/eixo-completo.webp",
+  "./src/imagens/kit-radiador.webp",
+  "./src/imagens/coxins-do-motor.webp",
+  "./src/imagens/correia-e-rolamento.webp"
+];
+
+let currentIndex = 0;
+let autoPlayInterval;
+const mainImage = document.getElementById("active-img");
+const thumbnails = document.querySelectorAll(".thumb");
+
+// Função para atualizar a imagem e as miniaturas
+function changeImage(index) {
+  currentIndex = index;
+
+  // Atualiza a imagem principal
+  mainImage.src = images[currentIndex];
+
+  // Atualiza o destaque das miniaturas
+  thumbnails.forEach((thumb, i) => {
+    thumb.classList.toggle("active", i === currentIndex);
+  });
+}
+
+// Avança para a próxima imagem
+function nextImage() {
+  let nextIndex = (currentIndex + 1) % images.length;
+  changeImage(nextIndex);
+}
+
+// Volta para a imagem anterior
+function prevImage() {
+  let prevIndex = (currentIndex - 1 + images.length) % images.length;
+  changeImage(prevIndex);
+}
+
+// Configura o Carrossel Automático (avança a cada 4 segundos)
+function startAutoPlay() {
+  autoPlayInterval = setInterval(nextImage, 3000);
+}
+
+// Pausa o carrossel automático quando o mouse passa por cima
+document.querySelector(".carousel-container").addEventListener("mouseenter", () => {
+  clearInterval(autoPlayInterval);
+});
+
+// Retoma o carrossel automático quando o mouse sai
+document.querySelector(".carousel-container").addEventListener("mouseleave", startAutoPlay);
+
+// Adiciona eventos aos botões
+document.getElementById("nextBtn").addEventListener("click", nextImage);
+document.getElementById("prevBtn").addEventListener("click", prevImage);
+
+// Inicia o autoplay na carga da página
+startAutoPlay();
+
