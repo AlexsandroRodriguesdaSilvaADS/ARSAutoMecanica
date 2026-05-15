@@ -81,12 +81,12 @@ function startAutoPlay() {
 }
 
 // Pausa o carrossel automático quando o mouse passa por cima
-document.querySelector(".carousel-container").addEventListener("mouseenter", () => {
+document.querySelector(".carousel-slide").addEventListener("mouseenter", () => {
   clearInterval(autoPlayInterval);
 });
 
 // Retoma o carrossel automático quando o mouse sai
-document.querySelector(".carousel-container").addEventListener("mouseleave", startAutoPlay);
+document.querySelector(".carousel-slide").addEventListener("mouseleave", startAutoPlay);
 
 // Adiciona eventos aos botões
 document.getElementById("nextBtn").addEventListener("click", nextImage);

@@ -501,10 +501,15 @@ body {
 .carousel-container {
 	padding: 70px 0 70px;
 	position: relative;
-	max-width: 1100px;
+	max-width: 780px;
 	margin: auto;
 	text-align: center;
-	/*overflow: hidden;*/
+	overflow: hidden;
+}
+
+.carousel-slide {
+	max-width: 360px;
+	margin: auto;
 }
 
 .carousel-slide img {
@@ -515,8 +520,8 @@ body {
 
 .nav-btn {
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 33.333%;
+	transform: translateY(-33.333%);
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #fff;
 	border: none;
@@ -526,18 +531,18 @@ body {
 }
 
 #prevBtn {
-	left:370px;
+	left: 27%;
 }
 
 #nextBtn {
-	right: 370px;
+	right: 27%;
 }
 
 .carousel-thumbnails {
 	width: 100%;
 	margin-top: 15px;
 	display: flex;
-	padding: auto;
+	flex-wrap: wrap;
 	justify-content: center;
 	gap: 10px;
 }
@@ -554,7 +559,6 @@ body {
 .thumb.active,
 .thumb:hover {
 	opacity: 1;
-	border: 2px solid #007bff;
 	transform: scale(1.1);
 }
 

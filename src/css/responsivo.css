@@ -107,6 +107,17 @@
         gap: 130px;
     }
 
+    .carousel-container {
+        max-width: 700px;
+    }
+
+    .carousel-slide img {
+        max-width: 300px;
+        max-height: 300px;
+        margin: auto;
+    }
+
+    /*
     .servicos {
         padding: 30px;
     }
@@ -118,10 +129,10 @@
     .servicos h3 {
         font-size: 12;
     }
-    
+
     .servicos .servico .informacoes-servico .link-agendamento {
-	font-size: 16px;
-    }
+        font-size: 16px;
+    }*/
 
 }
 
@@ -143,6 +154,8 @@
         gap: 100px;
     }
 
+
+    /*
     .servicos .servico p {
         font-size: 12px;
     }
@@ -150,6 +163,6 @@
     .servicos .servico .informacoes-servico .link-agendamento {
         bottom: 0;
         font-size: 12px;
-    }
+    }*/
 
 }
