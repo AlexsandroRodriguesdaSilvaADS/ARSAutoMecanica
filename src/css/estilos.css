@@ -501,27 +501,33 @@ body {
 .carousel-container {
 	padding: 70px 0 70px;
 	position: relative;
-	max-width: 780px;
+	max-width: 100%;
 	margin: auto;
 	text-align: center;
-	overflow: hidden;
+/*	overflow: hidden;*/
 }
 
 .carousel-slide {
-	max-width: 360px;
+	background-color: rgba(21, 60, 93, 0.7);
+	border: 1px #fff solid;
+	border-radius: 5%;
+	box-shadow: 0 0 10px #fff;
+	max-width: 460px;
 	margin: auto;
+	display: flex;
+	flex-direction: column;
 }
 
 .carousel-slide img {
-	height: 360px;
-	width: 360px;
+	height: 460px;
+	width: 460px;
 	border-radius: 8px;
 }
 
 .nav-btn {
 	position: absolute;
-	top: 33.333%;
-	transform: translateY(-33.333%);
+	top: 40%;
+	transform: translateY(-40%);
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #fff;
 	border: none;
@@ -531,25 +537,28 @@ body {
 }
 
 #prevBtn {
-	left: 28%;
+	left: 29%;
 }
 
 #nextBtn {
-	right: 28%;
+	right: 29%;
 }
 
 .carousel-thumbnails {
-	width: 100%;
 	margin-top: 15px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 10px;
+	gap: 5px;
 }
 
 .thumb {
-	width: 80px;
-	height: 80px;
+	background-color: rgba(21, 60, 93, 0.7);
+	border: 1px #fff solid;
+	border-radius: 5%;
+	box-shadow: 0 0 10px #fff;
+	width: 60px;
+	height: 60px;
 	cursor: pointer;
 	opacity: 0.6;
 	border-radius: 4px;
@@ -561,54 +570,6 @@ body {
 	opacity: 1;
 	transform: scale(1.1);
 }
-
-
-/*
-.carrossel {
-	background-color: #ca2a02;
-	max-width: 260px;
-	overflow: hidden;
-	border-radius: 10px;
-}
-
-.slides {
-	display: flex;
-	transition: transform 0.5s ease-in-out;
-}
-
-.slides img {
-	width: 100%;
-	object-fit: cover;
-	display: block;
-}
-
-.button {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 35px;
-	height: 35px;
-	border-radius: 50%;
-	border: none;
-	background: black;
-	color: white;
-	font-size: 20px;
-	cursor: pointer;
-	transition: background-color 0.2s ease;
-}
-
-.button:hover {
-	background-color: rgba(0, 0, 0, 0.75);
-}
-
-#esquerda {
-	left: 10px;
-}
-
-#direita {
-	right: 10px;
-}*/
-
 
 /* RODAPÉ */
 .footer {

@@ -27,22 +27,22 @@ setInterval(() => {
 
 // Lista com as URLs das imagens principais
 const images = [
-  "./src/imagens/embreagem.webp",
-  "./src/imagens/amortecedores.webp",
-  "./src/imagens/coxins-batedores-coifas.webp",
-  "./src/imagens/bandeja.webp",
-  "./src/imagens/bucha-traseira.webp",
-  "./src/imagens/discos-de-freio.webp",
-  "./src/imagens/pastilhas-de-freio.webp",
-  "./src/imagens/lonas-de-freio.webp",
-  "./src/imagens/cilindro-mestre.webp",
-  "./src/imagens/servo-freio.webp",
-  "./src/imagens/junta-homocinetica.webp",
-  "./src/imagens/deslizante-e-trizeta.webp",
-  "./src/imagens/eixo-completo.webp",
-  "./src/imagens/kit-radiador.webp",
-  "./src/imagens/coxins-do-motor.webp",
-  "./src/imagens/correia-e-rolamento.webp"
+  "./src/imagens/embreagem-alfa.webp",
+  "./src/imagens/amortecedores-alfa.webp",
+  "./src/imagens/coxins-batedores-coifas-alfa.webp",
+  "./src/imagens/bandeja-alfa.webp",
+  "./src/imagens/bucha-traseira-alfa.webp",
+  "./src/imagens/discos-de-freio-alfa.webp",
+  "./src/imagens/pastilhas-de-freio-alfa.webp",
+  "./src/imagens/lonas-de-freio-alfa.webp",
+  "./src/imagens/cilindro-mestre-alfa.webp",
+  "./src/imagens/servo-freio-alfa.webp",
+  "./src/imagens/junta-homocinetica-alfa.webp",
+  "./src/imagens/deslizante-e-trizeta-alfa.webp",
+  "./src/imagens/eixo-completo-alfa.webp",
+  "./src/imagens/kit-radiador-alfa.webp",
+  "./src/imagens/coxins-do-motor-alfa.webp",
+  "./src/imagens/correia-e-rolamento-alfa.webp"
 ];
 
 let currentIndex = 0;
@@ -77,7 +77,7 @@ function prevImage() {
 
 // Configura o Carrossel Automático (avança a cada 4 segundos)
 function startAutoPlay() {
-  autoPlayInterval = setInterval(nextImage, 3000);
+  autoPlayInterval = setInterval(nextImage, 4000);
 }
 
 // Pausa o carrossel automático quando o mouse passa por cima
