@@ -416,9 +416,8 @@ body {
 }
 
 .nav-btn {
-	background-color: #CA2A02;
 	position: absolute;
-	top: 50%;
+	top: 55.5vh;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #fff;
 	border: none;
@@ -428,11 +427,11 @@ body {
 }
 
 #prevBtn {
-	left: 29%;
+	left: 30%;
 }
 
 #nextBtn {
-	right: 29%;
+	right: 30%;
 }
 
 .carousel-thumbnails {
