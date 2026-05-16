@@ -26,23 +26,24 @@ setInterval(() => {
 }, 3000);*/
 
 // Lista com as URLs das imagens principais
+// ALTERAÇÃO 1: Array agora armazena Objetos (imagem + título)
 const images = [
-  "./src/imagens/embreagem-alfa.webp",
-  "./src/imagens/amortecedores-alfa.webp",
-  "./src/imagens/coxins-batedores-coifas-alfa.webp",
-  "./src/imagens/bandeja-alfa.webp",
-  "./src/imagens/bucha-traseira-alfa.webp",
-  "./src/imagens/discos-de-freio-alfa.webp",
-  "./src/imagens/pastilhas-de-freio-alfa.webp",
-  "./src/imagens/lonas-de-freio-alfa.webp",
-  "./src/imagens/cilindro-mestre-alfa.webp",
-  "./src/imagens/servo-freio-alfa.webp",
-  "./src/imagens/junta-homocinetica-alfa.webp",
-  "./src/imagens/deslizante-e-trizeta-alfa.webp",
-  "./src/imagens/eixo-completo-alfa.webp",
-  "./src/imagens/kit-radiador-alfa.webp",
-  "./src/imagens/coxins-do-motor-alfa.webp",
-  "./src/imagens/correia-e-rolamento-alfa.webp"
+  { src: "./src/imagens/embreagem-alfa.webp", title: "Embreagem" },
+  { src: "./src/imagens/amortecedores-alfa.webp", title: "Amortecedores" },
+  { src: "./src/imagens/coxins-batedores-coifas-alfa.webp", title: "Coxins, Batedores e Coifas" },
+  { src: "./src/imagens/bandeja-alfa.webp", title: "Bandeja de Suspensão" },
+  { src: "./src/imagens/bucha-traseira-alfa.webp", title: "Bucha Traseira" },
+  { src: "./src/imagens/discos-de-freio-alfa.webp", title: "Discos de Freio" },
+  { src: "./src/imagens/pastilhas-de-freio-alfa.webp", title: "Pastilhas de Freio" },
+  { src: "./src/imagens/lonas-de-freio-alfa.webp", title: "Lonas de Freio" },
+  { src: "./src/imagens/cilindro-mestre-alfa.webp", title: "Cilindro Mestre" },
+  { src: "./src/imagens/servo-freio-alfa.webp", title: "Servo Freio" },
+  { src: "./src/imagens/junta-homocinetica-alfa.webp", title: "Junta Homocinética" },
+  { src: "./src/imagens/deslizante-e-trizeta-alfa.webp", title: "Deslizante e Trizeta" },
+  { src: "./src/imagens/eixo-completo-alfa.webp", title: "Eixo Completo" },
+  { src: "./src/imagens/kit-radiador-alfa.webp", title: "Kit Radiador" },
+  { src: "./src/imagens/coxins-do-motor-alfa.webp", title: "Coxins do Motor" },
+  { src: "./src/imagens/correia-e-rolamento-alfa.webp", title: "Correia e Rolamento" }
 ];
 
 let currentIndex = 0;
@@ -50,12 +51,17 @@ let autoPlayInterval;
 const mainImage = document.getElementById("active-img");
 const thumbnails = document.querySelectorAll(".thumb");
 
-// Função para atualizar a imagem e as miniaturas
+// ALTERAÇÃO 2: Mapear o elemento de texto do HTML
+const carouselTitle = document.getElementById("carousel-title"); 
+
 function changeImage(index) {
   currentIndex = index;
 
-  // Atualiza a imagem principal
-  mainImage.src = images[currentIndex];
+  // ALTERAÇÃO 3: Agora buscamos a propriedade .src do objeto
+  mainImage.src = images[currentIndex].src;
+  
+  // ALTERAÇÃO 4: Atualiza o texto do título com a propriedade .title do objeto
+  carouselTitle.textContent = images[currentIndex].title;
 
   // Atualiza o destaque das miniaturas
   thumbnails.forEach((thumb, i) => {
@@ -75,23 +81,45 @@ function prevImage() {
   changeImage(prevIndex);
 }
 
-// Configura o Carrossel Automático (avança a cada 4 segundos)
+// Configura o Carrossel Automático
 function startAutoPlay() {
-  autoPlayInterval = setInterval(nextImage, 4000);
+  stopAutoPlay();
+  autoPlayInterval = setInterval(nextImage, 3000);
 }
 
-// Pausa o carrossel automático quando o mouse passa por cima
-document.querySelector(".carousel-slide").addEventListener("mouseenter", () => {
+function stopAutoPlay() {
   clearInterval(autoPlayInterval);
+}
+
+function resetAutoPlay() {
+  stopAutoPlay();
+  startAutoPlay();
+}
+
+// Eventos das miniaturas
+thumbnails.forEach((thumb, index) => {
+  thumb.addEventListener("click", () => {
+    changeImage(index);
+    resetAutoPlay();
+  });
 });
 
-// Retoma o carrossel automático quando o mouse sai
+// Eventos de mouse para o autoplay
+document.querySelector(".carousel-slide").addEventListener("mouseenter", stopAutoPlay);
 document.querySelector(".carousel-slide").addEventListener("mouseleave", startAutoPlay);
 
-// Adiciona eventos aos botões
-document.getElementById("nextBtn").addEventListener("click", nextImage);
-document.getElementById("prevBtn").addEventListener("click", prevImage);
+// Eventos dos botões
+document.getElementById("nextBtn").addEventListener("click", () => {
+  nextImage();
+  resetAutoPlay();
+});
 
-// Inicia o autoplay na carga da página
+document.getElementById("prevBtn").addEventListener("click", () => {
+  prevImage();
+  resetAutoPlay();
+});
+
+// Inicia o carrossel exibindo o primeiro item corretamente
+changeImage(currentIndex);
 startAutoPlay();
 

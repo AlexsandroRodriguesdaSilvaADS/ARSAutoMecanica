@@ -55,10 +55,10 @@ body {
 	font-weight: bolder;
 }
 
-.cabecalho #seta {
+.cabecalho button #seta {
 	position: fixed;
 	top: 5px;
-	right: 15%;
+	right: 22%;
 	width: 30px;
 	height: 30px;
 	border: 1px #fff solid;
@@ -69,7 +69,7 @@ body {
 	z-index: 4;
 }
 
-.cabecalho #seta.girar {
+.cabecalho button #seta.girar {
 	transform: rotate(90deg);
 	transition: transform 0.7s ease;
 }
@@ -377,7 +377,7 @@ body {
 }
 
 /* SESSÃO DOS SERVIÇOS */
-.servicos {
+/*.servicos {
 	padding: 70px 0 70px;
 }
 
@@ -494,17 +494,25 @@ body {
 .servicos .btn-mostrar-servicos.remover,
 .btn-ocultar-servicos.remover {
 	display: none;
-}
+}*/
 
 
 /*CARROSSEL*/
 .carousel-container {
+	/*	background-color: #FE9E00;*/
 	padding: 70px 0 70px;
 	position: relative;
 	max-width: 100%;
 	margin: auto;
 	text-align: center;
-/*	overflow: hidden;*/
+}
+
+.carousel-container .titulo {
+	text-align: center;
+	padding: 60px 0;
+	font-size: 45px;
+	font-weight: 500;
+	text-transform: uppercase;
 }
 
 .carousel-slide {
@@ -516,6 +524,11 @@ body {
 	margin: auto;
 	display: flex;
 	flex-direction: column;
+}
+
+.carousel-slide h3 {
+	width: 100%;
+	margin-top: 10px;
 }
 
 .carousel-slide img {
