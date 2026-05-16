@@ -9,7 +9,7 @@ const images = [
   { src: "./src/imagens/pastilhas-de-freio-alfa.webp", title: "Pastilhas de Freio" },
   { src: "./src/imagens/lonas-de-freio-alfa.webp", title: "Lonas de Freio" },
   { src: "./src/imagens/cilindro-mestre-alfa.webp", title: "Cilindro Mestre" },
-  { src: "./src/imagens/servo-freio-alfa.webp", title: "Servo Freio (Hidrovácuo)" },
+  { src: "./src/imagens/servo-freio-alfa.webp", title: "Servo-freio (Hidrovácuo)" },
   { src: "./src/imagens/junta-homocinetica-alfa.webp", title: "Junta Homocinética" },
   { src: "./src/imagens/deslizante-e-trizeta-alfa.webp", title: "Junta Deslizante e Trizeta" },
   { src: "./src/imagens/eixo-completo-alfa.webp", title: "Semi-eixo Completo" },
