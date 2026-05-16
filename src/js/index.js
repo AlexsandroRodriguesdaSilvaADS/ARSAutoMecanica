@@ -14,7 +14,7 @@
 // Objetivo 1 - quando o usuário clicar no botão de mostrar mais deve abrir os projetos que estão escondidos no html
 
 // Passo 1 - pegar o botão mostrar mais no JS pra poder verificar quando o usuário clicar em cima dele
-/*const botaoMostrarProjetos = document.querySelector('.btn-mostrar-servicos');
+const botaoMostrarProjetos = document.querySelector('.btn-mostrar-servicos');
 const botaoOcultarProjetos = document.querySelector('.btn-ocultar-servicos');
 const projetosInativos = document.querySelectorAll('.servico:not(.ativo)');
 
@@ -52,7 +52,7 @@ function ocultarProjetos() {
     projetosInativos.forEach(projetoInativo => {
         projetoInativo.classList.remove('ativo');
     });
-}*/
+}
 
 
 //CONTROLE DAS MÚSICAS

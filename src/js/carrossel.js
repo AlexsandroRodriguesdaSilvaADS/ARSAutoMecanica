@@ -1,49 +1,21 @@
-/*
-const slides = document.querySelector('.slides');
-const imagens = document.querySelectorAll('.slides img');
-const btnEsq = document.querySelector('.esquerdo');
-const btnDir = document.querySelector('.direito');
-
-let index = 0;
-
-function mostrarSlide() {
-  slides.style.transform = `translateX(${-index * 100}%)`;
-}
-
-btnDir.addEventListener('click', () => {
-  index = (index + 1) % imagens.length;
-  mostrarSlide();
-});
-
-btnEsq.addEventListener('click', () => {
-  index = (index - 1 + imagens.length) % imagens.length;
-  mostrarSlide();
-});
-
-setInterval(() => {
-  index = (index + 1) % imagens.length;
-  mostrarSlide();
-}, 3000);*/
-
-// Lista com as URLs das imagens principais
 // ALTERAÇÃO 1: Array agora armazena Objetos (imagem + título)
 const images = [
-  { src: "./src/imagens/embreagem-alfa.webp", title: "Embreagem" },
+  { src: "./src/imagens/embreagem-alfa.webp", title: "Kit de Embreagem" },
   { src: "./src/imagens/amortecedores-alfa.webp", title: "Amortecedores" },
   { src: "./src/imagens/coxins-batedores-coifas-alfa.webp", title: "Coxins, Batedores e Coifas" },
   { src: "./src/imagens/bandeja-alfa.webp", title: "Bandeja de Suspensão" },
-  { src: "./src/imagens/bucha-traseira-alfa.webp", title: "Bucha Traseira" },
+  { src: "./src/imagens/bucha-traseira-alfa.webp", title: "Bucha da Suspensão Traseira" },
   { src: "./src/imagens/discos-de-freio-alfa.webp", title: "Discos de Freio" },
   { src: "./src/imagens/pastilhas-de-freio-alfa.webp", title: "Pastilhas de Freio" },
   { src: "./src/imagens/lonas-de-freio-alfa.webp", title: "Lonas de Freio" },
   { src: "./src/imagens/cilindro-mestre-alfa.webp", title: "Cilindro Mestre" },
-  { src: "./src/imagens/servo-freio-alfa.webp", title: "Servo Freio" },
+  { src: "./src/imagens/servo-freio-alfa.webp", title: "Servo Freio (Hidrovácuo)" },
   { src: "./src/imagens/junta-homocinetica-alfa.webp", title: "Junta Homocinética" },
-  { src: "./src/imagens/deslizante-e-trizeta-alfa.webp", title: "Deslizante e Trizeta" },
-  { src: "./src/imagens/eixo-completo-alfa.webp", title: "Eixo Completo" },
+  { src: "./src/imagens/deslizante-e-trizeta-alfa.webp", title: "Junta Deslizante e Trizeta" },
+  { src: "./src/imagens/eixo-completo-alfa.webp", title: "Semi-eixo Completo" },
   { src: "./src/imagens/kit-radiador-alfa.webp", title: "Kit Radiador" },
   { src: "./src/imagens/coxins-do-motor-alfa.webp", title: "Coxins do Motor" },
-  { src: "./src/imagens/correia-e-rolamento-alfa.webp", title: "Correia e Rolamento" }
+  { src: "./src/imagens/correia-e-rolamento-alfa.webp", title: "Correia de Assessórios e Rolamento" }
 ];
 
 let currentIndex = 0;
