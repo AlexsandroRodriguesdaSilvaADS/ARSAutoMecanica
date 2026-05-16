@@ -394,7 +394,7 @@ body {
 }
 
 .carousel-slide {
-	background-color: rgba(21, 60, 93, 0.7);
+	background-color: rgb(21, 60, 93);
 	border: 1px #fff solid;
 	border-radius: 5%;
 	box-shadow: 0 0 10px #fff;
