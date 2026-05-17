@@ -1,5 +1,5 @@
 
-//AGENDAMENTO FUTURO
+//DATA AGENDAMENTO
 
 document.addEventListener("DOMContentLoaded", function () {
     // 1. Obter a data atual no formato YYYY-MM-DD

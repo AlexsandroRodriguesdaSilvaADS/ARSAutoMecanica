@@ -802,127 +802,31 @@ body {
 	}
 }
 
-
-/* OPINIÕES */
-.container {
-	max-width: 650px;
-	margin: 0 auto;
-	background: #fff;
-	padding: 30px;
-	border-radius: 12px;
-	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-}
-
-.container h2 {
-	margin-bottom: 20px;
-	color: #111;
-	font-size: 24px;
-}
-
-/* --- Formulário --- */
-.container .form-grupo {
-	margin-bottom: 15px;
-}
-
-.container .form-grupo label {
-	display: block;
-	margin-bottom: 5px;
-	font-weight: 600;
-	font-size: 14px;
-	color: #555;
-}
-
-.container .form-grupo input[type="text"],
-.container .form-grupo textarea {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccd0d5;
-	border-radius: 8px;
-	font-size: 15px;
-	transition: border-color 0.2s;
-}
-
-.container .form-grupo input[type="text"]:focus,
-.container .form-grupo textarea:focus {
-	border-color: #0076df;
-	outline: none;
-}
-
-.container .form-grupo textarea {
-	height: 100px;
-	resize: vertical;
-}
-
-.container .form-grupo #enviar {
-	background-color: #0076df;
-	color: white;
-	border: none;
-	padding: 12px 20px;
-	font-size: 15px;
-	font-weight: bold;
-	border-radius: 8px;
-	cursor: pointer;
-	width: 100%;
-	transition: background 0.2s;
-}
-
-.container .form-grupo #enviar:hover {
-	background-color: #0056a3;
-}
-
-/* --- Lista de Opiniões --- */
-.divisor {
-	margin: 30px 0;
-	border: 0;
-	border-top: 1px solid #e1e8ed;
-}
-
-.opiniao-card {
-	background: #f8f9fa;
-	padding: 15px;
-	border-radius: 8px;
-	margin-bottom: 15px;
-	border-left: 4px solid #0076df;
-	animation: fadeIn 0.3s ease-in;
-}
-
-.opiniao-header {
+.media {
 	display: flex;
-	justify-content: space-between;
-	margin-bottom: 8px;
-	font-size: 14px;
-}
-
-.opiniao-nome {
-	font-weight: bold;
-	color: #111;
-}
-
-.opiniao-data {
-	color: #888;
-}
-
-.opiniao-texto {
-	font-size: 15px;
-	color: #444;
-	white-space: pre-line;
-	/* Mantém as quebras de linha do usuário */
-}
-
-.sem-opinioes {
+	flex-wrap: wrap;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	display: flex;
 	text-align: center;
-	color: #888;
-	font-style: italic;
+	justify-content: center;
+	margin: auto;
+	gap: 10px;
 }
 
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translateY(10px);
-	}
+iframe {
+	width: 560px;
+	height: 315px;
+}
 
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
+.instagram-media {
+	background: #FFF;
+	border: 0;
+	border-radius: 3px;
+	height: 500px;
+	max-width: 240px;
+	min-width: 326px;
+	width: -webkit-calc(100% - 2px);
+	width: calc(100% - 2px)
 }

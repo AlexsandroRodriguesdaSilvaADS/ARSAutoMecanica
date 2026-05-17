@@ -1,5 +1,5 @@
 
-//ENVIAR DADOS DO FORMULARIO PELO WHATSAPP
+//ENVIAR DADOS DO FORMULARIO DE AGENDAMENTO PELO WHATSAPP
 
 document.getElementById('formulario').addEventListener('submit', function (event) {
     event.preventDefault(); // Impede o envio padrão do formulário
