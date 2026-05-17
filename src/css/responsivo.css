@@ -116,12 +116,8 @@
         max-width: 700px;
     }
 
-    .nav-btn {
-        display: none;
-    }
-
     .carousel-slide {
-        max-width: 300px;
+        max-width: 95vw;
     }
 
     .carousel-slide img {
