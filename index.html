@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ARS | Auto Mecânico</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -199,9 +200,9 @@
             <h3 id="carousel-title">Embreagem</h3>
             <img src="./src/imagens/embreagem-alfa.webp" id="active-img">
 
-              <button id="nextBtn" class="nav-btn">&#10095;</button>
-              <button id="prevBtn" class="nav-btn">&#10094;</button>
-            
+            <button id="nextBtn" class="nav-btn">&#10095;</button>
+            <button id="prevBtn" class="nav-btn">&#10094;</button>
+
           </div>
           <div class="carousel-thumbnails">
             <img src="./src/imagens/embreagem-alfa.webp" class="thumb active" onclick="changeImage(0)">
@@ -224,21 +225,26 @@
         </div>
       </section>
 
-      <section class="servicos">
+      <!--<section class="servicos">
         <h2 class="titulo">Dicas</h2>
         <div class="container-servicos">
-          <div class="servico ativo">
-            <img src="./src/imagens/embreagem.webp" alt="Kit de embreagem" />
-            <img id="hand" src="./src/imagens/hand.png" alt="https://www.flaticon.com/br/icones-gratis/cursor">
+          <div class="flexivel">
+            <div class="servico ativo">
+              <div>
+                <img src="./src/imagens/embreagem.webp" alt="Kit de embreagem" />
+                <img id="hand" src="./src/imagens/hand.png" alt="https://www.flaticon.com/br/icones-gratis/cursor">
             <h3>Embreagens</h3>
-            <div class="informacoes-servico">
-              <p>Quando substituir?</p>
-              <p>1. Embreagem deslizando ou patinando; perda de aderência do disco.
-                <br>2. Quebra do colar de embreagem ou da mola membrana; barrulho extranho.
-              </p>
-              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+              </div>
+              <div class="informacoes-servico">
+                <p>Quando substituir?</p>
+                <p>1. Embreagem deslizando ou patinando; perda de aderência do disco.
+                  <br>2. Quebra do colar de embreagem ou da mola membrana; barrulho extranho.
+                </p>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+              </div>
             </div>
           </div>
+
           <div class="servico ativo">
             <img src="./src/imagens/amortecedores.webp" alt="Amortecedores" />
             <h3>Amortecedores</h3>
@@ -413,26 +419,101 @@
         </div>
         <button class="btn-mostrar-servicos ativo">Mostrar mais</button>
         <button class="btn-ocultar-servicos remover">Mostrar menos</button>
-      </section>
+      </section>-->
+
+      <!--<section class="sessao-dicas">
+        <div class="container-dicas">
+          <div class="dicas ativo">
+            <ul class="dica">
+              <li>
+                <img src="./src/imagens/embreagem.webp" alt="Kit de embreagem" />
+                <h3>Embreagens</h3>
+              </li>
+              <li class="informacoes">
+                <p>Quando substituir?</p>
+                <p>1. Embreagem deslizando ou patinando; perda de aderência do disco.
+                  <br>2. Quebra do colar de embreagem ou da mola membrana; barrulho extranho.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="dicas ativo">
+            <ul class="container-dicas">
+              <li class="dica">
+                <img src="./src/imagens/embreagem.webp" alt="Kit de embreagem" />
+                <h3>Embreagens</h3>
+              </li>
+              <li class="informacoes">
+                <p>Quando substituir?</p>
+                <p>1. Embreagem deslizando ou patinando; perda de aderência do disco.
+                  <br>2. Quebra do colar de embreagem ou da mola membrana; barrulho extranho.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="dicas">
+            <ul class="container-dicas">
+              <li class="dica">
+                <img src="./src/imagens/embreagem.webp" alt="Kit de embreagem" />
+                <h3>Embreagens</h3>
+              </li>
+              <li class="informacoes">
+                <p>Quando substituir?</p>
+                <p>1. Embreagem deslizando ou patinando; perda de aderência do disco.
+                  <br>2. Quebra do colar de embreagem ou da mola membrana; barrulho extranho.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="dicas">
+            <ul class="container-dicas">
+              <li class="dica">
+                <img src="./src/imagens/embreagem.webp" alt="Kit de embreagem" />
+                <h3>Embreagens</h3>
+              </li>
+              <li class="informacoes">
+                <p>Quando substituir?</p>
+                <p>1. Embreagem deslizando ou patinando; perda de aderência do disco.
+                  <br>2. Quebra do colar de embreagem ou da mola membrana; barrulho extranho.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="btn-mostrar-servicos ativo">Mostrar mais</button>
+        <button class="btn-ocultar-servicos remover">Mostrar menos</button>
+
+      </section>-->
+
 
     </div>
+
     <script src="./src/js/dicas.js"></script>
     <script src="./src/js/carrossel.js"></script>
     <script src="./src/js/girar.js"></script>
-    <script src="./src/js/form.js"></script>
+    <script src="./src/js/formAgendamento.js"></script>
     <script src="./src/js/player.js"></script>
     <script src="./src/js/toogle.js"></script>
-    <script src="./src/js/agendamento.js"></script>
+    <script src="./src/js/dataAgendamento.js"></script>
+    <script src="./src/js/opinioes.js"></script>
 
     <footer class="footer">
       <img class="logo" src="./src/imagens/logo-p.png" alt="Logotipo ARS">
-      <h2>Alexsandro Rodrigues da Silva | Mecânico Automotivo</h2>
+      <h2 id="footer" >Alexsandro Rodrigues da Silva | Mecânico Automotivo</h2>
       <h1>© Copyright 2026. Made by <a href="https://alexsandrorodriguesdasilvaads.github.io/portifolio/"
           target="_blank">Alexsandro R da Silva</a></h1>
     </footer>
 
   </section>
   <script defer src="https://cdn.bibliatodo.com/assets/js/verselinker.js" lang="pt" version="ARA1993"></script>
+  <a href="https://api.whatsapp.com/send?phone=5581998090037&text=Olá! Gostaria de mais informações."
+    class="whatsapp-flutuante" target="_blank" rel="noopener noreferrer" title="Fale conosco pelo WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 </body>
 
 </html>

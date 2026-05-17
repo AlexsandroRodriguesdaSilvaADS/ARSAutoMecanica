@@ -1,4 +1,6 @@
+
 // ALTERAÇÃO 1: Array agora armazena Objetos (imagem + título)
+
 const images = [
   { src: "./src/imagens/embreagem-alfa.webp", title: "Kit de Embreagem" },
   { src: "./src/imagens/amortecedores-alfa.webp", title: "Amortecedores" },
