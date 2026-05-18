@@ -200,8 +200,8 @@
             <h3 id="carousel-title">Embreagem</h3>
             <img src="./src/imagens/embreagem-alfa.webp" id="active-img">
 
-            <button id="nextBtn" class="nav-btn">&#10095;</button>
-            <button id="prevBtn" class="nav-btn">&#10094;</button>
+            <!--<button id="nextBtn" class="nav-btn">&#10095;</button>
+            <button id="prevBtn" class="nav-btn">&#10094;</button>-->
 
           </div>
           <div class="carousel-thumbnails">
@@ -225,16 +225,14 @@
         </div>
       </section>
 
-      <!--<section class="servicos">
+      <section class="servicos">
         <h2 class="titulo">Dicas</h2>
         <div class="container-servicos">
-          <div class="flexivel">
-            <div class="servico ativo">
-              <div>
-                <img src="./src/imagens/embreagem.webp" alt="Kit de embreagem" />
-                <img id="hand" src="./src/imagens/hand.png" alt="https://www.flaticon.com/br/icones-gratis/cursor">
-            <h3>Embreagens</h3>
-              </div>
+
+          <div class="servico-main">
+            <div class="servico">
+              <img src="./src/imagens/embreagem.webp" alt="Kit de embreagem" />
+              <h3>Embreagens</h3>
               <div class="informacoes-servico">
                 <p>Quando substituir?</p>
                 <p>1. Embreagem deslizando ou patinando; perda de aderência do disco.
@@ -245,259 +243,231 @@
             </div>
           </div>
 
-          <div class="servico ativo">
-            <img src="./src/imagens/amortecedores.webp" alt="Amortecedores" />
-            <h3>Amortecedores</h3>
-            <div class="informacoes-servico">
-              <p>Quando substituir?</p>
-              <p>1. Perda da compressão; vazamento do óleo, sem controle das oscilações das molas.
-                <br>2. Travamento; suspensão com pouca ou nenhuma oscilações das molas.
-              </p>
-              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+          <div class="servico-main">
+            <div class="servico">
+              <img src="./src/imagens/amortecedores.webp" alt="Amortecedores" />
+              <h3>Amortecedores</h3>
+              <div class="informacoes-servico">
+                <p>Quando substituir?</p>
+                <p>1. Perda da compressão; vazamento do óleo, sem controle das oscilações das molas.
+                  <br>2. Travamento; suspensão com pouca ou nenhuma oscilações das molas.
+                </p>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+              </div>
             </div>
           </div>
 
-          <div class="servico ativo">
-            <img src="./src/imagens/coxins-batedores-coifas.webp" alt="Coxim e kit batedor" />
-            <h3>Coxins e batedores</h3>
-            <div class="informacoes-servico">
-              <p>Quando substituir?</p>
-              <p>1. Desgaste do batedor; esfarelamento.
-                <br>2. Desgaste do coxin; barrulho extranho na extremidade da aste do amortecedor.
-              </p>
-              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+          <div class="servico-main">
+            <div class="servico">
+              <img src="./src/imagens/coxins-batedores-coifas.webp" alt="Coxim e kit batedor" />
+              <h3>Coxins e batedores</h3>
+              <div class="informacoes-servico">
+                <p>Quando substituir?</p>
+                <p>1. Desgaste do batedor; esfarelamento.
+                  <br>2. Desgaste do coxin; barrulho extranho na extremidade da aste do amortecedor.
+                </p>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+              </div>
             </div>
           </div>
 
-          <div class="servico ativo">
-            <img src="./src/imagens/bandeja.webp" alt="Bandejas" />
-            <h3>Bandejas</h3>
-            <div class="informacoes-servico">
-              <p>Quando substituir?</p>
-              <p>1. Buchas estragadas.
-                <br>2. Pivô com folga; necessário elevação do veículo.
-              </p>
-              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+          <div class="servico-main">
+            <div class="servico ativo">
+              <img src="./src/imagens/bandeja.webp" alt="Bandejas" />
+              <h3>Bandejas</h3>
+              <div class="informacoes-servico">
+                <p>Quando substituir?</p>
+                <p>1. Buchas estragadas.
+                  <br>2. Pivô com folga; necessário elevação do veículo.
+                </p>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+              </div>
             </div>
           </div>
 
-          <div class="servico">
-            <img src="./src/imagens/bucha-traseira.webp" alt="Embuchamento do eixo traseiro" />
-            <h3>Buchas do eixo traseiro</h3>
-            <div class="informacoes-servico">
-              <p>Quando substituir?</p>
-              <p>1. Buchas estragadas; necessário elevação do veículo.</p>
-              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+          <div class="servico-main">
+            <div class="servico">
+              <img src="./src/imagens/bucha-traseira.webp" alt="Embuchamento do eixo traseiro" />
+              <h3>Buchas do eixo traseiro</h3>
+              <div class="informacoes-servico">
+                <p>Quando substituir?</p>
+                <p>1. Buchas estragadas; necessário elevação do veículo.</p>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+              </div>
             </div>
           </div>
 
-          <div class="servico">
-            <img src="./src/imagens/discos-de-freio.webp" alt="Discos de freio" />
-            <h3>Discos de Freio</h3>
-            <div class="informacoes-servico">
-              <p>Quando substituir?</p>
-              <p>1. Desgaste excessivo; as paredes do disco ficam mais finas e com irregularidades. É possível retificar
-              </p>
-              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+          <div class="servico-main">
+            <div class="servico">
+              <img src="./src/imagens/discos-de-freio.webp" alt="Discos de freio" />
+              <h3>Discos de Freio</h3>
+              <div class="informacoes-servico">
+                <p>Quando substituir?</p>
+                <p>1. Desgaste excessivo; as paredes do disco ficam mais finas e com irregularidades. É possível
+                  retificar
+                </p>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+              </div>
             </div>
           </div>
 
-          <div class="servico">
-            <img src="./src/imagens/pastilhas-de-freio.webp" alt="Pastilhas de freio" />
-            <h3>Pastilhas de freio</h3>
-            <div class="informacoes-servico">
-              <p>Quando substituir?</p>
-              <p>1. Desgaste natural; é comum ouvir um barulho metálico (do limitador) quando estão no momento da troca.
-                Algumas possuem um sensor eletrônico.</p>
-              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+          <div class="servico-main">
+            <div class="servico">
+              <img src="./src/imagens/pastilhas-de-freio.webp" alt="Pastilhas de freio" />
+              <h3>Pastilhas de freio</h3>
+              <div class="informacoes-servico">
+                <p>Quando substituir?</p>
+                <p>1. Desgaste natural; é comum ouvir um barulho metálico (do limitador) quando estão no momento da
+                  troca.
+                  Algumas possuem um sensor eletrônico.</p>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+              </div>
             </div>
           </div>
 
-          <div class="servico">
-            <img src="./src/imagens/lonas-de-freio.webp" alt="Lonas de freio" />
-            <h3>Lonas de freio</h3>
-            <div class="informacoes-servico">
-              <p>Quando substituir?</p>
-              <p>1. Desgaste natural; o freio de mão fica aparentemente desrregulado ou não estaciona o veículo.
-                <br>Relação de troca 2x1 em função da troca das pastilha; trocar na segunda troca das pastilhas.
-              </p>
-              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+          <div class="servico-main">
+            <div class="servico">
+              <img src="./src/imagens/lonas-de-freio.webp" alt="Lonas de freio" />
+              <h3>Lonas de freio</h3>
+              <div class="informacoes-servico">
+                <p>Quando substituir?</p>
+                <p>1. Desgaste natural; o freio de mão fica aparentemente desrregulado ou não estaciona o veículo.
+                  <br>Relação de troca 2x1 em função da troca das pastilha; trocar na segunda troca das pastilhas.
+                </p>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+              </div>
             </div>
           </div>
 
-          <div class="servico">
-            <img src="./src/imagens/cilindro-mestre.webp" alt="Cilindro mestre de freio" />
-            <h3>Cilindro mestre</h3>
-            <div class="informacoes-servico">
-              <p>Quando substituir?</p>
-              <p>1. Desgaste de o'rings e/ou vazamento de fluído; o pedal de freio fica sem pressão, quase encostando no
-                açoalho. É possível ver vazamento de fluído de freio.
-              </p>
-              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+          <div class="servico-main">
+            <div class="servico">
+              <img src="./src/imagens/cilindro-mestre.webp" alt="Cilindro mestre de freio" />
+              <h3>Cilindro mestre</h3>
+              <div class="informacoes-servico">
+                <p>Quando substituir?</p>
+                <p>1. Desgaste de o'rings e/ou vazamento de fluído; o pedal de freio fica sem pressão, quase encostando
+                  no
+                  açoalho. É possível ver vazamento de fluído de freio.
+                </p>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+              </div>
             </div>
           </div>
 
-          <div class="servico">
-            <img src="./src/imagens/servo-freio.webp" alt="Servo freio" />
-            <h3>Servo freio</h3>
-            <div class="informacoes-servico">
-              <p>Quando substituir?</p>
-              <p>1. Pedal do freio fica "pesado"; é necessário mais esforço para frear. É possível ouvir um barulho de
-                ar escapando.</p>
-              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+          <div class="servico-main">
+            <div class="servico">
+              <img src="./src/imagens/servo-freio.webp" alt="Servo freio" />
+              <h3>Servo freio</h3>
+              <div class="informacoes-servico">
+                <p>Quando substituir?</p>
+                <p>1. Pedal do freio fica "pesado"; é necessário mais esforço para frear. É possível ouvir um barulho de
+                  ar escapando.</p>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+              </div>
             </div>
           </div>
 
-          <div class="servico">
-            <img src="./src/imagens/junta-homocinetica.webp" alt="Junta homocinética" />
-            <h3>Junta homocinética</h3>
-            <div class="informacoes-servico">
-              <p>Quando substituir?</p>
-              <p>1. Barulho de "estalo" ao esterçar a direção; o barulho é mais evidente quando numa curva em velocidade
-                lenta.</p>
-              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+          <div class="servico-main">
+            <div class="servico">
+              <img src="./src/imagens/junta-homocinetica.webp" alt="Junta homocinética" />
+              <h3>Junta homocinética</h3>
+              <div class="informacoes-servico">
+                <p>Quando substituir?</p>
+                <p>1. Barulho de "estalo" ao esterçar a direção; o barulho é mais evidente quando numa curva em
+                  velocidade
+                  lenta.</p>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+              </div>
             </div>
           </div>
 
-          <div class="servico">
-            <img src="./src/imagens/eixo-completo.webp" alt="Semi-eixo completo" />
-            <h3>Eixo completo</h3>
-            <div class="informacoes-servico">
-              <p>Quando substituir?</p>
-              <p>1. Barulho de "estalo" ao esterçar a direção ou quando em linha reta em média velocidade.</p>
-              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+          <div class="servico-main">
+            <div class="servico">
+              <img src="./src/imagens/eixo-completo.webp" alt="Semi-eixo completo" />
+              <h3>Eixo completo</h3>
+              <div class="informacoes-servico">
+                <p>Quando substituir?</p>
+                <p>1. Barulho de "estalo" ao esterçar a direção ou quando em linha reta em média velocidade.</p>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+              </div>
             </div>
           </div>
 
-          <div class="servico">
-            <img src="./src/imagens/deslizante-e-trizeta.webp" alt="Junta deslizante" />
-            <h3>Deslizante e trizeta</h3>
-            <div class="informacoes-servico">
-              <p>Quando substituir?</p>
-              <p>1. Barulho de "estalo" quando em linha reta em média velocidade.</p>
-              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+          <div class="servico-main">
+            <div class="servico">
+              <img src="./src/imagens/deslizante-e-trizeta.webp" alt="Junta deslizante" />
+              <h3>Deslizante e trizeta</h3>
+              <div class="informacoes-servico">
+                <p>Quando substituir?</p>
+                <p>1. Barulho de "estalo" quando em linha reta em média velocidade.</p>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+              </div>
             </div>
           </div>
 
-          <div class="servico">
-            <img src="./src/imagens/kit-radiador.webp" alt="Kit radiador" />
-            <h3>Kit radiador</h3>
-            <div class="informacoes-servico">
-              <p>Quando substituir?</p>
-              <p>1. Vazamento no radiador ou no recipiente de expansão.
-                <br>2. Defeito na tampa no recipiente de expansão.
-                <br>3. Mal funcionamento do eletro ventilador.
-                <br>4. Elevação da temperatura do motor.
-              </p>
-              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+          <div class="servico-main">
+            <div class="servico">
+              <img src="./src/imagens/kit-radiador.webp" alt="Kit radiador" />
+              <h3>Kit radiador</h3>
+              <div class="informacoes-servico">
+                <p>Quando substituir?</p>
+                <p>1. Vazamento no radiador ou no recipiente de expansão.
+                  <br>2. Defeito na tampa no recipiente de expansão.
+                  <br>3. Mal funcionamento do eletro ventilador.
+                  <br>4. Elevação da temperatura do motor.
+                </p>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+              </div>
             </div>
           </div>
 
-          <div class="servico">
-            <img src="./src/imagens/coxins-do-motor.webp" alt="Coxins do motor" />
-            <h3>Coxins do motor</h3>
-            <div class="informacoes-servico">
-              <p>Quando substituir?</p>
-              <p>1. Desgaste das borrachas.
-                <br>2. Vibração excessiva do motor ao arrancar ou na marcha ré.
-              </p>
-              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+          <div class="servico-main">
+            <div class="servico">
+              <img src="./src/imagens/coxins-do-motor.webp" alt="Coxins do motor" />
+              <h3>Coxins do motor</h3>
+              <div class="informacoes-servico">
+                <p>Quando substituir?</p>
+                <p>1. Desgaste das borrachas.
+                  <br>2. Vibração excessiva do motor ao arrancar ou na marcha ré.
+                </p>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+              </div>
             </div>
           </div>
 
-          <div class="servico">
-            <img src="./src/imagens/correia-e-rolamento.webp" alt="Coxins do motor" />
-            <h3>Correia e rolamento tensor</h3>
-            <div class="informacoes-servico">
-              <p>Quando substituir?</p>
-              <p>1. Desgaste da correia e rolamento; barulho extranho.
-              </p>
-              <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+          <div class="servico-main">
+            <div class="servico">
+              <img src="./src/imagens/correia-e-rolamento.webp" alt="Coxins do motor" />
+              <h3>Correia e rolamento tensor</h3>
+              <div class="informacoes-servico">
+                <p>Quando substituir?</p>
+                <p>1. Desgaste da correia e rolamento; barulho extranho.
+                </p>
+                <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+              </div>
             </div>
           </div>
 
         </div>
-        <button class="btn-mostrar-servicos ativo">Mostrar mais</button>
-        <button class="btn-ocultar-servicos remover">Mostrar menos</button>
-      </section>-->
 
-      <!--<section class="sessao-dicas">
-        <div class="container-dicas">
-          <div class="dicas ativo">
-            <ul class="dica">
-              <li>
-                <img src="./src/imagens/embreagem.webp" alt="Kit de embreagem" />
-                <h3>Embreagens</h3>
-              </li>
-              <li class="informacoes">
-                <p>Quando substituir?</p>
-                <p>1. Embreagem deslizando ou patinando; perda de aderência do disco.
-                  <br>2. Quebra do colar de embreagem ou da mola membrana; barrulho extranho.
-                </p>
-              </li>
-            </ul>
-          </div>
+        <!--<button class="btn-mostrar-servicos ativo">Mostrar mais</button>
+        <button class="btn-ocultar-servicos remover">Mostrar menos</button>-->
 
-          <div class="dicas ativo">
-            <ul class="container-dicas">
-              <li class="dica">
-                <img src="./src/imagens/embreagem.webp" alt="Kit de embreagem" />
-                <h3>Embreagens</h3>
-              </li>
-              <li class="informacoes">
-                <p>Quando substituir?</p>
-                <p>1. Embreagem deslizando ou patinando; perda de aderência do disco.
-                  <br>2. Quebra do colar de embreagem ou da mola membrana; barrulho extranho.
-                </p>
-              </li>
-            </ul>
-          </div>
-
-          <div class="dicas">
-            <ul class="container-dicas">
-              <li class="dica">
-                <img src="./src/imagens/embreagem.webp" alt="Kit de embreagem" />
-                <h3>Embreagens</h3>
-              </li>
-              <li class="informacoes">
-                <p>Quando substituir?</p>
-                <p>1. Embreagem deslizando ou patinando; perda de aderência do disco.
-                  <br>2. Quebra do colar de embreagem ou da mola membrana; barrulho extranho.
-                </p>
-              </li>
-            </ul>
-          </div>
-
-          <div class="dicas">
-            <ul class="container-dicas">
-              <li class="dica">
-                <img src="./src/imagens/embreagem.webp" alt="Kit de embreagem" />
-                <h3>Embreagens</h3>
-              </li>
-              <li class="informacoes">
-                <p>Quando substituir?</p>
-                <p>1. Embreagem deslizando ou patinando; perda de aderência do disco.
-                  <br>2. Quebra do colar de embreagem ou da mola membrana; barrulho extranho.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <button class="btn-mostrar-servicos ativo">Mostrar mais</button>
-        <button class="btn-ocultar-servicos remover">Mostrar menos</button>
-
-      </section>-->
+      </section>
 
       <!--<div class="media">
         <div class="instagram">
           <script async src="//www.instagram.com/embed.js"></script>
         </div>
-
         <iframe></iframe>
-
       </div>-->
+
     </div>
+
+    <a href="https://api.whatsapp.com/send?phone=5581998090037&text=Olá! Gostaria de mais informações."
+      class="whatsapp-flutuante" target="_blank" rel="noopener noreferrer" title="Fale conosco pelo WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="./src/js/dicas.js"></script>
     <script src="./src/js/carrossel.js"></script>
@@ -517,10 +487,6 @@
 
   </section>
   <script defer src="https://cdn.bibliatodo.com/assets/js/verselinker.js" lang="pt" version="ARA1993"></script>
-  <a href="https://api.whatsapp.com/send?phone=5581998090037&text=Olá! Gostaria de mais informações."
-    class="whatsapp-flutuante" target="_blank" rel="noopener noreferrer" title="Fale conosco pelo WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
 </body>
 
 </html>

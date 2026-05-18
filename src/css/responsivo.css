@@ -29,14 +29,11 @@
         padding: 0 30px;
     }
 
-    .servicos .servico #hand {
-        display: unset;
-    }
-
     .servicos h3 {
         font-size: 14px;
     }
 }
+
 
 @media(max-width: 425px) {
     .home .informacoes h1 {
@@ -135,16 +132,28 @@
         padding: 30px;
     }
 
+    .servicos .servico {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 0;
+    }
+
     .servicos .servico .informacoes-servico {
         padding: 5px;
     }
 
-    .servicos h3 {
-        font-size: 12;
+    .servicos .servico h3 {
+        width: 100%;
     }
 
     .servicos .servico .informacoes-servico .link-agendamento {
         font-size: 16px;
+    }
+
+    .whatsapp-flutuante {
+        bottom: 145px;
+        right: 10px;
     }
 
 }

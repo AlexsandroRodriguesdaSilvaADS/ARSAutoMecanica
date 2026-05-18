@@ -16,7 +16,7 @@
 // Passo 1 - pegar o botão mostrar mais no JS pra poder verificar quando o usuário clicar em cima dele
 const botaoMostrarProjetos = document.querySelector('.btn-mostrar-servicos');
 const botaoOcultarProjetos = document.querySelector('.btn-ocultar-servicos');
-const projetosInativos = document.querySelectorAll('.servico:not(.ativo)');
+const projetosInativos = document.querySelectorAll('.servico1:not(.ativo)');
 
 botaoMostrarProjetos.addEventListener('click', () => {
     // Passo 3 - adicionar a classe "ativo" nos projetos escondidos

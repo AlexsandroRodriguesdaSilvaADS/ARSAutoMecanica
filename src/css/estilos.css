@@ -378,7 +378,7 @@ body {
 
 /* CARROSSEL DE SERVIÇOS */
 .carousel-container {
-	padding: 70px 0 70px;
+	padding: 50px 0;
 	position: relative;
 	max-width: 100vw;
 	margin: auto;
@@ -387,7 +387,7 @@ body {
 
 .carousel-container .titulo {
 	text-align: center;
-	padding: 60px 0;
+	padding: 40px 0;
 	font-size: 45px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -398,7 +398,7 @@ body {
 	border: 1px #fff solid;
 	border-radius: 5%;
 	box-shadow: 0 0 10px #fff;
-	max-width: 460px;
+	max-width: 500px;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
@@ -410,8 +410,7 @@ body {
 }
 
 .carousel-slide img {
-	height: 460px;
-	width: 460px;
+	width: 90vw;
 	border-radius: 8px;
 }
 
@@ -465,63 +464,51 @@ body {
 
 /* SESSÃO DAS DICAS */
 .servicos {
-	padding: 70px 0 70px;
+	padding: 50px 0;
 }
 
 .servicos .titulo {
 	text-align: center;
-	padding: 60px 0;
+	padding: 40px 0;
 	font-size: 45px;
 	font-weight: 500;
 	text-transform: uppercase;
 }
 
 .servicos .container-servicos {
-	display: flex;
-	gap: 20px;
-	flex-wrap: wrap;
-	margin-bottom: 20px;
 	justify-content: center;
+	height: 530px;
+	overflow-y: auto;
 }
 
-.servicos .flexivel {
+.servicos .servico-main {
 	display: flex;
-	flex-wrap: wrap;
-}
-
-.servicos .servico {
-	display: none;
-	flex-wrap: wrap;
-	box-shadow: 0 0 10px #fff;
-	max-width: 260px;
-	max-height: 260px;
-	/*position: relative;*/
-}
-
-.servicos .servico.ativo {
-	display: block;
-}
-
-.servicos .servico img {
-	height: 100%;
 	width: 100%;
 }
 
-.servicos .servico #hand {
-	display: none;
-	height: 30px;
-	width: 30px;
-	margin: 5px 5px 0px 0px;
-	position: absolute;
-	right: 0;
+.servicos .servico {
+	display: flex;
+	width: 100%;
+	height: 160px;
+	position: relative;
+	gap: 10px;
+	margin: 10px;
+}
+
+.servicos .servico img {
+	border: 1px #fff solid;
+	box-shadow: 0 0 10px #fff;
+	min-width: 160px;
+	min-height: 160px;
 }
 
 .servicos .servico h3 {
 	background-color: rgb(21, 60, 93);
-	width: 100%;
+	font-size: 14px;
+	width: 160px;
 	padding: 1px 0px 1px 5px;
 	position: absolute;
-	bottom: 0;
+	top: 0;
 }
 
 .servicos .servico p {
@@ -529,29 +516,27 @@ body {
 }
 
 .servicos .servico .informacoes-servico {
-	background-color: #000000;
-	/*position: absolute;
-	top: 0;*/
+	background-color: rgba(21, 60, 93, 0.7);
+	border: 1px #fff solid;
+	box-shadow: 0 0 10px #fff;
 	width: 100%;
 	height: 100%;
 	font-weight: 600;
-	opacity: 1;
-	transition: 0.5s;
 	padding: 20px;
 }
 
-.servicos .servico:hover .informacoes-servico {
+/*.servicos .servico:hover .informacoes-servico {
 	background-color: rgb(21, 60, 93);
 	opacity: 0.9;
 	border: 1px solid #fff;
-}
+}*/
 
 .servicos .servico .informacoes-servico .link-agendamento {
-	font-size: 18px;
+	display: none;
+	font-size: 14px;
 	text-decoration: underline;
 	position: absolute;
-	bottom: 3px;
-	left: 5px;
+	bottom: 5px;
 }
 
 .servicos .servico .informacoes-servico .link-agendamento:hover {
@@ -589,13 +574,13 @@ body {
 	display: none;
 }
 
-/*
+/* SESSÃO DE DICAS */
 .sessao-dicas {
 	padding: 70px 0 70px;
 }
 
 .dicas {
-	display: flex;
+	display: none;
 	gap: 20px;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -607,7 +592,7 @@ body {
 
 .dicas .titulo {
 	text-align: center;
-	padding: 60px 0;
+	padding: 40px 0;
 	font-size: 45px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -657,7 +642,6 @@ body {
 	padding: 20px;
 }
 
-
 .dicas .btn-mostrar-servicos,
 .dicas .btn-ocultar-servicos {
 	background: none;
@@ -688,54 +672,15 @@ body {
 .btn-ocultar-servicos.remover {
 	display: none;
 }
-*/
 
-
-/* RODAPÉ */
-.footer {
-	max-width: 1300px;
-	margin: auto;
-	background-color: rgba(21, 60, 93, 0.7);
-	font-family: "Raleway", sans-serif;
-	padding: 50px;
-	text-align: center;
-	border-top: 1px #fff solid;
-}
-
-.footer .logo {
-	margin-top: 0px;
-	padding: 2px;
-	width: 80px;
-	height: 50px;
-	box-shadow: 0 0 10px #fff;
-}
-
-.footer h2 {
-	font-size: 16px;
-}
-
-.footer h1 {
-	margin: 10px;
-	font-size: 15px;
-}
-
-.footer a#footer {
-	color: #ffffff;
-	border-bottom: 1px solid;
-}
-
-.footer a#footer:hover {
-	color: #df8b04;
-	transition: 0.3s;
-}
 
 /* Estilização do Botão */
 .whatsapp-flutuante {
 	position: fixed;
 	width: 60px;
 	height: 60px;
-	bottom: 10px;
-	right: 10px;
+	bottom: 20px;
+	right: 320px;
 	background-color: #25d366;
 	color: #fff;
 	border-radius: 50px;
@@ -786,6 +731,44 @@ body {
 		transform: scale(0.9);
 		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
 	}
+}
+
+/* RODAPÉ */
+.footer {
+	max-width: 1300px;
+	margin: auto;
+	background-color: rgba(21, 60, 93, 0.7);
+	font-family: "Raleway", sans-serif;
+	padding: 50px;
+	text-align: center;
+	border-top: 1px #fff solid;
+}
+
+.footer .logo {
+	margin-top: 0px;
+	padding: 2px;
+	width: 80px;
+	height: 50px;
+	box-shadow: 0 0 10px #fff;
+}
+
+.footer h2 {
+	font-size: 16px;
+}
+
+.footer h1 {
+	margin: 10px;
+	font-size: 15px;
+}
+
+.footer a#footer {
+	color: #ffffff;
+	border-bottom: 1px solid;
+}
+
+.footer a#footer:hover {
+	color: #df8b04;
+	transition: 0.3s;
 }
 
 .media {
