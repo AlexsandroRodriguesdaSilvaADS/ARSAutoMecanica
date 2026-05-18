@@ -114,6 +114,7 @@
     }
 
     .carousel-slide {
+        max-height: 100vh;
         max-width: 95vw;
     }
 
@@ -129,7 +130,12 @@
     }
 
     .servicos {
-        padding: 30px;
+        padding: 10px 0;
+    }
+
+    .servicos .container-servicos {
+        height: 650px;
+        margin: 10px;
     }
 
     .servicos .servico {
