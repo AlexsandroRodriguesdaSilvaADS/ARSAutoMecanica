@@ -32,6 +32,26 @@
     .servicos h3 {
         font-size: 14px;
     }
+
+    .whatsapp-flutuante {
+        width: 50px;
+        height: 50px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+     .media iframe {
+        width: 90vw;
+        height: 100vh;
+    }
+}
+
+
+@media(max-width: 768px) {
+     .media iframe {
+        width: 90vw;
+        height: 78vh;
+    }
 }
 
 
@@ -46,10 +66,11 @@
 
     .home .informacoes div#endereço {
         background-color: rgba(21, 60, 93, 0.8);
-        width: 250px;
+        width: 200px;
         position: fixed;
-        bottom: 6px;
-        font-size: 18px;
+        bottom: 10px;
+        left: 40px;
+        font-size: 15px;
         z-index: 3;
     }
 
@@ -110,17 +131,16 @@
     }
 
     .carousel-container {
-        max-width: 700px;
+        width: 500px;
     }
 
     .carousel-slide {
-        max-height: 100vh;
-        max-width: 95vw;
+        min-width: 90%;
     }
 
     .carousel-slide img {
-        max-width: 300px;
-        max-height: 300px;
+        width: 300px;
+        height: 300px;
         margin: auto;
     }
 
@@ -134,7 +154,7 @@
     }
 
     .servicos .container-servicos {
-        height: 650px;
+        min-height: 580px;
         margin: 10px;
     }
 
@@ -157,11 +177,10 @@
         font-size: 16px;
     }
 
-    .whatsapp-flutuante {
-        bottom: 145px;
-        right: 10px;
+     .media iframe {
+        width: 90vw;
+        height: 80vh;
     }
-
 }
 
 @media(max-width: 320px) {
@@ -181,7 +200,6 @@
     .popup form .botoes {
         gap: 100px;
     }
-
 
     .servicos .servico p {
         font-size: 12px;
