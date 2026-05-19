@@ -466,6 +466,18 @@ body {
 /* SESSÃO DAS DICAS */
 .servicos {
 	padding: 50px 0;
+	margin: auto;
+}
+
+.servicos .link-servicos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: auto;
+	width: 55vw;
+	height: 200px;
+	gap: 15px;
+	padding: 10px;
 }
 
 .servicos .titulo {

@@ -79,11 +79,12 @@ thumbnails.forEach((thumb, index) => {
 });
 
 // Eventos de mouse para o autoplay
-document.querySelector(".carousel-slide").addEventListener("mouseenter", stopAutoPlay);
+/*document.querySelector(".carousel-slide").addEventListener("mouseenter", stopAutoPlay);
 document.querySelector(".carousel-slide").addEventListener("mouseleave", startAutoPlay);
+*/
 
 // Eventos dos botões
-document.getElementById("nextBtn").addEventListener("click", () => {
+/*document.getElementById("nextBtn").addEventListener("click", () => {
   nextImage();
   resetAutoPlay();
 });
@@ -91,7 +92,7 @@ document.getElementById("nextBtn").addEventListener("click", () => {
 document.getElementById("prevBtn").addEventListener("click", () => {
   prevImage();
   resetAutoPlay();
-});
+});*/
 
 // Inicia o carrossel exibindo o primeiro item corretamente
 changeImage(currentIndex);

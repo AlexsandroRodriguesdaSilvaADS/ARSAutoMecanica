@@ -161,7 +161,7 @@
     .servicos .container-servicos {
         height: 70vh;
         width: 99vw;
-        overflow: auto;
+        overflow: hidden;
     }
 
     .servicos .servico {
