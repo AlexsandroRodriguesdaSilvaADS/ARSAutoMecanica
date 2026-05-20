@@ -464,20 +464,35 @@ body {
 
 
 /* SESSÃO DAS DICAS */
+.dicas {
+	background-color: #25d366;
+	padding: 40px 0;
+}
+
 .dicas .link-dicas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: auto;
-    width: 55vw;
-    height: 200px;
-    gap: 15px;
-    padding: 10px;
+	background-color: #ca2a02;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: auto;
+	width: 55vw;
+	height: 200px;
+	gap: 15px;
+	padding: 10px;
+}
+
+.dicas #frame {
+	background-color: #128c7e;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	width: 55vw;
 }
 
 .dicas iframe {
-	width: 90%;
-	height: 300px;
+	width: 100%;
+	height: 50vh;
+/*	overflow: hidden;*/
 }
 
 /* SESSÃO DE DICAS */
@@ -667,7 +682,7 @@ body {
 	width: 60px;
 	height: 60px;
 	bottom: 20px;
-	right: 320px;
+	right: 20px;
 	background-color: #25d366;
 	color: #fff;
 	border-radius: 50px;
