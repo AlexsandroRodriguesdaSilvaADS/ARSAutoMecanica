@@ -158,11 +158,11 @@
         padding: 10px 0;
     }
 
-    .servicos .container-servicos {
+    /*.servicos .container-servicos {
         height: 70vh;
         width: 99vw;
         overflow: hidden;
-    }
+    }*/
 
     .servicos .servico {
         flex-direction: column;
