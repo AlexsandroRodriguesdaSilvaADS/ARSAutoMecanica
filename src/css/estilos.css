@@ -395,6 +395,7 @@ body {
 }
 
 .carousel-slide {
+	background-color: #df8b04;
 	box-shadow: 0 0 10px #fff;
 	border-radius: 5%;
 	width: 50%;
@@ -458,6 +459,7 @@ body {
 
 .thumb.active,
 .thumb:hover {
+	background-color: #df8b04;
 	opacity: 1;
 	transform: scale(1.1);
 }
@@ -465,34 +467,39 @@ body {
 
 /* SESSÃO DAS DICAS */
 .dicas {
-	background-color: #25d366;
 	padding: 40px 0;
 }
 
+.dicas-main {
+	display: flex;
+}
+
 .dicas .link-dicas {
-	background-color: #ca2a02;
+	background-color: #000;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content:flex-start;
 	margin: auto;
-	width: 55vw;
-	height: 200px;
+	width: 80%;
+	height: 300px;
 	gap: 15px;
 	padding: 10px;
 }
 
 .dicas #frame {
-	background-color: #128c7e;
+/*	background-color: #128c7e;*/
 	display: flex;
 	justify-content: center;
 	margin: auto;
 	width: 55vw;
+	height: 100%;
+	overflow: hidden;
 }
 
 .dicas iframe {
 	width: 100%;
-	height: 50vh;
-	/*	overflow: hidden;*/
+	height: 300px;
+
 }
 
 /* SESSÃO DE DICAS */
@@ -594,9 +601,9 @@ body {
 	display: none;
 }*/
 
-#noticias {
+/*#noticias {
 	display: none;
-}
+}*/
 
 .media {
 	display: flex;
