@@ -492,7 +492,7 @@ body {
 .dicas iframe {
 	width: 100%;
 	height: 50vh;
-/*	overflow: hidden;*/
+	/*	overflow: hidden;*/
 }
 
 /* SESSÃO DE DICAS */
@@ -593,6 +593,10 @@ body {
 .btn-ocultar-servicos.remover {
 	display: none;
 }*/
+
+#noticias {
+	display: none;
+}
 
 .media {
 	display: flex;
