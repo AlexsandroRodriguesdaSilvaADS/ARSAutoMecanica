@@ -155,10 +155,10 @@
 
     .dicas {
         display: none;
+        
         padding: 10px 0;
     }
 
-   
     .dicas .servico {
         display: flex;
         flex-direction: column;
