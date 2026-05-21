@@ -614,10 +614,14 @@ body {
 	text-transform: uppercase;
 }
 
+/*.media #frame-noticias {
+	background-color: #CA2A02;
+}*/
+
 .media iframe {
 	background-color: rgba(224, 224, 224, 0.3);
 	width: 400px;
-	height: 650px;
+	height: 600px;
 	margin: 10px 0;
 }
 
@@ -632,9 +636,10 @@ body {
 	font-size: 22px;
 }
 
-.media .title {
+.media .title-ary {
+	background-color: #BBEE1F;
+	color: #000;
 	font-size: 20px;
-	width: 100%;
 }
 
 
