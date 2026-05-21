@@ -1,10 +1,10 @@
 html {
     color: #fff;
-/*    scroll-behavior: smooth;*/
+    /*    scroll-behavior: smooth;*/
 }
 
 body {
-/*    background-color: rgb(21, 60, 93);*/
+    /*    background-color: rgb(21, 60, 93);*/
     font-family: "Poppins", sans-serif;
     margin: auto 0;
     overflow: hidden;
@@ -24,37 +24,35 @@ body {
 .dicas .servico-main {
     display: flex;
     width: 100%;
-    height: 300px;
-    margin: 0;
+    height: 100%;
+    margin: 10px;
 }
 
 .dicas .servico {
     display: flex;
     width: 100%;
+    height: 270px;
     position: relative;
     gap: 10px;
     margin: 10px;
 }
 
 .dicas .servico .informacoes-servico {
-    background-color: rgba(21, 60, 93, 0.7);
+    background-color: rgb(21, 60, 93);
     box-shadow: 0 0 10px #fff;
     width: 100%;
-    /*	height: 100vh;*/
-    font-weight: 600;
     padding: 20px;
 }
 
 .dicas .servico img {
     box-shadow: 0 0 10px #fff;
-    min-width: 300px;
-    min-height: 200px;
+    min-width: 260px;
 }
 
 .dicas .servico h3 {
     background-color: rgb(21, 60, 93);
     font-size: 14px;
-    width: 300px;
+    width: 260px;
     padding: 1px 0px 1px 5px;
     position: absolute;
     top: 0;
@@ -64,7 +62,7 @@ body {
     font-size: 15px;
 }
 
-.dicas .servico .informacoes-servico .link-agendamento {
+/*.dicas .servico .informacoes-servico .link-agendamento {
     display: none;
     font-size: 14px;
     text-decoration: underline;
@@ -105,4 +103,4 @@ body {
 .dicas .btn-mostrar-servicos.remover,
 .btn-ocultar-servicos.remover {
     display: none;
-}
+}*/

@@ -25,13 +25,13 @@
         gap: 10px;
     }
 
-    .servicos .container-servicos {
+    /*.servicos .container-servicos {
         padding: 0 30px;
     }
 
     .servicos h3 {
         font-size: 14px;
-    }
+    }*/
 
     .whatsapp-flutuante {
         width: 50px;
@@ -40,8 +40,8 @@
         right: 30px;
     }
 
-     .media iframe {
-/*        width: 90vw;*/
+    .media iframe {
+        /*        width: 90vw;*/
         height: 50vh;
     }
 }
@@ -131,7 +131,7 @@
     }
 
     .carousel-container {
-        width: 500px;
+        width: 100%;
     }
 
     .carousel-thumbnails {
@@ -153,15 +153,23 @@
         height: 55px;
     }
 
-    .servicos {
+    .dicas {
+        display: none;
         padding: 10px 0;
+    }
+
+   
+    .dicas .servico {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
     }
 
     /*.servicos .container-servicos {
         height: 70vh;
         width: 99vw;
         overflow: hidden;
-    }*/
+    }
 
     .servicos .servico {
         flex-direction: column;
@@ -180,7 +188,7 @@
 
     .servicos .servico .informacoes-servico .link-agendamento {
         font-size: 16px;
-    }
+    }*/
 
     /*.media iframe {
         width: 80vw;
@@ -207,13 +215,13 @@
         gap: 100px;
     }
 
-    .servicos .servico p {
+    /*.servicos .servico p {
         font-size: 12px;
     }
 
     .servicos .servico .informacoes-servico .link-agendamento {
         bottom: 0;
         font-size: 12px;
-    }
+    }*/
 
 }
