@@ -79,9 +79,9 @@ thumbnails.forEach((thumb, index) => {
 });
 
 // Eventos de mouse para o autoplay
-/*document.querySelector(".carousel-slide").addEventListener("mouseenter", stopAutoPlay);
+document.querySelector(".carousel-slide").addEventListener("mouseenter", stopAutoPlay);
 document.querySelector(".carousel-slide").addEventListener("mouseleave", startAutoPlay);
-*/
+
 
 // Eventos dos botões
 /*document.getElementById("nextBtn").addEventListener("click", () => {
