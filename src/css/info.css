@@ -10,10 +10,10 @@ body {
     overflow: hidden;
 }
 
-/*.dicas {
+.info {
     height: 100%;
     width: 100%;
-}*/
+}
 
 .info .container-servicos {
     justify-content: center;
