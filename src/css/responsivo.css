@@ -157,11 +157,12 @@
         height: 50px;
     }
 
+
     .dicas {
         padding: 10px 0;
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: 100vh;
     }
 
     .dicas-main {
@@ -173,9 +174,12 @@
     }
 
     .dicas .navbar {
+        font-size: 14px;
         display: flex;
         width: 110px;
+        height: 100%;
         box-shadow: 0 0 10px #fff;
+        top: 10px;
     }
 
     .submenu {
@@ -187,13 +191,14 @@
         position: relative;
         margin: auto;
         width: 65%;
-        height: 100%;
+        height: 500px;
     }
 
     .servicos-dicas .container-servicos .servico {
         background-color: #fff;
         box-shadow: 0 0 10px #fff;
         flex-direction: column;
+        height: 100%;
     }
 
     .servicos-dicas .container-servicos .servico h3,
@@ -217,8 +222,8 @@
     }
 
     .link-agendamento {
-        position: relative;
-        top: 5px;
+        position: absolute;
+        bottom: 5px;
     }
 
     .media iframe {

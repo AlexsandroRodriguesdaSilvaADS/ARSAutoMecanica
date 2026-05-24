@@ -404,8 +404,7 @@ body {
 	background: url('../imagens/engrenagem.png') center / cover no-repeat;
 	/*	background-color: #fff;*/
 	border-radius: 5%;
-	max-width: 550px;
-	height: 100%;
+	max-width: 500px;
 	margin: auto;
 	padding: 10px;
 }
@@ -521,13 +520,16 @@ body {
 	text-decoration: none;
 
 	padding: 15px 5px;
+	margin: 5px 0;
 
 	display: block;
 	transition: background 0.3s ease;
 }
 
 .menu-item a:hover {
-	background-color: #34495e;
+	background-color: #fff;
+	color: rgb(21, 60, 93);
+	font-weight: bold;
 }
 
 /* Ícone indicador de submenu (opcional, mas ajuda o usuário) */
