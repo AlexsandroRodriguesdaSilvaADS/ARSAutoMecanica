@@ -6,7 +6,7 @@ const images = [
   { src: "./src/imagens/amortecedores-alfa.webp", title: "Amortecedores" },
   { src: "./src/imagens/coxins-batedores-coifas-alfa.webp", title: "Coxins, Batedores e Coifas" },
   { src: "./src/imagens/bandeja-alfa.webp", title: "Bandeja de Suspensão" },
-  { src: "./src/imagens/bucha-traseira-alfa.webp", title: "Bucha da Suspensão Traseira" },
+  { src: "./src/imagens/bucha-traseira-alfa.webp", title: "Embuchamento Traseiro" },
   { src: "./src/imagens/discos-de-freio-alfa.webp", title: "Discos de Freio" },
   { src: "./src/imagens/pastilhas-de-freio-alfa.webp", title: "Pastilhas de Freio" },
   { src: "./src/imagens/lonas-de-freio-alfa.webp", title: "Lonas de Freio" },
@@ -17,7 +17,7 @@ const images = [
   { src: "./src/imagens/eixo-completo-alfa.webp", title: "Semi-eixo Completo" },
   { src: "./src/imagens/kit-radiador-alfa.webp", title: "Kit Radiador" },
   { src: "./src/imagens/coxins-do-motor-alfa.webp", title: "Coxins do Motor" },
-  { src: "./src/imagens/correia-e-rolamento-alfa.webp", title: "Correia de Assessórios e Rolamento" }
+  { src: "./src/imagens/correia-e-rolamento-alfa.webp", title: "Correia e Rolamento" }
 ];
 
 let currentIndex = 0;

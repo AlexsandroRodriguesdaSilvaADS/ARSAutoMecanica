@@ -8,3 +8,7 @@ function toggleMenu1() {
 function toggleMenu2() {
     document.getElementById("overlay").classList.toggle("ativo");
 }
+
+function toggleMenu3() {
+    document.getElementById("navbar").classList.toggle("ativo");
+}

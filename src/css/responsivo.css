@@ -25,13 +25,9 @@
         gap: 10px;
     }
 
-    /*.carousel-thumbnails {
-        width: 55%;
-    }*/
-
-    /*.servicos h3 {
-        font-size: 14px;
-    }*/
+    .servicos-dicas .container-servicos .servico.ativo {
+        width: 90%;
+    }
 
     .whatsapp-flutuante {
         width: 50px;
@@ -41,7 +37,6 @@
     }
 
     .media iframe {
-        /*width: 90vw;*/
         height: 50vh;
     }
 }
@@ -49,33 +44,28 @@
 
 @media(max-width: 768px) {
     .dicas .link-dicas {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: auto;
-        width: 400px;
-        height: 100%;
         gap: 10px;
         padding: 0;
     }
 
     .servicos-dicas .container-servicos .servico.ativo {
-        display: flex;
-        flex-direction: column;
-        width: 400px;
-        height: 100vh;
-        margin: auto;
+        width: 95vw;
+        margin-top: 10px;
     }
 
     .servicos-dicas .container-servicos .informacoes-servico {
-        height: 100%;
+        padding: 10px;
+        height: 250px;
     }
 
     .servicos-dicas .container-servicos .servico img {
-        max-width: 400px;
-        min-height: 400px;
+        min-width: 200px;
+        max-height: 200px;
     }
 
+    .servicos-dicas .container-servicos .servico h3 {
+        min-width: 200px;
+    }
 }
 
 
@@ -155,56 +145,81 @@
     }
 
     .carousel-container {
-        width: 100%;
-    }
-
-    .carousel-thumbnails {
-        width: 99vw;
-    }
-
-    .carousel-slide {
-        min-width: 90%;
+        width: 95%;
     }
 
     .carousel-slide img {
-        width: 300px;
-        height: 300px;
-        margin: auto;
+        height: 50%;
     }
 
     .thumb {
-        width: 55px;
-        height: 55px;
+        width: 50px;
+        height: 50px;
     }
 
     .dicas {
         padding: 10px 0;
-    }
-
-    /*.servicos .container-servicos {
-        height: 70vh;
-        width: 99vw;
-        overflow: hidden;
-    }
-
-    .servicos .servico {
+        display: flex;
         flex-direction: column;
-        width: 100%;
         height: 100%;
-        gap: 0;
     }
 
-    .servicos .servico .informacoes-servico {
-        padding: 5px;
+    .dicas-main {
+        display: flex;
     }
 
-    .servicos .servico h3 {
+    .dicas .link-dicas {
+        display: none;
+    }
+
+    .dicas .navbar {
+        display: flex;
+        width: 110px;
+        box-shadow: 0 0 10px #fff;
+    }
+
+    .submenu {
+        left: 120px;
+    }
+
+    .servicos-dicas .container-servicos {
+        display: flex;
+        position: relative;
+        margin: auto;
+        width: 65%;
+        height: 100%;
+    }
+
+    .servicos-dicas .container-servicos .servico {
+        background-color: #fff;
+        box-shadow: 0 0 10px #fff;
+        flex-direction: column;
+    }
+
+    .servicos-dicas .container-servicos .servico h3,
+    h2 {
         width: 100%;
+        font-size: 16px;
+        font-weight: normal;
     }
 
-    .servicos .servico .informacoes-servico .link-agendamento {
+    .servicos-dicas .container-servicos .servico img {
+        min-width: 200px;
+        min-height: 200px;
+        margin: auto;
+    }
+
+    .servicos-dicas .container-servicos .informacoes-servico {
+        font-weight: normal;
         font-size: 16px;
-    }*/
+        padding: 5px;
+        height: 100%;
+    }
+
+    .link-agendamento {
+        position: relative;
+        top: 5px;
+    }
 
     .media iframe {
         width: 95vw;
@@ -231,13 +246,8 @@
         gap: 100px;
     }
 
-    /*.servicos .servico p {
-        font-size: 12px;
+    .thumb {
+        width: 45px;
+        height: 45px;
     }
-
-    .servicos .servico .informacoes-servico .link-agendamento {
-        bottom: 0;
-        font-size: 12px;
-    }*/
-
 }
