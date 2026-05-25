@@ -15,7 +15,9 @@ const images = [
   { src: "./src/imagens/junta-homocinetica-alfa.webp", title: "Junta Homocinética" },
   { src: "./src/imagens/deslizante-e-trizeta-alfa.webp", title: "Junta Deslizante e Trizeta" },
   { src: "./src/imagens/eixo-completo-alfa.webp", title: "Semi-eixo Completo" },
-  { src: "./src/imagens/kit-radiador-alfa.webp", title: "Kit Radiador" },
+  { src: "./src/imagens/radiador.webp", title: "Radiador" },
+  { src: "./src/imagens/eletro-ventilador.webp", title: "Eletro ventilador" },
+  { src: "./src/imagens/valvula-termostatica.webp", title: "Válvula termostática" },
   { src: "./src/imagens/coxins-do-motor-alfa.webp", title: "Coxins do Motor" },
   { src: "./src/imagens/correia-e-rolamento-alfa.webp", title: "Correia e Rolamento" }
 ];
@@ -26,14 +28,14 @@ const mainImage = document.getElementById("active-img");
 const thumbnails = document.querySelectorAll(".thumb");
 
 // ALTERAÇÃO 2: Mapear o elemento de texto do HTML
-const carouselTitle = document.getElementById("carousel-title"); 
+const carouselTitle = document.getElementById("carousel-title");
 
 function changeImage(index) {
   currentIndex = index;
 
   // ALTERAÇÃO 3: Agora buscamos a propriedade .src do objeto
   mainImage.src = images[currentIndex].src;
-  
+
   // ALTERAÇÃO 4: Atualiza o texto do título com a propriedade .title do objeto
   carouselTitle.textContent = images[currentIndex].title;
 

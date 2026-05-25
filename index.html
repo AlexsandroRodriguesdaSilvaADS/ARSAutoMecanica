@@ -213,9 +213,11 @@
             <img src="./src/imagens/junta-homocinetica.webp" class="thumb" onclick="changeImage(10)">
             <img src="./src/imagens/deslizante-e-trizeta.webp" class="thumb" onclick="changeImage(11)">
             <img src="./src/imagens/eixo-completo.webp" class="thumb" onclick="changeImage(12)">
-            <img src="./src/imagens/kit-radiador.webp" class="thumb" onclick="changeImage(13)">
-            <img src="./src/imagens/coxins-do-motor.webp" class="thumb" onclick="changeImage(14)">
-            <img src="./src/imagens/correia-e-rolamento.webp" class="thumb" onclick="changeImage(15)">
+            <img src="./src/imagens/radiador.webp" class="thumb" onclick="changeImage(13)">
+            <img src="./src/imagens/eletro-ventilador.webp" class="thumb" onclick="changeImage(14)">
+            <img src="./src/imagens/valvula-termostatica.webp" class="thumb" onclick="changeImage(15)">
+            <img src="./src/imagens/coxins-do-motor.webp" class="thumb" onclick="changeImage(16)">
+            <img src="./src/imagens/correia-e-rolamento.webp" class="thumb" onclick="changeImage(17)">
           </div>
         </div>
       </section>
@@ -262,7 +264,15 @@
                   </ul>
                 </li>
 
-                <li class="menu-item"><a href="#" class="meu-link" data-alvo="radiador">Kit radiador</a></li>
+                <li class="menu-item has-submenu">
+                  <a>Arrefecimento</a>
+                  <ul class="submenu">
+                    <li><a href="#" class="meu-link" data-alvo="radiador">Radiador</a></li>
+                    <li><a href="#" class="meu-link" data-alvo="eletro-ventilador">Eletro ventilador</a></li>
+                    <li><a href="#" class="meu-link" data-alvo="valvula-termostatica">Válvula termostática</a></li>
+                    <li></li>
+                  </ul>
+                </li>
 
                 <li class="menu-item"><a href="#" class="meu-link" data-alvo="coxins-do-motor">Coxins do motor</a></li>
 
@@ -284,7 +294,9 @@
               <li><a href="#" class="meu-link" data-alvo="servo-freio">Servo freio</a></li>
               <li><a href="#" class="meu-link" data-alvo="homocinetica">Junta homocinética</a></li>
               <li><a href="#" class="meu-link" data-alvo="deslizante">Deslizante e trizeta</a></li>
-              <li><a href="#" class="meu-link" data-alvo="radiador">Kit radiador</a></li>
+              <li><a href="#" class="meu-link" data-alvo="radiador">Radiador</a></li>
+              <li><a href="#" class="meu-link" data-alvo="eletro-ventilador">Eletro ventilador</a></li>
+              <li><a href="#" class="meu-link" data-alvo="valvula-termostatica">Válvula termostática</a></li>
               <li><a href="#" class="meu-link" data-alvo="coxins-do-motor">Coxins do motor</a></li>
               <li><a href="#" class="meu-link" data-alvo="correia-e-rolamento">Correia e rolamento</a></li>
             </ul>
@@ -475,15 +487,45 @@
               </div>
 
               <div id="radiador" class="servico">
-                <img src="./src/imagens/kit-radiador.webp" alt="Kit radiador" />
-                <h3>Kit radiador</h3>
+                <img src="./src/imagens/radiador.webp" alt="Radiador" />
+                <h3>Radiador</h3>
                 <div class="informacoes-servico">
                   <h2>Quando reparar?</h2>
                   <ul>
-                    <li>O principal sinal de que existem problemas nese sistema é o superaquecimento.</li>
-                    <li>1. Vazamento no radiador ou no recipiente de expansão.</li>
-                    <li>2. Defeito na tampa no recipiente de expansão.</li>
-                    <li>3. Mal funcionamento do eletro ventilador.</li>
+                    <li>O principal sinal de que existem problemas nesse sistema é o superaquecimento.</li>
+                    <li>1. Vazamento ou entupimento.</li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+                </div>
+              </div>
+
+              <div id="eletro-ventilador" class="servico">
+                <img src="./src/imagens/eletro-ventilador.webp" alt="Eletro ventilador" />
+                <h3>Eletro ventilador</h3>
+                <div class="informacoes-servico">
+                  <h2>Quando reparar?</h2>
+                  <ul>
+                    <li>O principal sinal de que existem problemas nesse sistema é o superaquecimento.</li>
+                    <li>1. Mal funcionamento do eletro ventilador.</li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
+                </div>
+              </div>
+
+              <div id="valvula-termostatica" class="servico">
+                <img src="./src/imagens/valvula-termostatica.webp" alt="Válvula termostática" />
+                <h3>Válvula termostática</h3>
+                <div class="informacoes-servico">
+                  <h2>Quando reparar?</h2>
+                  <ul>
+                    <li>O principal sinal de que existem problemas nesse sistema é o superaquecimento.</li>
+                    <li>1. Válvula travada</li>
+                    <li></li>
+                    <li></li>
                   </ul>
                   <a class="link-agendamento" onclick="toggleMenu2()">Ir para agendamento</a>
                 </div>
