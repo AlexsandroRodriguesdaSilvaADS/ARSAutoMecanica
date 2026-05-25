@@ -157,9 +157,8 @@
         height: 50px;
     }
 
-
     .dicas {
-        background-color: aqua;
+/*        background-color: aqua;*/
 
         padding: 10px 0;
         display: flex;
@@ -176,9 +175,9 @@
     }
 
     .dicas .navbar {
+        display: flex;
         background-color: rgb(21, 60, 93);
         font-size: 14px;
-        display: flex;
         width: 30%;
         height: 100%;
         box-shadow: 0 0 10px #fff;
