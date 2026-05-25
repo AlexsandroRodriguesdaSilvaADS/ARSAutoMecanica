@@ -517,12 +517,6 @@ body {
 	display: none;
 }
 
-/*.dicas iframe {
-	width: 100%;
-	height: 280px;
-	overflow: hidden;
-}*/
-
 .servicos-dicas .container-servicos {
 	display: flex;
 	height: 50%;
@@ -532,7 +526,6 @@ body {
 	display: none;
 	width: 100%;
 	margin: auto;
-	/*	max-height: 260px;*/
 	position: relative;
 	gap: 10px;
 }
@@ -549,14 +542,16 @@ body {
 }
 
 .servicos-dicas .container-servicos .servico img {
-	box-shadow: 0 0 10px #fff;
+	/*box-shadow: 0 0 10px #fff;*/
+
 	min-width: 260px;
 	max-height: 260px;
 }
 
 .servicos-dicas .container-servicos .informacoes-servico {
 	background-color: rgb(21, 60, 93);
-	box-shadow: 0 0 10px #fff;
+
+/*	box-shadow: 0 0 10px #fff;*/
 	width: 100%;
 	height: 260px;
 	font-weight: 600;
