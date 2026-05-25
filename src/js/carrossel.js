@@ -15,9 +15,9 @@ const images = [
   { src: "./src/imagens/junta-homocinetica-alfa.webp", title: "Junta Homocinética" },
   { src: "./src/imagens/deslizante-e-trizeta-alfa.webp", title: "Junta Deslizante e Trizeta" },
   { src: "./src/imagens/eixo-completo-alfa.webp", title: "Semi-eixo Completo" },
-  { src: "./src/imagens/radiador.webp", title: "Radiador" },
-  { src: "./src/imagens/eletro-ventilador.webp", title: "Eletro ventilador" },
-  { src: "./src/imagens/valvula-termostatica.webp", title: "Válvula termostática" },
+  { src: "./src/imagens/radiador-alfa.webp", title: "Radiador" },
+  { src: "./src/imagens/eletro-ventilador-alfa.webp", title: "Eletro ventilador" },
+  { src: "./src/imagens/valvula-termostatica-alfa.webp", title: "Válvula termostática" },
   { src: "./src/imagens/coxins-do-motor-alfa.webp", title: "Coxins do Motor" },
   { src: "./src/imagens/correia-e-rolamento-alfa.webp", title: "Correia e Rolamento" }
 ];

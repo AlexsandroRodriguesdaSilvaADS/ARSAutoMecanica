@@ -159,6 +159,8 @@
 
 
     .dicas {
+        background-color: aqua;
+
         padding: 10px 0;
         display: flex;
         flex-direction: column;
@@ -174,17 +176,99 @@
     }
 
     .dicas .navbar {
+        background-color: rgb(21, 60, 93);
         font-size: 14px;
         display: flex;
-        width: 110px;
+        width: 30%;
         height: 100%;
         box-shadow: 0 0 10px #fff;
         top: 10px;
+        position: relative;
+        margin: auto;
+        justify-content: center;
     }
 
-    .submenu {
-        left: 120px;
+
+    .menu {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
     }
+
+    /* Itens Principais do Menu */
+    .menu-item {
+        position: relative;
+        /* Necessário para posicionar a cascata */
+    }
+
+    .menu-item a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 15px 5px;
+        margin: 5px 0;
+        width: 100%;
+        display: block;
+        transition: background 0.3s ease;
+    }
+
+    .menu-item a:hover {
+        background-color: #fff;
+        color: rgb(21, 60, 93);
+        font-weight: bold;
+    }
+
+    /* Ícone indicador de submenu (opcional, mas ajuda o usuário) */
+    .has-submenu>a::after {
+        content: ' ▼';
+        font-size: 0.8rem;
+        color: #bdc3c7;
+    }
+
+    /* A Cascata (Submenu) - Escondida por padrão */
+    .submenu {
+        list-style: none;
+        position: absolute;
+        top: 100%;
+
+        /* Brota exatamente abaixo do item pai */
+        left: 100%;
+        background-color: #ffffff;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+        min-width: 200px;
+
+        /* Efeito de transição suave em vez de apenas display:none */
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+        border-radius: 0 0 4px 4px;
+        z-index: 10;
+    }
+
+    /* Itens do Submenu */
+    .submenu li a {
+        color: #333333;
+        padding: 12px 20px;
+        border-bottom: 1px solid #f1f1f1;
+    }
+
+    .submenu li a:hover {
+        background-color: #f8f9fa;
+        color: #2c3e50;
+    }
+
+    /* Remove a borda do último item do submenu */
+    .submenu li:last-child a {
+        border-bottom: none;
+    }
+
+    /* O PULO DO GATO: Quando passar o mouse no item pai, mostra o submenu */
+    .menu-item:hover .submenu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
 
     .servicos-dicas .container-servicos {
         display: flex;
@@ -254,5 +338,9 @@
     .thumb {
         width: 45px;
         height: 45px;
+    }
+
+     .menu-item a {
+        font-size: 11px;
     }
 }
