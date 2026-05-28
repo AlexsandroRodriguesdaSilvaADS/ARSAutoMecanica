@@ -111,7 +111,10 @@
     }
 
     .home .agendamento-ul {
-        flex-direction: column;
+        /*flex-direction: column;*/
+        position: relative;
+        justify-content: center;
+
         gap: 10px;
     }
 
@@ -355,11 +358,11 @@
         width: 60%;
     }
 
-     .servicos-dicas .container-servicos .servico h3 {
+    .servicos-dicas .container-servicos .servico h3 {
         width: 60%;
     }
 
-     .servicos-dicas .container-servicos .servico img {
+    .servicos-dicas .container-servicos .servico img {
         min-width: 180px;
         min-height: 180px;
     }
