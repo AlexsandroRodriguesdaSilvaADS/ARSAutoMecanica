@@ -165,7 +165,8 @@ body {
 
 /* DIV AGENDAMENTO */
 .home .agendamento-ul {
-	padding-top: 25px;
+	padding-bottom: 40px;
+
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
@@ -380,6 +381,9 @@ body {
 
 /* CARROSSEL DE SERVIÇOS */
 .servicos {
+	/*background-color: rgba(18, 140, 126, 0.7);*/
+	background-color: rgba(21, 60, 93, 0.7);
+
 	padding: 50px 0;
 }
 
@@ -402,7 +406,7 @@ body {
 
 .carousel-slide {
 	background: url('../imagens/engrenagem.png') center / cover no-repeat;
-	/*	background-color: #fff;*/
+	/*	background-color: #FE9E00;*/
 	border-radius: 5%;
 	max-width: 500px;
 	margin: auto;
@@ -415,6 +419,13 @@ body {
 	width: 100%;
 	padding: 10px 0;
 	text-transform: uppercase;
+	font-weight: bolder;
+
+	/*text-shadow:
+		-1px -1px 0 rgb(21, 60, 93),
+		1px -1px 0 rgb(21, 60, 93),
+		-1px 1px 0 rgb(21, 60, 93),
+		1px 1px 0 rgb(21, 60, 93);*/
 
 	text-shadow:
 		0 0 5px #fff,
@@ -422,6 +433,7 @@ body {
 		0 0 20px #fff,
 		0 0 40px #fff,
 		0 0 80px #fff;
+
 	letter-spacing: 5px;
 }
 
@@ -614,7 +626,7 @@ body {
 }
 
 .media a {
-/*	color: rgb(21, 60, 93);*/
+	/*	color: rgb(21, 60, 93);*/
 	font-size: 20px;
 	font-weight: normal;
 	transition: 0.3s;

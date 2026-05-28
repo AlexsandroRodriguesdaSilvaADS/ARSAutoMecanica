@@ -167,7 +167,7 @@
 
     .dicas-main {
         background-color: rgb(21, 60, 93);
-
+        min-width: 100%;
         display: flex;
     }
 
@@ -280,8 +280,7 @@
     }
 
     .servicos-dicas .container-servicos .servico {
-        /*background-color: #fff;
-        box-shadow: 0 0 10px #fff;*/
+        /*box-shadow: 0 0 10px #fff;*/
         flex-direction: column;
         height: 100%;
         width: 100%;
@@ -349,6 +348,19 @@
     }
 
     .menu-item a {
-        font-size: 11px;
+        font-size: 11px7
+    }
+
+    .servicos-dicas .container-servicos {
+        width: 60%;
+    }
+
+     .servicos-dicas .container-servicos .servico h3 {
+        width: 60%;
+    }
+
+     .servicos-dicas .container-servicos .servico img {
+        min-width: 180px;
+        min-height: 180px;
     }
 }
