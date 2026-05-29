@@ -88,6 +88,17 @@
         z-index: 3;
     }
 
+    .cabecalho .menu ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cabecalho .menu li a {
+        font-size: 20px;
+        color: #fff;
+        padding: 5px 20px;
+    }
+
     .cabecalho .logo {
         width: 120px;
         height: 110px;
@@ -319,7 +330,7 @@
         bottom: 5px;
     }
 
-    .media iframe {
+    #noticias .media iframe {
         width: 95vw;
         height: 200px;
     }
