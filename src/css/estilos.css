@@ -39,7 +39,7 @@ body {
 
 .cabecalho .menu ul {
 	display: flex;
-/*	flex-direction: column;*/
+	/*	flex-direction: column;*/
 	gap: 30px;
 }
 
@@ -502,8 +502,7 @@ body {
 /* SESSÃO DAS DICAS */
 .servicos-dicas {
 	margin-top: 15px;
-
-	/*	padding: 40px 0;*/
+	padding: 40px 0;
 }
 
 .servicos-dicas .titulo {
@@ -539,14 +538,15 @@ body {
 
 .dicas .link-dicas li {
 	border: 1px #fff solid;
+	color: #fff;
 	padding: 10px;
 	border-radius: 15px;
 	transition: 0.3s;
 }
 
 .dicas .link-dicas li:hover {
-	color: rgb(21, 60, 93);
-	background-color: #fff;
+	color: #ca2a02;
+	background-color: #FE9E00;
 	font-weight: bolder;
 }
 
@@ -611,7 +611,7 @@ body {
 /* SESSÃO DE NOTICIAS */
 #noticias {
 	margin-top: 10px;
-	padding: 40px;
+	padding: 20px 0;
 }
 
 #noticias .titulo {

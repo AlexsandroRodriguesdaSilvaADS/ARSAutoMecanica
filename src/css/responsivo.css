@@ -172,6 +172,7 @@
 
     .dicas {
         /*background-color: aqua;*/
+
         padding: 10px 0;
         display: flex;
         flex-direction: column;
@@ -179,7 +180,7 @@
     }
 
     .dicas-main {
-        background-color: rgb(21, 60, 93);
+        background-color: rgb(21, 60, 93, 0.7);
         min-width: 100%;
         display: flex;
     }
@@ -191,13 +192,12 @@
 
     /* FILHO 1 */
     .dicas .navbar {
+        border-right: 2px #ca2a02 solid;
         display: flex;
-        /*background-color: rgb(21, 60, 93);*/
         font-size: 14px;
         width: 30%;
-        height: 550px;
-        /*box-shadow: 0 0 10px #fff;*/
-        top: 10px;
+        height: 540px;
+        /*top: 10px;*/
         position: relative;
         margin: auto;
         justify-content: center;
@@ -285,6 +285,8 @@
 
     /* FILHO 2 */
     .servicos-dicas .container-servicos {
+        /*background-color: #ca2a02;*/
+
         display: flex;
         position: relative;
         margin: auto;
@@ -293,18 +295,20 @@
     }
 
     .servicos-dicas .container-servicos .servico {
-        /*box-shadow: 0 0 10px #fff;*/
+        /*background-color: aqua;*/
+
         flex-direction: column;
         height: 100%;
         width: 100%;
     }
 
     .servicos-dicas .container-servicos .servico h3 {
+        background-color: rgba(21, 60, 93, 0.5);
         width: 100%;
         font-size: 16px;
         font-weight: normal;
         top: -30px;
-        border: 1px #fff solid;
+        border: 2px #ca2a02 solid;
     }
 
     .servicos-dicas .container-servicos .servico h2 {
@@ -319,19 +323,21 @@
     }
 
     .servicos-dicas .container-servicos .informacoes-servico {
+        background-color: rgba(21, 60, 93, 0.5);
+
         font-weight: normal;
-        font-size: 16px;
+        font-size: 15px;
         padding: 5px;
         height: 100%;
     }
 
     .link-agendamento {
         position: absolute;
-        bottom: 5px;
+        bottom: 0;
     }
 
     #noticias .media iframe {
-        width: 95vw;
+        width: 100vw;
         height: 200px;
     }
 
@@ -361,7 +367,7 @@
     }
 
     .menu-item a {
-        font-size: 11px7
+        font-size: 11px;
     }
 
     .servicos-dicas .container-servicos {
