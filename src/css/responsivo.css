@@ -1,6 +1,14 @@
 @media(max-width: 1280px) {
+    body {
+        overflow: auto;
+    }
+
     .main {
         padding: 0;
+    }
+
+    .main .logo {
+        position: relative;
     }
 
     .cabecalho {
@@ -25,8 +33,23 @@
         gap: 10px;
     }
 
-    .servicos-dicas .container-servicos .servico.ativo {
+    .dicas .container-servicos .servico.ativo {
         width: 90%;
+    }
+
+    .noticias {
+        height: 100%;
+    }
+
+    .noticias .media {
+        padding: 10px 0;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .noticias .media iframe {
+        width: 400px;
+        height: 400px;
     }
 
     .whatsapp-flutuante {

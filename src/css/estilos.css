@@ -7,6 +7,7 @@ body {
 	background: url("../imagens/logo-p.png") center / cover no-repeat fixed;
 	font-family: "Poppins", sans-serif;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .background {
@@ -24,12 +25,14 @@ body {
 }
 
 .main .logo {
+	position: fixed;
+	left: 10px;
 	margin-top: 15px;
-	
 	padding: 2px;
 	width: 170px;
 	height: 140px;
 	box-shadow: 0 0 10px #fff;
+	z-index: 3;
 }
 
 .cabecalho {
@@ -47,7 +50,6 @@ body {
 
 .cabecalho .menu ul {
 	display: flex;
-	/*	flex-direction: column;*/
 	gap: 30px;
 }
 
@@ -85,10 +87,11 @@ body {
 
 /* SESSÃO HOME */
 .home {
+	padding: 70px 0;
 	display: flex;
 	min-height: calc(100vh - 125px);
 	align-items: center;
-	gap: 50px;
+	/*gap: 50px;*/
 	justify-content: space-between;
 }
 
@@ -234,7 +237,7 @@ body {
 	position: fixed;
 	width: 500px;
 	top: 30px;
-	z-index: 2;
+	z-index: 3;
 }
 
 .overlay.ativo {
@@ -315,7 +318,7 @@ body {
 	width: 1100px;
 	height: 300px;
 	transition: 0.3s;
-	z-index: 3;
+	z-index: 4;
 }
 
 .painel-lateral.ativo {
@@ -410,7 +413,7 @@ button #seta.girar {
 
 /* CARROSSEL DE SERVIÇOS */
 .servicos {
-	padding: 20px 0;
+	padding: 70px 0;
 }
 
 .servicos .titulo {
@@ -524,13 +527,12 @@ button #seta.girar {
 
 /* SESSÃO DAS DICAS */
 .dicas {
-/*	margin-top: 15px;*/
-	padding: 20px 0;
+	padding: 70px 0;
+	height: 100vh;
 }
 
 .dicas .titulo {
 	padding: 20px 0;
-
 	text-align: center;
 	/*padding: 70px 0;*/
 	font-size: 45px;
@@ -603,16 +605,12 @@ button #seta.girar {
 }
 
 .dicas .container-servicos .servico img {
-	/*box-shadow: 0 0 10px #fff;*/
-
 	min-width: 260px;
 	max-height: 260px;
 }
 
 .dicas .container-servicos .informacoes-servico {
 	background-color: rgb(21, 60, 93);
-
-	/*	box-shadow: 0 0 10px #fff;*/
 	width: 100%;
 	height: 260px;
 	font-weight: 600;
@@ -634,8 +632,8 @@ button #seta.girar {
 
 /* SESSÃO DE NOTICIAS */
 .noticias {
-/*	margin-top: 10px;*/
-	padding: 20px 0;
+	padding: 70px 0;
+	height: 100vh;
 }
 
 .noticias .titulo {
@@ -649,25 +647,24 @@ button #seta.girar {
 .noticias .media {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 10px 0;
+/*	padding: 10px 0;*/
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	justify-content: center;
+/*	justify-content: center;*/
 	margin: auto;
-	gap: 50px;
+	gap: 10px;
 }
 
 .noticias .media iframe {
 	background-color: rgba(224, 224, 224, 0.3);
-	width: 400px;
-	height: 400px;
+	width: 265px;
+	height: 280px;
 	margin: 10px 0;
 }
 
 .noticias .media a {
-	/*	color: rgb(21, 60, 93);*/
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: normal;
 	transition: 0.3s;
 	text-decoration: underline;
