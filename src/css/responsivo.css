@@ -88,15 +88,21 @@
         z-index: 3;
     }
 
+    .cabecalho .menu {
+        position: fixed;
+        right: 0;
+        z-index: 6;
+    }
+
     .cabecalho .menu ul {
         flex-direction: column;
         gap: 15px;
     }
 
-    .cabecalho .menu li a {
-        font-size: 20px;
+    .cabecalho .menu li a.botao {
+        font-size: 14px;
         color: #fff;
-        padding: 5px 20px;
+        padding: 10px;
     }
 
     .cabecalho .logo {
@@ -128,14 +134,14 @@
         gap: 10px;
     }
 
-    .home .painel-lateral {
+    .painel-lateral {
         flex-direction: column;
         top: -600px;
         width: 400px;
         height: 600px;
     }
 
-    .home .painel-lateral.ativo {
+    .painel-lateral.ativo {
         transform: translateY(625px);
     }
 
@@ -170,7 +176,13 @@
         height: 50px;
     }
 
-    .dicas {
+    .topo {
+        display: flex;
+        position: relative;
+        right: 0;
+    }
+
+    .dicas-container {
         /*background-color: aqua;*/
 
         padding: 10px 0;
@@ -188,7 +200,6 @@
     .dicas .link-dicas {
         display: none;
     }
-
 
     /* FILHO 1 */
     .dicas .navbar {
@@ -284,7 +295,7 @@
     }
 
     /* FILHO 2 */
-    .servicos-dicas .container-servicos {
+    .dicas .container-servicos {
         /*background-color: #ca2a02;*/
 
         display: flex;
@@ -294,7 +305,7 @@
         height: 500px;
     }
 
-    .servicos-dicas .container-servicos .servico {
+    .dicas .container-servicos .servico {
         /*background-color: aqua;*/
 
         flex-direction: column;
@@ -302,7 +313,7 @@
         width: 100%;
     }
 
-    .servicos-dicas .container-servicos .servico h3 {
+    .dicas .container-servicos .servico h3 {
         background-color: rgba(21, 60, 93, 0.5);
         width: 100%;
         font-size: 16px;
@@ -311,18 +322,18 @@
         border: 2px #ca2a02 solid;
     }
 
-    .servicos-dicas .container-servicos .servico h2 {
+    .dicas .container-servicos .servico h2 {
         font-size: 16px;
         font-weight: normal;
     }
 
-    .servicos-dicas .container-servicos .servico img {
+    .dicas .container-servicos .servico img {
         min-width: 220px;
         min-height: 220px;
         margin: auto;
     }
 
-    .servicos-dicas .container-servicos .informacoes-servico {
+    .dicas .container-servicos .informacoes-servico {
         background-color: rgba(21, 60, 93, 0.5);
 
         font-weight: normal;
@@ -331,12 +342,12 @@
         height: 100%;
     }
 
-    .link-agendamento {
+    .dicas .container-servicos .informacoes-servico .link-agendamento {
         position: absolute;
         bottom: 0;
     }
 
-    #noticias .media iframe {
+    .noticias .media iframe {
         width: 100vw;
         height: 200px;
     }
