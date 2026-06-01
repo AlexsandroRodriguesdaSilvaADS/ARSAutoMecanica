@@ -170,11 +170,11 @@
         height: 50px;
     }
 
-    .home .container-foto .foto-video {
+    .home .container-foto-principal .foto-video {
         max-width: 300px;
     }
 
-    .home .container-foto .foto-video video {
+    .home .container-foto-principal .foto-video video {
         width: 300px;
     }
 
@@ -225,6 +225,10 @@
     .thumb {
         width: 50px;
         height: 50px;
+    }
+
+    .container-foto .foto-video{
+        display: none;
     }
 
     .dicas-main {
