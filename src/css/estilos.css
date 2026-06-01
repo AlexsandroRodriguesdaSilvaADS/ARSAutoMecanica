@@ -8,14 +8,8 @@ body {
 	background: url("../imagens/bmw-m3-gtr.webp") center / cover no-repeat fixed;
 	font-family: "Poppins", sans-serif;
 	margin: 0 auto;
-	overflow: hidden;
+	/*	overflow: hidden;*/
 }
-
-/*.background {
-	width: 100%;
-	max-width: 1300px;
-	margin: auto;
-}*/
 
 .main {
 	background-color: rgba(21, 60, 93, 0.7);
@@ -29,13 +23,14 @@ body {
 	left: 10px;
 	margin-top: 15px;
 	padding: 2px;
-	width: 280px;
-	height: 240px;
+	max-width: 200px;
+	/*	height: 240px;*/
 	box-shadow: 0 0 10px #fff;
 	z-index: 3;
 }
 
 .cabecalho {
+	background-color: rgb(21, 60, 93);
 	position: fixed;
 	top: 25px;
 	width: 100vw;
@@ -74,7 +69,6 @@ body {
 .personagem {
 	display: none;
 	transition: all 0.3s ease-in-out;
-
 }
 
 .personagem.selecionado {
@@ -209,24 +203,30 @@ div#endereço-toogle {
 }
 
 /* CONTAINER FOTO-VIDEO */
+.home .container-foto-principal {
+	display: flex;
+}
+
 .home .container-foto-principal .foto-video {
 	max-width: 450px;
 	text-align: center;
 	justify-content: center;
+	position: relative;
+	z-index: 1;
 }
 
 .home .container-foto-principal .foto-video video {
-	width: 450px;
+	width: 100%;
 	border-radius: 50%;
-	position: absolute;
-	/*z-index: 1;*/
+	position: relative;
 }
 
 .home .container-foto-principal .foto-video img {
-	max-width: 100%;
+	width: 100%;
 	border-radius: 50%;
-	position: relative;
-	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 
@@ -413,25 +413,24 @@ button #seta.girar {
 }
 
 .container-foto .foto-video {
-	max-width: 300px;
-	text-align: center;
-	justify-content: center;
+	max-width: 230px;
 	position: fixed;
 	right: 5px;
 	top: 5px;
 }
 
 .container-foto .foto-video video {
-	width: 300px;
+	width: 100%;
 	border-radius: 50%;
-	position: absolute;
+	position: relative;
 }
 
 .container-foto .foto-video img {
-	max-width: 100%;
+	width: 100%;
 	border-radius: 50%;
-	position: relative;
-	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .servicos .titulo {
