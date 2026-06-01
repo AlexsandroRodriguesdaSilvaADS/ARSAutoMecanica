@@ -32,7 +32,7 @@
         gap: 10px;
     }
 
-    .container-foto .foto-video{
+    .container-foto .foto-video {
         display: none;
     }
 
@@ -285,12 +285,15 @@
 
     /* A Cascata (Submenu) - Escondida por padrão */
     .submenu {
+        border: 1px #ca2a02 solid;
+
         list-style: none;
         position: absolute;
-        top: 100%;
+        /*top: 100%;*/
+        top: 5px;
 
         /* Brota exatamente abaixo do item pai */
-        left: 100%;
+        left: 130px;
         background-color: #ffffff;
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
         min-width: 200px;
@@ -330,8 +333,6 @@
 
     /* FILHO 2 */
     .dicas .container-servicos {
-        /*background-color: #ca2a02;*/
-
         display: flex;
         position: relative;
         margin: auto;
@@ -340,8 +341,6 @@
     }
 
     .dicas .container-servicos .servico {
-        /*background-color: aqua;*/
-
         flex-direction: column;
         height: 100%;
         width: 100%;
@@ -389,7 +388,6 @@
         width: 70px;
         height: 50px;
     }
-
 }
 
 @media (max-width: 320px) {
