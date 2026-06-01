@@ -32,6 +32,10 @@
         gap: 10px;
     }
 
+    .container-foto .foto-video{
+        display: none;
+    }
+
     .dicas .container-servicos .servico.ativo {
         width: 90%;
     }
@@ -165,11 +169,6 @@
         padding: 10px;
     }
 
-    .footer .logo {
-        width: 70px;
-        height: 50px;
-    }
-
     .home .container-foto-principal .foto-video {
         max-width: 300px;
     }
@@ -225,10 +224,6 @@
     .thumb {
         width: 50px;
         height: 50px;
-    }
-
-    .container-foto .foto-video{
-        display: none;
     }
 
     .dicas-main {
@@ -389,6 +384,11 @@
     .noticias .media iframe {
         width: 100vw;
         height: 200px;
+    }
+
+    .footer .logo {
+        width: 70px;
+        height: 50px;
     }
 
 }
