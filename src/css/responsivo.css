@@ -1,4 +1,4 @@
-@media(max-width: 1280px) {
+@media (max-width: 1280px) {
     body {
         overflow: auto;
     }
@@ -13,10 +13,6 @@
         height: 140px;
         /*left: 420px;
         top: 80px;*/
-    }
-
-    .cabecalho {
-        padding: 30px;
     }
 
     .home {
@@ -67,11 +63,11 @@
     }
 }
 
-
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .main .logo {
         left: 290px;
         top: 80px;
+        margin-bottom: 70px;
     }
 
     .painel-lateral {
@@ -109,11 +105,9 @@
     }
 }
 
-
-@media(max-width: 425px) {
+@media (max-width: 425px) {
     .main .logo {
         align-items: center;
-        width: 180px;
         left: calc(50vw - 85px);
         top: 100px;
         margin-bottom: 50px;
@@ -155,7 +149,7 @@
 
     .cabecalho {
         background-color: rgb(21, 60, 93);
-        min-width: 425px;
+        /*min-width: 425px;*/
         top: 0;
         padding: 10px 0;
     }
@@ -234,9 +228,9 @@
     }
 
     .dicas-main {
-        background-color: rgb(21, 60, 93, 0.7);
-        min-width: 100%;
+        background-color: rgba(21, 60, 93, 0.7);
         display: flex;
+        min-width: 100%;
     }
 
     .dicas .link-dicas {
@@ -314,14 +308,14 @@
 
     /* Itens do Submenu */
     .submenu li a {
-        color: #333333;
+        color: rgb(21, 60, 93);
         padding: 12px 20px;
         border-bottom: 1px solid #f1f1f1;
     }
 
     .submenu li a:hover {
         background-color: #f8f9fa;
-        color: #2c3e50;
+        color: rgb(21, 60, 93);
     }
 
     /* Remove a borda do último item do submenu */
@@ -356,7 +350,7 @@
     }
 
     .dicas .container-servicos .servico h3 {
-        background-color: rgba(21, 60, 93, 0.5);
+        background-color: rgba(0, 0, 0, 0.1);
         width: 100%;
         font-size: 16px;
         font-weight: normal;
@@ -376,8 +370,7 @@
     }
 
     .dicas .container-servicos .informacoes-servico {
-        background-color: rgba(21, 60, 93, 0.5);
-
+        background-color: rgba(0, 0, 0, 0.1);
         font-weight: normal;
         font-size: 15px;
         padding: 5px;
@@ -396,19 +389,7 @@
 
 }
 
-@media(max-width: 375px) {
-
-    .cabecalho {
-        min-width: 375px;
-    }
-}
-
-@media(max-width: 320px) {
-
-    .cabecalho {
-        min-width: 320px;
-    }
-
+@media (max-width: 320px) {
     .cabecalho .logo {
         width: 100px;
         height: 90px;
