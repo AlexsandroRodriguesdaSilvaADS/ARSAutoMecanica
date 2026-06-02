@@ -109,12 +109,15 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
     .main .logo {
         align-items: center;
-        left: calc(50vw - 85px);
-        top: 100px;
-        margin-bottom: 50px;
+        left: calc(50vw - 90px);
+        top: 80px;
+    }
+
+    .home {
+        padding: 30px 0;
     }
 
     .home .informacoes h1 {
@@ -225,6 +228,12 @@
         height: 50px;
     }
 
+    .servicos,
+    .dicas,
+    .noticias {
+        padding: 20px 0 30px 0;
+    }
+
     .dicas-main {
         background-color: rgba(21, 60, 93, 0.7);
         display: flex;
@@ -293,7 +302,7 @@
         top: 5px;
 
         /* Brota exatamente abaixo do item pai */
-        left: 130px;
+        left: 123px;
         background-color: #ffffff;
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
         min-width: 200px;
