@@ -21,7 +21,7 @@ body {
 .main .logo {
 	position: relative;
 	left: 5px;
-	top: 5px;
+	top: 10px;
 	padding: 2px;
 	max-width: 200px;
 	box-shadow: 0 0 10px #fff;
@@ -44,13 +44,13 @@ body {
 .cabecalho .menu ul {
 	display: flex;
 	gap: 30px;
+	padding: 10px 0;
 }
 
 .cabecalho .menu li .botao {
 	font-family: "Raleway", sans-serif;
 	font-size: 20px;
 	color: #fff;
-	/*	background-color: rgb(21, 60, 93);*/
 	border: 1px solid #fff;
 	border-radius: 15px;
 	text-transform: capitalize;
@@ -205,6 +205,9 @@ div#endereço-toogle {
 /* CONTAINER FOTO-VIDEO */
 .home .container-foto-principal {
 	display: flex;
+	position: relative;
+	top: -160px;
+	right: 0;
 }
 
 .home .container-foto-principal .foto-video {
@@ -418,8 +421,8 @@ button #seta.girar {
 .noticias .container-foto .foto-video {
 	max-width: 200px;
 	position: absolute;
-	right: 210px;
-	top: 5px;
+	right: 21%;
+	top: 10px;
 	z-index: 2;
 }
 
@@ -543,7 +546,6 @@ button #seta.girar {
 .dicas .titulo {
 	padding: 20px 0;
 	text-align: center;
-	/*padding: 70px 0;*/
 	font-size: 45px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -551,7 +553,6 @@ button #seta.girar {
 
 .dicas .link-dicas {
 	display: flex;
-
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: auto;
@@ -627,7 +628,7 @@ button #seta.girar {
 
 /* SESSÃO NOTICIAS */
 .noticias {
-	padding: 20px 0;
+	padding: 30px 0;
 }
 
 .noticias .titulo {
@@ -651,7 +652,7 @@ button #seta.girar {
 
 .noticias .media iframe {
 	background-color: rgba(224, 224, 224, 0.3);
-	width: 300px;
+	width: 400px;
 	height: 250px;
 	margin: 10px 0;
 }
