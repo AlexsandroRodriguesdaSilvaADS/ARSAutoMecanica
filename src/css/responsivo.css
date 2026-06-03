@@ -170,6 +170,10 @@
         padding: 10px;
     }
 
+    .home .container-foto-principal {
+        top: 0;
+    }
+
     .home .container-foto-principal .foto-video {
         max-width: 300px;
     }
