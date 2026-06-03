@@ -99,4 +99,3 @@ document.getElementById("prevBtn").addEventListener("click", () => {
 // Inicia o carrossel exibindo o primeiro item corretamente
 changeImage(currentIndex);
 startAutoPlay();
-
