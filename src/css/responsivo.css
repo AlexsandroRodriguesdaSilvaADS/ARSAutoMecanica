@@ -32,8 +32,14 @@
         gap: 10px;
     }
 
-    .container-foto .foto-video {
-        display: none;
+    .home .container-foto-principal {
+        top: 0;
+    }
+
+    .servicos .container-foto .foto-video,
+    .dicas .container-foto .foto-video,
+    .noticias .container-foto .foto-video {
+        right: 10px;
     }
 
     .dicas .container-servicos .servico.ativo {
@@ -72,6 +78,10 @@
         left: 290px;
         top: 100px;
         margin-bottom: 80px;
+    }
+
+    .container-foto .foto-video {
+        display: none;
     }
 
     .painel-lateral {
@@ -168,10 +178,6 @@
         font-size: 14px;
         color: #fff;
         padding: 10px;
-    }
-
-    .home .container-foto-principal {
-        top: 0;
     }
 
     .home .container-foto-principal .foto-video {
