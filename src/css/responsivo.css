@@ -167,7 +167,6 @@
 
     .cabecalho .menu ul {
         gap: 15px;
-        margin-top: 10px;
     }
 
     .cabecalho .menu li a.botao {
@@ -222,6 +221,10 @@
 
     .carousel-container {
         width: 95%;
+    }
+
+    .carousel-slide {
+        background: none;
     }
 
     .carousel-slide img {
@@ -361,12 +364,12 @@
     }
 
     .dicas .container-servicos .servico h3 {
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: rgba(0, 0, 0, 0.01);
+         border: 2px #ca2a02 solid;
         width: 100%;
         font-size: 16px;
         font-weight: normal;
         top: -30px;
-        border: 2px #ca2a02 solid;
     }
 
     .dicas .container-servicos .servico h2 {
@@ -381,7 +384,8 @@
     }
 
     .dicas .container-servicos .informacoes-servico {
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: rgba(0, 0, 0, 0.01);
+         border: 2px #ca2a02 solid;
         font-weight: normal;
         font-size: 15px;
         padding: 5px;
@@ -390,7 +394,7 @@
 
     .dicas .container-servicos .informacoes-servico .link-agendamento {
         position: absolute;
-        bottom: 0;
+        bottom: 5px;
     }
 
     .noticias .media iframe {
