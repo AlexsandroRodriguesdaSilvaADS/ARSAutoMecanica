@@ -38,6 +38,10 @@
         width: 150px;
     }*/
 
+    .servicos {
+        margin: 0;
+    }
+
     .dicas .container-servicos .servico.ativo {
         width: 90%;
     }
