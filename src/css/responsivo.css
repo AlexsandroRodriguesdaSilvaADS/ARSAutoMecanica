@@ -7,9 +7,9 @@
         padding: 0;
     }
 
-    .main .logo {
+    /*.main .logo {
         width: 150px;
-    }
+    }*/
 
     .home {
         flex-direction: column;
@@ -32,11 +32,11 @@
         top: 0;
     }
 
-    .servicos .container-foto .foto-video,
+    /*.servicos .container-foto .foto-video,
     .dicas .container-foto .foto-video,
     .noticias .container-foto .foto-video {
         width: 150px;
-    }
+    }*/
 
     .dicas .container-servicos .servico.ativo {
         width: 90%;
@@ -219,12 +219,12 @@
         gap: 130px;
     }
 
-    .carousel-container {
-        width: 95%;
+    .servicos {
+        background: none;
     }
 
-    .carousel-slide {
-        background: none;
+    .carousel-container {
+        width: 95%;
     }
 
     .carousel-slide img {
@@ -254,7 +254,7 @@
 
     /* FILHO 1 */
     .dicas .navbar {
-/*        border-right: 2px #ca2a02 solid;*/
+        /*border-right: 2px #ca2a02 solid;*/
         display: flex;
         font-size: 14px;
         width: 30%;
