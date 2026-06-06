@@ -2,286 +2,125 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Blog Pessoal</title>
-    <style>
-        /* --- Configurações Gerais --- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARS | Meu Blog</title>
 
-        body {
-            background-color: #f7f9fa;
-            color: #333;
-            line-height: 1.6;
-        }
+    <!--<link rel="shortcut icon" href="./src/imagens/logo-p.png" type="image/x-icon">-->
 
-        a {
-            text-decoration: none;
-            color: #0076df;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* --- Cabeçalho (Header) --- */
-        header {
-            background-color: #fff;
-            border-bottom: 1px solid #e1e8ed;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .header-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #111;
-        }
-
-        nav a {
-            margin-left: 20px;
-            color: #555;
-            font-weight: 500;
-        }
-
-        /* --- Layout Principal --- */
-        .main-container {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            /* 2 partes para posts, 1 para a barra lateral */
-            gap: 30px;
-        }
-
-        /* --- Área dos Posts --- */
-        .posts-section {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-        }
-
-        .post-card {
-            background-color: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            transition: transform 0.2s;
-        }
-
-        .post-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .post-img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            background-color: #ddd;
-            /* Fundo padrão caso falte imagem */
-        }
-
-        .post-content {
-            padding: 25px;
-        }
-
-        .post-meta {
-            font-size: 14px;
-            color: #777;
-            margin-bottom: 10px;
-        }
-
-        .post-title {
-            font-size: 24px;
-            color: #111;
-            margin-bottom: 15px;
-        }
-
-        .post-excerpt {
-            color: #555;
-            margin-bottom: 20px;
-        }
-
-        .read-more-btn {
-            display: inline-block;
-            background-color: #0076df;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        .read-more-btn:hover {
-            background-color: #0056a3;
-            text-decoration: none;
-        }
-
-        /* --- Barra Lateral (Sidebar) --- */
-        aside {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-
-        .sidebar-widget {
-            background-color: #fff;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        }
-
-        .widget-title {
-            font-size: 18px;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #0076df;
-            padding-bottom: 5px;
-            color: #111;
-        }
-
-        .about-me img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-            object-fit: cover;
-        }
-
-        .categories-list {
-            list-style: none;
-        }
-
-        .categories-list li {
-            padding: 8px 0;
-            border-bottom: 1px solid #f0f0f0;
-        }
-
-        /* --- Rodapé (Footer) --- */
-        footer {
-            background-color: #111;
-            color: #fff;
-            text-align: center;
-            padding: 30px;
-            margin-top: 60px;
-        }
-
-        /* --- Responsividade (Telas menores/Celular) --- */
-        @media (max-width: 768px) {
-            .main-container {
-                grid-template-columns: 1fr;
-                /* Transforma em uma única coluna no celular */
-            }
-
-            .header-container {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav a {
-                margin: 0 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <!--<link rel="stylesheet" href="./css/responsivo.css" />-->
+    <link rel="stylesheet" href="./css/blog.css" />
 </head>
 
-<body>
+<body cz-shortcut-listen="true">
+    <section class="background">
 
-    <!-- CABEÇALHO -->
-    <header>
-        <div class="header-container">
-            <div class="logo">🚀 DevBlog</div>
-            <nav>
-                <a href="#">Início</a>
-                <a href="#">Artigos</a>
-                <a href="#">Sobre</a>
-                <a href="#">Contato</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- CONTEÚDO PRINCIPAL -->
-    <main class="main-container">
-
-        <!-- SEÇÃO DE POSTS -->
-        <section class="posts-section">
-
-            <!-- POST 1 -->
-            <article class="post-card">
-                <!-- Substitua a URL abaixo pela imagem do seu post -->
-                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800" alt="Programação"
-                    class="post-img">
-                <div class="post-content">
-                    <div class="post-meta">Por João Silva • 16 de Maio de 2026</div>
-                    <h2 class="post-title">Como começar na programação web este ano</h2>
-                    <p class="post-excerpt">O mercado de tecnologia continua aquecido. Neste artigo, vamos explorar o
-                        mapa de estudos ideal para quem quer se tornar um desenvolvedor web do zero...</p>
-                    <a href="#" class="read-more-btn">Ler mais</a>
-                </div>
-            </article>
-
-            <!-- POST 2 -->
-            <article class="post-card">
-                <!-- Substitua a URL abaixo pela imagem do seu post -->
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="Espaço de trabalho"
-                    class="post-img">
-                <div class="post-content">
-                    <div class="post-meta">Por João Silva • 14 de Maio de 2026</div>
-                    <h2 class="post-title">Dicas de produtividade para o Home Office</h2>
-                    <p class="post-excerpt">Trabalhar de casa tem seus desafios. Descubra ferramentas e rotinas simples
-                        que mudaram completamente a minha forma de produzir e evitar a procrastinação...</p>
-                    <a href="#" class="read-more-btn">Ler mais</a>
-                </div>
-            </article>
-
-        </section>
-
-        <!-- BARRA LATERAL -->
-        <aside>
-
-            <!-- WIDGET QUEM SOU EU -->
-            <div class="sidebar-widget about-me">
-                <h3 class="widget-title">Sobre Mim</h3>
-                <!-- Imagem de perfil de exemplo -->
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200" alt="Minha foto">
-                <p>Olá! Sou o João, desenvolvedor apaixonado por criar soluções web e compartilhar conhecimento com o
-                    mundo.</p>
+        <!-- CABEÇALHO -->
+        <header>
+            <div class="header-container">
+                <div class="logo">ARS</div>
+                <nav>
+                    <a href="../index.html">Home</a>
+                    <a href="#">Início</a>
+                    <a href="#">Artigos</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Contato</a>
+                </nav>
             </div>
+        </header>
 
-            <!-- WIDGET CATEGORIAS -->
-            <div class="sidebar-widget">
-                <h3 class="widget-title">Categorias</h3>
-                <ul class="categories-list">
-                    <li><a href="#">Tecnologia (12)</a></li>
-                    <li><a href="#">Produtividade (5)</a></li>
-                    <li><a href="#">Design (8)</a></li>
-                    <li><a href="#">Carreira (4)</a></li>
-                </ul>
-            </div>
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="main-container">
 
-        </aside>
+            <!-- SEÇÃO DE POSTS -->
+            <section class="posts-section">
 
-    </main>
+                <!-- POST 1 -->
+                <article class="post-card">
+                    <!-- Substitua a URL abaixo pela imagem do seu post -->
+                    <!--<div class="container-foto-principal">
+                        <div class="foto-video">
+                            <video src="./video/skyline-gtr-r34.mp4" autoplay muted loop
+                                alt="@ric_lambo (https://www.youtube.com/shorts/krrsP_xThbQ)">
+                            </video>
+                            <img src="./imagens/foto-perfil-alfa.png" alt="Foto do portifólio de Alexsandro" />
+                        </div>
+                    </div>-->
 
-    <!-- RODAPÉ -->
-    <footer>
-        <p>&copy; 2026 DevBlog - Todos os direitos reservados.</p>
-    </footer>
+                    <img src="" alt="Programação" class="post-img">
+                    <div class="post-content">
+                        <div class="post-meta">Por João Silva • 16 de Maio de 2026</div>
+                        <h2 class="post-title">Como começar na programação web este ano</h2>
+                        <p class="post-excerpt">O mercado de tecnologia continua aquecido. Neste artigo, vamos explorar
+                            o mapa de estudos ideal para quem quer se tornar um desenvolvedor web do zero...</p>
+                        <a href="#" class="read-more-btn">Ler mais</a>
+                    </div>
+                </article>
 
+                <!-- POST 2 -->
+                <article class="post-card">
+                    <!-- Substitua a URL abaixo pela imagem do seu post -->
+                    <img src="" alt="Espaço de trabalho" class="post-img">
+                    <div class="post-content">
+                        <div class="post-meta">Por João Silva • 14 de Maio de 2026</div>
+                        <h2 class="post-title">Dicas de produtividade para o Home Office</h2>
+                        <p class="post-excerpt">Trabalhar de casa tem seus desafios. Descubra ferramentas e rotinas
+                            simples que mudaram completamente a minha forma de produzir e evitar a procrastinação...</p>
+                        <a href="#" class="read-more-btn">Ler mais</a>
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- BARRA LATERAL -->
+            <aside>
+
+                <!-- WIDGET QUEM SOU EU -->
+                <div class="sidebar-widget about-me">
+                    <h3 class="widget-title">Sobre Mim</h3>
+                    <!-- Imagem de perfil de exemplo -->
+                    <img src="./imagens/foto-perfil.png" alt="Minha foto">
+                    <p>Olá! Sou o João, desenvolvedor apaixonado por criar soluções web e compartilhar conhecimento com
+                        o mundo.</p>
+                </div>
+
+                <!-- WIDGET CATEGORIAS -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Categorias</h3>
+                    <ul class="categories-list">
+                        <li><a href="#">Tecnologia (12)</a></li>
+                        <li><a href="#">Produtividade (5)</a></li>
+                        <li><a href="#">Design (8)</a></li>
+                        <li><a href="#">Carreira (4)</a></li>
+                    </ul>
+                </div>
+
+            </aside>
+
+        </main>
+
+        <!-- RODAPÉ -->
+        <footer class="footer">
+            <img class="logo" src="./imagens/logo-p.png" alt="Logotipo ARS">
+            <h2 id="footer">Alexsandro Rodrigues da Silva | Mecânico Automotivo</h2>
+            <h1>© Copyright 2026. Made by <a href="https://alexsandrorodriguesdasilvaads.github.io/portifolio/"
+                    target="_blank">Alexsandro R da Silva</a></h1>
+        </footer>
+        <a href="https://api.whatsapp.com/send?phone=5581998090037&text=Olá! Gostaria de mais informações."
+            class="whatsapp-flutuante" target="_blank" rel="noopener noreferrer" title="Fale conosco pelo WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </section>
 </body>
 
 </html>

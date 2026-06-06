@@ -19,7 +19,6 @@
   <link rel="stylesheet" href="./src/css/reset.css" />
   <link rel="stylesheet" href="./src/css/estilos.css" />
   <link rel="stylesheet" href="./src/css/responsivo.css" />
-  <link rel="stylesheet" href="./src/css/blog.css" />
 </head>
 
 <body cz-shortcut-listen="true">
@@ -38,7 +37,7 @@
             <a class="botao">Dicas</a>
           </li>
           <li>
-            <a class="botao">Notícias</a>
+            <a class="botao">Noticias</a>
           </li>
           <li>
             <button onclick="toggleMenu1()">
@@ -52,29 +51,6 @@
     <div class="main">
       <img class="logo" src="./src/imagens/logo.png" title="Soluções integradas para o seu veículo"
         alt="Logo de ARS Mecânico Automotivo" />
-      <!--<header class="cabecalho">
-          <nav class="menu">
-            <ul>
-              <li>
-                <a class="botao selecionado">Home</a>
-              </li>
-              <li>
-                <a class="botao">Serviços</a>
-              </li>
-              <li>
-                <a class="botao">Dicas</a>
-              </li>
-              <li>
-                <a class="botao">Notícias</a>
-              </li>
-              <li>
-                <button onclick="toggleMenu1()">
-                  <img id="seta" src="./src/imagens/seta.png" alt="Botão da barra lateral" />
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </header>-->
 
       <div class="personagem selecionado">
         <section class="home">
@@ -88,8 +64,9 @@
               <br>das 8h às 18h<br>
               <br>Contato <a class="referencia" onclick="toggleMenu2()" title="Ir para agendamento">(81) 9
                 9809-0037</a>
-            <div id="endereço">
-              <a href="https://www.google.com/maps/place/R.+Jos%C3%A9+Cardoso+de+Vasconcelos,+171+-+S%C3%A3o+Jo%C3%A3o+da+Esc%C3%B3cia,+Caruaru+-+PE,+55019-255/@-8.2683311,-35.9546289,17z/data=!3m1!4b1!4m6!3m5!1s0x7a98a2ebf72d4ef:0xf5bbbdceff335f4f!8m2!3d-8.2683364!4d-35.952054!16s%2Fg%2F11fs0gjdt1!5m1!1e3?entry=ttu&g_ep=EgoyMDI2MDUxMC4wIKXMDSoASAFQAw%3D%3D"
+            <div id="endereç">
+              <a id="endereço"
+                href="https://www.google.com/maps/place/R.+Jos%C3%A9+Cardoso+de+Vasconcelos,+171+-+S%C3%A3o+Jo%C3%A3o+da+Esc%C3%B3cia,+Caruaru+-+PE,+55019-255/@-8.2683311,-35.9546289,17z/data=!3m1!4b1!4m6!3m5!1s0x7a98a2ebf72d4ef:0xf5bbbdceff335f4f!8m2!3d-8.2683364!4d-35.952054!16s%2Fg%2F11fs0gjdt1!5m1!1e3?entry=ttu&g_ep=EgoyMDI2MDUxMC4wIKXMDSoASAFQAw%3D%3D"
                 title="Ir para endereço" target="_blank">Conheça a nossa oficina</a>
             </div>
             </p>
@@ -156,11 +133,6 @@
           </div>
 
         </section>
-      </div>
-
-      <div id="endereço-toogle">
-        <a href="https://www.google.com/maps/place/R.+Jos%C3%A9+Cardoso+de+Vasconcelos,+171+-+S%C3%A3o+Jo%C3%A3o+da+Esc%C3%B3cia,+Caruaru+-+PE,+55019-255/@-8.2683311,-35.9546289,17z/data=!3m1!4b1!4m6!3m5!1s0x7a98a2ebf72d4ef:0xf5bbbdceff335f4f!8m2!3d-8.2683364!4d-35.952054!16s%2Fg%2F11fs0gjdt1!5m1!1e3?entry=ttu&g_ep=EgoyMDI2MDUxMC4wIKXMDSoASAFQAw%3D%3D"
-          title="Ir para endereço" target="_blank">Conheça a nossa oficina</a>
       </div>
 
       <div class="painel-lateral" id="meuPainel">
@@ -705,7 +677,7 @@
 
   <script defer src="https://cdn.bibliatodo.com/assets/js/verselinker.js" lang="pt" version="ARA1993"></script>
 
-  <a href="./src/blog.html" class="blog-flutuante" target="_blank" title="Blog"><i class="fa-brands fa-blogger"></i></a>
+  <a href="./src/blog.html" target="_self" class="blog-flutuante" title="Ir para o Blog">Blog<!--<i class="fa-brands fa-blogger"></i>--></a>
 
   <a href="https://api.whatsapp.com/send?phone=5581998090037&text=Olá! Gostaria de mais informações."
     class="whatsapp-flutuante" target="_blank" rel="noopener noreferrer" title="Fale conosco pelo WhatsApp">

@@ -15,31 +15,16 @@ body {
 	background-color: rgba(21, 60, 93, 0.6);
 }
 
-.main {
-	/*	background-color: rgba(21, 60, 93, 0.7);*/
-	max-width: 1300px;
-	margin: auto;
-	padding: 0 100px;
-}
-
-.main .logo {
-	position: fixed;
-	left: 10px;
-	top: 10px;
-	padding: 2px;
-	max-width: 150px;
-	box-shadow: 0 0 10px #fff;
-	z-index: 3;
-}
-
 .cabecalho {
-	background-color: rgb(21, 60, 93);
-	position: fixed;
+	background-color: rgb(21, 60, 93, 0.5);
+	border-bottom: 2px rgb(21, 60, 93) solid;
+	position: relative;
 	padding: 15px;
-	height: 50px;
+	height: 150px;
 	top: 0;
+	margin: auto;
 	width: 100vw;
-	/*	max-width: 1100px;*/
+	/*max-width: 1100px;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -66,9 +51,26 @@ body {
 }
 
 .cabecalho .menu li .botao.selecionado {
-	background-color: #df8b04;
-	color: #ca2a02;
+	background-color: #fff;
+	color: rgb(21, 60, 93);
 	font-weight: bolder;
+}
+
+.main {
+	/*	background-color: rgba(21, 60, 93, 0.7);*/
+	max-width: 1300px;
+	margin: auto;
+	padding: 0 100px;
+}
+
+.main .logo {
+	position: absolute;
+	top: 10px;
+	margin-left: 10px;
+	padding: 2px;
+	max-width: 150px;
+	box-shadow: 0 0 10px #fff;
+	z-index: 3;
 }
 
 /* MUDANÇA DAS SESSÕES*/
@@ -123,23 +125,23 @@ body {
 	font-weight: bolder;
 }
 
-div#endereço-toogle {
+/*div#endereço-toogle {
 	display: none;
-}
+}*/
 
-.home .informacoes div#endereço {
-	align-items: center;
+.home .informacoes #endereço {
+	/*align-items: center;*/
 	width: 320px;
 	border: 1px solid #fff;
 	border-radius: 15px;
 	padding: 10px 15px;
-	text-align: center;
+	/*	text-align: center;*/
 	font-size: 24px;
 	transition: 0.3s;
 	box-shadow: 0 0 10px #fff;
 }
 
-.home .informacoes div#endereço:hover {
+.home .informacoes #endereço:hover {
 	background-color: #df8b04;
 	color: #ca2a02;
 	font-weight: bolder;
@@ -210,8 +212,8 @@ div#endereço-toogle {
 
 /* CONTAINER FOTO-VIDEO */
 .home .container-foto-principal {
-	display: flex;
 	position: relative;
+	display: flex;
 	top: -160px;
 	right: 0;
 }
@@ -333,12 +335,13 @@ div#endereço-toogle {
 }
 
 .painel-lateral.ativo {
-	transform: translateY(360px);
+	transform: translateY(435px);
 }
 
 button #seta {
-	width: 30px;
-	height: 30px;
+	width: 35px;
+	height: 35px;
+	padding: 5px;
 	border: 1px #fff solid;
 	box-shadow: 0 0 10px #fff;
 	border-radius: 50%;
@@ -421,15 +424,15 @@ button #seta.girar {
 .servicos {
 	background: url('../imagens/engrenagem-alfa.png') center / cover no-repeat;
 	padding: 100px 0 25px 0;
-	margin: 0 150px;
+	margin: 50px 150px;
 }
 
 .servicos .container-foto .foto-video,
 .dicas .container-foto .foto-video,
 .noticias .container-foto .foto-video {
-	position: fixed;
-	max-width: 150px;
-	right: 10px;
+	position: absolute;
+	max-width: 130px;
+	right: 22%;
 	top: 10px;
 	z-index: 2;
 }
@@ -437,7 +440,7 @@ button #seta.girar {
 .servicos .container-foto .foto-video video,
 .dicas .container-foto .foto-video video,
 .noticias .container-foto .foto-video video {
-	box-shadow: 0 0 10PX 1px #fff;
+	box-shadow: 0 0 10px 1px #fff;
 	width: 100%;
 	border-radius: 50%;
 	position: relative;
@@ -486,14 +489,12 @@ button #seta.girar {
 	font-size: 24px;
 	text-transform: uppercase;
 	font-weight: bolder;
-
 	text-shadow:
 		0 0 5px #fff,
 		0 0 10px #fff,
 		0 0 20px #fff,
 		0 0 40px #fff,
 		0 0 80px #fff;
-
 	letter-spacing: 5px;
 }
 
@@ -711,12 +712,13 @@ button #seta.girar {
 	width: 60px;
 	height: 60px;
 	bottom: 100px;
-	right: 20px;
-	background-color: rgb(21, 60, 93);
-	color: #fff;
+	right: 10px;
+	background-color: #fff;
+	color: rgb(21, 60, 93);
 	border-radius: 50px;
 	text-align: center;
-	font-size: 30px;
+	font-size: 20px;
+	font-weight: bold;
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 	z-index: 10000;
 	display: flex;
@@ -727,9 +729,9 @@ button #seta.girar {
 }
 
 .blog-flutuante:hover {
-	background-color: #FE9E00;
-	transform: scale(1.1);
+	background-color: rgb(21, 60, 93);
 	color: #fff;
+	transform: scale(1.1);
 }
 
 .blog-flutuante::after {
@@ -748,17 +750,17 @@ button #seta.girar {
 @keyframes pulso-blog {
 	0% {
 		transform: scale(0.9);
-		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+		box-shadow: 0 0 0 0 rgba(224, 224, 224, 0.7);
 	}
 
 	70% {
 		transform: scale(1);
-		box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+		box-shadow: 0 0 0 15px rgba(224, 224, 224, 0);
 	}
 
 	100% {
 		transform: scale(0.9);
-		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+		box-shadow: 0 0 0 0 rgba(224, 224, 224, 0);
 	}
 }
 
@@ -767,7 +769,7 @@ button #seta.girar {
 	width: 60px;
 	height: 60px;
 	bottom: 20px;
-	right: 20px;
+	right: 10px;
 	background-color: #25d366;
 	color: #fff;
 	border-radius: 50px;
@@ -775,10 +777,6 @@ button #seta.girar {
 	font-size: 30px;
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 	z-index: 10000;
-	/*
-	background-color: #128c7e;
-	transform: scale(1.1);
-	color: #fff;*/
 	display: flex;
 	align-items: center;
 	justify-content: center;
