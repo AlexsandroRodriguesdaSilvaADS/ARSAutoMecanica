@@ -32,11 +32,11 @@
         top: 0;
     }
 
-    /*.servicos .container-foto .foto-video,
+    .servicos .container-foto .foto-video,
     .dicas .container-foto .foto-video,
     .noticias .container-foto .foto-video {
-        width: 150px;
-    }*/
+        right: 10px;
+    }
 
     .servicos {
         margin: 0;
@@ -422,10 +422,6 @@
 }
 
 @media (max-width: 320px) {
-    .cabecalho .logo {
-        width: 100px;
-    }
-
     .cabecalho .menu ul {
         gap: 5px;
     }
