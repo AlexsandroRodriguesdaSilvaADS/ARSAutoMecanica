@@ -426,9 +426,9 @@
         gap: 5px;
     }
 
-    .cabecalho .menu li a {
-        font-size: 10px;
-        padding: 2px;
+    .cabecalho .menu li a.botao {
+        font-size: 13px;
+        /*padding: 5px;*/
     }
 
     .overlay {

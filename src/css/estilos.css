@@ -38,7 +38,7 @@ body {
 	padding: 10px 0;
 }
 
-.cabecalho .menu li .botao {
+.cabecalho .menu li a.botao {
 	font-family: "Raleway", sans-serif;
 	font-size: 18px;
 	color: #fff;
@@ -419,14 +419,6 @@ body {
 	pointer-events: none;
 }
 
-
-/* SESSÃO SERVIÇOS */
-.servicos {
-	background: url('../imagens/engrenagem-alfa.png') center / cover no-repeat;
-	padding: 100px 0 25px 0;
-	margin: 50px 130px;
-}
-
 .servicos .container-foto .foto-video,
 .dicas .container-foto .foto-video,
 .noticias .container-foto .foto-video {
@@ -456,6 +448,14 @@ body {
 	left: 0;
 }
 
+
+/* SESSÃO SERVIÇOS */
+.servicos {
+	background: url('../imagens/engrenagem-alfa.png') center / cover no-repeat;
+	padding: 100px 0 25px 0;
+	margin: 50px 130px;
+}
+
 .servicos .titulo {
 	text-align: center;
 	padding: 20px 0 40px 0;
@@ -474,7 +474,6 @@ body {
 }
 
 .carousel-slide {
-	/*	background: url('../imagens/engrenagem-alfa.png') center / cover no-repeat;*/
 	position: relative;
 	max-width: 950px;
 	margin: auto;
