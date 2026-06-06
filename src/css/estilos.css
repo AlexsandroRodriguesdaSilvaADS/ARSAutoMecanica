@@ -4,11 +4,9 @@ html {
 }
 
 body {
-	/*	background: url("../imagens/logo-p.png") center / cover no-repeat fixed;*/
 	background: url("../imagens/bmw-m3-gtr.webp") center / cover no-repeat fixed;
 	font-family: "Poppins", sans-serif;
 	margin: 0 auto;
-	/*	overflow: hidden;*/
 }
 
 .background {
@@ -23,7 +21,7 @@ body {
 	height: 150px;
 	top: 0;
 	margin: auto;
-	width: 100vw;
+	width: 100%;
 	/*max-width: 1100px;*/
 	display: flex;
 	justify-content: center;
@@ -140,10 +138,6 @@ body {
 	border-bottom: 1px solid #df8b04;
 	font-weight: bolder;
 }
-
-/*div#endereço-toogle {
-	display: none;
-}*/
 
 .home .informacoes #endereço {
 	/*align-items: center;*/
@@ -337,21 +331,23 @@ body {
 
 /* PAINEL-LATERAL */
 .painel-lateral {
-	margin: auto;
 	justify-content: center;
 	align-items: center;
 	display: flex;
 	flex-direction: row;
 	position: fixed;
+	left: 0;
+	right: 0;
 	top: -300px;
-	width: 1100px;
+	margin: auto;
+	width: 100%;
 	height: 300px;
 	transition: 0.3s;
 	z-index: 4;
 }
 
 .painel-lateral.ativo {
-	transform: translateY(435px);
+	transform: translateY(445px);
 }
 
 .painel-lateral .player-container {
@@ -451,12 +447,28 @@ body {
 
 /* SESSÃO SERVIÇOS */
 .servicos {
-	background: url('../imagens/engrenagem-alfa.png') center / cover no-repeat;
-	padding: 100px 0 25px 0;
-	margin: 50px 130px;
+	padding: 100px 30px;
+}
+
+.servicos .container-engrenagem {
+	position: absolute;
+	top: 150px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	max-width: 800px;
+	padding: 15px;
+}
+
+.servicos .container-engrenagem .engrenagem {
+	position: relative;
+	margin: auto;
+	width: 100%;
 }
 
 .servicos .titulo {
+	position: relative;
 	text-align: center;
 	padding: 20px 0 40px 0;
 	font-size: 45px;
@@ -556,7 +568,7 @@ body {
 	width: 100%;
 	height: 100%;
 	gap: 20px;
-	padding: 70px 0;
+	padding: 30px 0;
 }
 
 .dicas .link-dicas li {

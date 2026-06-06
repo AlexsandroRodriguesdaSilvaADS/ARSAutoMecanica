@@ -1,15 +1,7 @@
 @media (max-width: 1280px) {
-    body {
-        overflow: auto;
-    }
-
     .main {
         padding: 0;
     }
-
-    /*.main .logo {
-        width: 150px;
-    }*/
 
     .home {
         flex-direction: column;
@@ -67,25 +59,10 @@
 }
 
 @media (max-width: 768px) {
-    .main .logo {
-        position: relative;
-        display: flex;
-        margin: auto;
-        top: 50px;
-        z-index: 1;
-    }
-
-    .container-foto .foto-video {
-        display: none;
-    }
-
-    .painel-lateral {
-        top: -600px;
-        width: 800px;
-    }
-
-    .painel-lateral.ativo {
-        transform: translateY(660px);
+    .cabecalho .menu li a.botao {
+        font-size: 14px;
+        color: #fff;
+        padding: 10px;
     }
 
     .dicas .link-dicas {
@@ -116,7 +93,14 @@
 
 @media (max-width: 426px) {
     .main .logo {
-        margin-bottom: 80px;
+        display: flex;
+        margin: auto;
+        margin-top: 15px;
+        position: relative;
+    }
+
+    .container-foto .foto-video {
+        display: none;
     }
 
     .home {
@@ -131,35 +115,10 @@
         font-size: 18px;
     }
 
-    /*.home .informacoes div#endereço {
-        display: none;
-    }
-
-        div#endereço-toogle {
-        display: flex;
-        border: 1px solid #fff;
-        border-radius: 15px;
-        padding: 5px 10px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 0 10px #fff;
-        background-color: rgba(21, 60, 93, 0.8);
-        width: 210px;
-        position: fixed;
-        bottom: 10px;
-        left: 20px;
-        font-size: 15px;
-        z-index: 3;
-    }
-
-    div#endereço-toogle:hover {
-        background-color: #df8b04;
-        color: #ca2a02;
-    }*/
-
     .cabecalho {
         top: 0;
         padding: 10px 0;
+        height: 70px;
         z-index: 3;
     }
 
@@ -238,6 +197,10 @@
     .dicas,
     .noticias {
         padding: 20px 0 30px 0;
+    }
+
+    .servicos .container-engrenagem {
+        display: none;
     }
 
     .dicas-main {
