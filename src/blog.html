@@ -28,13 +28,14 @@
         <!-- CABEÇALHO -->
         <header>
             <div class="header-container">
-                <div class="logo">ARS</div>
+                <div class="logo"><img src="./imagens/logo-p.png" alt="Logomarca"></div>
                 <nav>
                     <a href="../index.html">Home</a>
                     <a href="#">Início</a>
                     <a href="#">Artigos</a>
-                    <a href="#">Sobre</a>
-                    <a href="#">Contato</a>
+                    <a href="#sobre mim">Sobre</a>
+                    <a href="https://api.whatsapp.com/send?phone=5581998090037&text=Olá! Gostaria de mais informações."
+                        target="_blank" rel="noopener noreferrer" title="Fale conosco pelo WhatsApp">Contato</a>
                 </nav>
             </div>
         </header>
@@ -58,26 +59,32 @@
                         </div>
                     </div>-->
 
-                    <img src="" alt="Programação" class="post-img">
+                    <img src="./imagens/supra.jpg" alt="Programação" class="post-img">
                     <div class="post-content">
-                        <div class="post-meta">Por João Silva • 16 de Maio de 2026</div>
-                        <h2 class="post-title">Como começar na programação web este ano</h2>
-                        <p class="post-excerpt">O mercado de tecnologia continua aquecido. Neste artigo, vamos explorar
-                            o mapa de estudos ideal para quem quer se tornar um desenvolvedor web do zero...</p>
-                        <a href="#" class="read-more-btn">Ler mais</a>
+                        <div class="post-meta">Por Alexsandro R da Silva <time datetime="" id="current-time"></time>
+                        </div>
+                        <h2 class="post-title">Manutenção preventiva, você deve fazer</h2>
+                        <p class="post-excerpt">Possuir um veículo significa que você tem grande responsabilidade. Não é
+                            só abastecer e calibrar os pneus, é necessário mais conhecimento para não ter maiores
+                            prejuízos...</p>
+                        <a href="https://youtu.be/wFjEoT-QZXw?si=QX8VsDQlSq54Zg7e" target="_blank"
+                            class="read-more-btn">Ler mais</a>
                     </div>
                 </article>
 
                 <!-- POST 2 -->
                 <article class="post-card">
                     <!-- Substitua a URL abaixo pela imagem do seu post -->
-                    <img src="" alt="Espaço de trabalho" class="post-img">
+                    <img src="./imagens/orçamento.png" alt="Espaço de trabalho" class="post-img">
                     <div class="post-content">
-                        <div class="post-meta">Por João Silva • 14 de Maio de 2026</div>
-                        <h2 class="post-title">Dicas de produtividade para o Home Office</h2>
-                        <p class="post-excerpt">Trabalhar de casa tem seus desafios. Descubra ferramentas e rotinas
-                            simples que mudaram completamente a minha forma de produzir e evitar a procrastinação...</p>
-                        <a href="#" class="read-more-btn">Ler mais</a>
+                        <div class="post-meta">Por Alexsandro R da Silva <time datetime="" id="current-time"></time>
+                        </div>
+                        <h2 class="post-title">Orçamento correto para o seu veículo</h2>
+                        <p class="post-excerpt">Infelizmente muitas oficinas possuem profissionais que deixa muito a
+                            desejar. A má impressão dos proprietátios de veículos é a de que em algum momento serão
+                            enganados...</p>
+                        <a href="https://quatrorodas.abril.com.br/auto-servico/orcamento-na-medida-certa/"
+                            target="_blank" class="read-more-btn">Ler mais</a>
                     </div>
                 </article>
 
@@ -87,22 +94,23 @@
             <aside>
 
                 <!-- WIDGET QUEM SOU EU -->
-                <div class="sidebar-widget about-me">
-                    <h3 class="widget-title">Sobre Mim</h3>
-                    <!-- Imagem de perfil de exemplo -->
-                    <img src="./imagens/foto-perfil.png" alt="Minha foto">
-                    <p>Olá! Sou o João, desenvolvedor apaixonado por criar soluções web e compartilhar conhecimento com
-                        o mundo.</p>
+                <div id="sobre mim">
+                    <div class="sidebar-widget about-me">
+                        <h3 class="widget-title">Sobre Mim</h3>
+                        <!-- Imagem de perfil de exemplo -->
+                        <img src="./imagens/foto-perfil.png" alt="Minha foto">
+                        <p>Olá! Sou o Alexsandro, mecãnico automotivo em formação técnica apaixonado por carros.</p>
+                    </div>
                 </div>
 
                 <!-- WIDGET CATEGORIAS -->
                 <div class="sidebar-widget">
                     <h3 class="widget-title">Categorias</h3>
                     <ul class="categories-list">
-                        <li><a href="#">Tecnologia (12)</a></li>
-                        <li><a href="#">Produtividade (5)</a></li>
-                        <li><a href="#">Design (8)</a></li>
-                        <li><a href="#">Carreira (4)</a></li>
+                        <li><a href="#">Tecnologia (0)</a></li>
+                        <li><a href="#">Produtividade (0)</a></li>
+                        <li><a href="#">Design (0)</a></li>
+                        <li><a href="#">Carreira (0)</a></li>
                     </ul>
                 </div>
 
@@ -163,6 +171,8 @@
 
         </main>
 
+        <script src="./src/js/data.js"></script>
+
         <!-- RODAPÉ -->
         <footer class="footer">
             <img class="logo" src="./imagens/logo-p.png" alt="Logotipo ARS">
@@ -180,6 +190,7 @@
         </a>
 
     </section>
+
 </body>
 
 </html>

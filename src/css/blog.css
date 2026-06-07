@@ -26,7 +26,7 @@ header {
 }
 
 .logo {
-    background: url("../imagens/logo-p.png") center / cover no-repeat fixed;
+    width: 150px;
     font-size: 24px;
     font-weight: bold;
     color: #000;
@@ -148,6 +148,7 @@ aside {
 
 .sidebar-widget {
     background-color: #fff;
+    color: #0056a3;
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
