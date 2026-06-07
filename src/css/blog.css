@@ -3,6 +3,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background: url("../imagens/eclipse.jpg") center / cover no-repeat fixed;
+}
+
 /* --- Cabeçalho (Header) --- */
 header {
     background-color: #fff;
@@ -174,6 +178,54 @@ aside {
     border-bottom: 1px solid #f0f0f0;
 }
 
+
+/* SESSÃO BLOG/NOTICIAS */
+.noticias {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.noticias .titulo {
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.noticias .media {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    gap: 40px;
+}
+
+.noticias .media iframe {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 250px;
+    margin: 10px 0;
+}
+
+.noticias .media .title {
+    font-size: 18px;
+    font-weight: normal;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+.noticias .media .title:hover {
+    font-weight: bold;
+}
+
+
 /* Responsividade (Telas menores/Celular) */
 @media (max-width: 768px) {
     .main-container {
@@ -188,5 +240,15 @@ aside {
 
     nav a {
         margin: 0 10px;
+    }
+
+    .noticias .media iframe {
+        width: 85vw;
+    }
+
+    .noticias .media .title {
+        position: absolute;
+        height: 40px;
+        width: 85vw;
     }
 }

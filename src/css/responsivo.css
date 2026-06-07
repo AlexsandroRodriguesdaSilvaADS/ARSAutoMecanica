@@ -59,7 +59,8 @@
 }
 
 @media (max-width: 768px) {
-    .cabecalho .menu li a.botao {
+    .cabecalho .menu li a.botao,
+    .cabecalho .menu li a.blog {
         font-size: 14px;
         color: #fff;
         padding: 10px;
@@ -141,7 +142,6 @@
     }
 
     .home .agendamento-ul {
-        /*flex-direction: column;*/
         position: relative;
         justify-content: center;
         gap: 10px;
@@ -155,7 +155,7 @@
     }
 
     .painel-lateral.ativo {
-        transform: translateY(735px);
+        transform: translateY(660px);
     }
 
     .player-container li {
@@ -358,7 +358,7 @@
         bottom: 5px;
     }
 
-    .noticias .media iframe {
+    /*.noticias .media iframe {
         width: 85vw;
         height: 200px;
     }
@@ -367,7 +367,7 @@
         position: absolute;
         height: 40px;
         width: 85vw;
-    }
+    }*/
 
     .footer .logo {
         width: 70px;
