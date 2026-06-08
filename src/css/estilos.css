@@ -44,17 +44,23 @@ header {
 	padding: 10px 0;
 }
 
-.cabecalho .container-foto .foto-video {
-	position: relative;
-	max-width: 130px;
+.cabecalho .container-foto {
+	display: none;
 }
 
-.cabecalho .container-foto .foto-video.ativo {
+.cabecalho .container-foto .foto-video {
+	margin-top: 5px;
+	position: relative;
+	width: 110px;
+}
+
+.cabecalho .container-foto.ativo {
 	display: block;
 }
 
 .cabecalho .container-foto .foto-video video {
 	box-shadow: 0 0 10px 1px #fff;
+	padding: 2px;
 	width: 100%;
 	border-radius: 50%;
 	position: relative;
