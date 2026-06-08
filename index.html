@@ -24,47 +24,33 @@
 <body cz-shortcut-listen="true">
   <section class="background">
 
-    <header class="cabecalho">
-      <nav class="menu">
-        <ul>
-          <li>
-            <img class="logo" src="./src/imagens/logo.png" title="Soluções integradas para o seu veículo"
-              alt="Logo de ARS Mecânico Automotivo" />
-          </li>
-          <li>
-            <a class="botao selecionado">Home</a>
-          </li>
-          <li>
-            <a class="botao">Serviços</a>
-          </li>
-          <li>
-            <a class="botao">Dicas</a>
-          </li>
-          <!--<li>
-            <a href="./src/blog.html" class="blog">Blog</a>
-          </li>-->
-          <li>
-            <a onclick="toggleMenu1()">
-              <img id="seta" src="./src/imagens/seta.png" alt="Botão da barra superior" />
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <header>
+      <div class="cabecalho">
+        <img class="logo" src="./src/imagens/logo.png" title="Soluções integradas para o seu veículo"
+          alt="Logo de ARS Mecânico Automotivo" />
+        <nav class="menu">
+          <a class="botao selecionado">Home</a>
+          <a class="botao">Serviços</a>
+          <a class="botao">Dicas</a>
+          <a onclick="toggleMenu1()">
+            <img id="seta" src="./src/imagens/seta.png" alt="Botão da barra superior" />
+        </nav>
+
+        <div class="container-foto">
+          <div class="foto-video">
+            <video src="./src/video/skyline-gtr-r34.mp4" autoplay muted loop
+              alt="@ric_lambo (https://www.youtube.com/shorts/krrsP_xThbQ)">
+            </video>
+            <img src="./src/imagens/foto-perfil-alfa.png" alt="Foto do perfil de Alexsandro" />
+          </div>
+        </div>
+
+      </div>
     </header>
 
     <div class="main">
       <img class="logo" src="./src/imagens/logo.png" title="Soluções integradas para o seu veículo"
         alt="Logo de ARS Mecânico Automotivo" />
-
-      <!--<div class="container-foto">
-        <div class="foto-video">
-          <video src="./src/video/skyline-gtr-r34.mp4" autoplay muted loop
-            alt="@ric_lambo (https://www.youtube.com/shorts/krrsP_xThbQ)">
-          </video>
-          <img src="./src/imagens/foto-perfil-alfa.png" alt="Foto do perfil de Alexsandro" />
-        </div>
-      </div>-->
-
       <div class="personagem selecionado">
         <section class="home">
           <div class="informacoes">
@@ -225,14 +211,15 @@
           <div class="container-engrenagem">
             <img class="engrenagem" src="./src/imagens/engrenagem-alfa.png" alt="Engrenagem">
           </div>
-          <div class="container-foto">
+
+          <!--<div class="container-foto">
             <div class="foto-video">
               <video src="./src/video/skyline-gtr-r34.mp4" autoplay muted loop
                 alt="@ric_lambo (https://www.youtube.com/shorts/krrsP_xThbQ)">
               </video>
               <img src="./src/imagens/foto-perfil-alfa.png" alt="Foto do portifólio de Alexsandro" />
             </div>
-          </div>
+          </div>-->
 
           <h2 id="servicos" class="titulo">Serviços</h2>
 
@@ -268,14 +255,14 @@
       <div class="personagem">
         <section class="dicas">
 
-          <div class="container-foto">
+          <!--<div class="container-foto">
             <div class="foto-video">
               <video src="./src/video/skyline-gtr-r34.mp4" autoplay muted loop
                 alt="@ric_lambo (https://www.youtube.com/shorts/krrsP_xThbQ)">
               </video>
               <img src="./src/imagens/foto-perfil-alfa.png" alt="Foto do portifólio de Alexsandro" />
             </div>
-          </div>
+          </div>-->
 
           <h2 id="dicas" class="titulo">Dicas</h2>
           <div class="dicas-main">
@@ -616,58 +603,6 @@
           </div>
         </section>
       </div>
-
-      <!--<div class="personagem">
-        <section class="noticias">
-
-          <div class="container-foto">
-            <div class="foto-video">
-              <video src="./src/video/skyline-gtr-r34.mp4" autoplay muted loop
-                alt="@ric_lambo (https://www.youtube.com/shorts/krrsP_xThbQ)">
-              </video>
-              <img src="./src/imagens/foto-perfil-alfa.png" alt="Foto do portifólio de Alexsandro" />
-            </div>
-          </div>
-
-          <h2 class="titulo">Notícias</h2>
-          <div class="media">
-            <div>
-              <h1 class="title" style="background-color: #FF1100; color: #fff;"><a
-                  href="https://www.lojadomecanico.com.br/blog/dicas/mecanica/" target="_blank"
-                  title="Ir para Loja do Mecânico">Loja do Mecânico</a></h1>
-              <iframe src="https://www.lojadomecanico.com.br/blog/dicas/mecanica/" frameborder="0" scrolling="yes"
-                sandbox="allow-scripts allow-popups allow-forms"></iframe>
-            </div>
-            <div>
-              <h1 class="title" style="background-color: red; color: #fff;"><a
-                  href="https://www.youtube.com/watch?v=7UvXYsvLDqo" target="_blank" title="Ir para Auto Papo">Auto
-                  Papo</a></h1>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/7UvXYsvLDqo?si=LnPBSAypErUhb5iQ"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="frame-noticias">
-              <h1 class="title" style="background-color: #BBEE1F; color: rgb(21, 60, 93);"><a
-                  href="https://aryqueirozjr.com.br/" target="_blank" title="Ir para blog aryqueirozjr">Teologia
-                  Reformada
-                  - AQVJ</a></h1>
-              <iframe src="https://aryqueirozjr.com.br/" frameborder="0" scrolling="yes"
-                sandbox="allow-scripts allow-popups allow-forms"></iframe>
-            </div>
-            <div class="frame-noticias">
-              <h1 class="title" style="background-color: #BBEE1F; color: rgb(21, 60, 93);"><a
-                  href="https://www.youtube.com/augustusnicodemus" target="_blank"
-                  title="Ir para blog augustusnicodemus">Augustus Nicodemus</a></h1>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/yV-1qzzWfm4?si=WXv-BAOdO_SYQwSM"
-                title="YouTube video player" frameborder="0">
-              </iframe>
-
-            </div>
-          </div>
-        </section>
-      </div>-->
-
     </div>
 
     <script src="./src/js/index.js"></script>
@@ -682,7 +617,9 @@
     <script src="./src/js/opinioes.js"></script>
 
     <footer class="footer">
-      <img class="logo" src="./src/imagens/logo-p.png" alt="Logotipo ARS">
+
+      <!--<img class="logo" src="./src/imagens/logo-p.png" alt="Logotipo ARS">-->
+
       <h2 id="footer">Alexsandro Rodrigues da Silva | Mecânico Automotivo</h2>
       <h1>© Copyright 2026. Made by <a href="https://alexsandrorodriguesdasilvaads.github.io/portifolio/"
           target="_blank">Alexsandro R da Silva</a></h1>
