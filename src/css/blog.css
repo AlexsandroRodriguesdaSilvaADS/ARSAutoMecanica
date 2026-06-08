@@ -9,33 +9,39 @@ body {
 
 /* --- Cabeçalho (Header) --- */
 header {
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
     border-bottom: 1px solid #e1e8ed;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 10;
 }
 
 .header-container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    width: 150px;
-    font-size: 24px;
+.logo img {
+    margin-top: 5px;
+    width: 130px;
+    box-shadow: 0 0 10px #fff;
+    /*    font-size: 24px;
     font-weight: bold;
-    color: #000;
+    color: #000;*/
 }
 
 nav a {
     margin-left: 20px;
-    color: #555;
+    color: #fff;
     font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 /* --- Layout Principal --- */
@@ -57,7 +63,7 @@ nav a {
 }
 
 .post-card {
-    background-color: #fff;
+    background-color: rgba(225, 225, 225, 0.5);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -73,7 +79,7 @@ nav a {
     display: flex;
 }
 
-.container-foto-principal .foto-video {
+/*.container-foto-principal .foto-video {
     max-width: 100%;
     text-align: center;
     justify-content: center;
@@ -94,7 +100,7 @@ nav a {
     position: absolute;
     top: 0;
     left: 0;
-}
+}*/
 
 .post-img {
     width: 100%;
@@ -110,7 +116,7 @@ nav a {
 
 .post-meta {
     font-size: 14px;
-    color: #777;
+    color: #fff;
     margin-bottom: 10px;
 }
 
@@ -121,7 +127,7 @@ nav a {
 }
 
 .post-excerpt {
-    color: #555;
+    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -147,8 +153,8 @@ aside {
 }
 
 .sidebar-widget {
-    background-color: #fff;
-    color: #0056a3;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -159,7 +165,7 @@ aside {
     margin-bottom: 15px;
     border-bottom: 2px solid #0076df;
     padding-bottom: 5px;
-    color: #111;
+    color: #fff;
 }
 
 .about-me img {
@@ -182,7 +188,7 @@ aside {
 
 /* SESSÃO BLOG/NOTICIAS */
 .noticias {
-    background-color: #fff;
+    background-color: rgba(225, 225, 225, 0.5);
     border-radius: 10px;
     width: 100%;
     padding: 50px 0;

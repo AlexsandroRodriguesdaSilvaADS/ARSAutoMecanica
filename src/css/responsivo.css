@@ -59,6 +59,7 @@
 }
 
 @media (max-width: 768px) {
+
     .cabecalho .menu li a.botao,
     .cabecalho .menu li a.blog {
         font-size: 14px;
@@ -93,6 +94,10 @@
 }
 
 @media (max-width: 426px) {
+    .cabecalho .menu .logo {
+      display: none;
+    }
+
     .main .logo {
         display: flex;
         margin: auto;

@@ -16,7 +16,7 @@ body {
 .cabecalho {
 	background-color: rgb(21, 60, 93, 0.5);
 	border-bottom: 2px rgb(21, 60, 93) solid;
-	position: relative;
+	position: sticky;
 	padding: 15px;
 	height: 150px;
 	top: 0;
@@ -32,8 +32,16 @@ body {
 .cabecalho .menu ul {
 	display: flex;
 	align-items: center;
-	gap: 30px;
+	gap: 20px;
 	padding: 10px 0;
+}
+
+.cabecalho .menu li .logo {
+	position: sticky;
+	margin-left: -160px;
+	max-width: 150px;
+	box-shadow: 0 0 10px #fff;
+	/*z-index: 3;*/
 }
 
 .cabecalho .menu li a.botao,
@@ -80,8 +88,9 @@ body {
 }
 
 .main .logo {
-	position: absolute;
-	top: 10px;
+	display: none;
+	position: sticky;
+	top: 0;
 	margin-left: 10px;
 	padding: 2px;
 	max-width: 150px;
@@ -419,7 +428,7 @@ body {
 .servicos .container-foto .foto-video,
 .dicas .container-foto .foto-video,
 .noticias .container-foto .foto-video {
-	position: absolute;
+	position: fixed;
 	max-width: 130px;
 	right: 22%;
 	top: 10px;
