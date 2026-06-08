@@ -99,13 +99,12 @@
         margin: 10px auto;
         position: relative;
         padding: 2px;
-        max-width: 150px;
+        width: 130px;
         box-shadow: 0 0 10px #fff;
         z-index: 3;
     }
 
     .cabecalho nav.menu {
-
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -116,12 +115,9 @@
 
     .cabecalho .logo {
         display: none;
-        margin: auto;
-        margin-top: 15px;
-        position: relative;
     }
 
-    .cabecalho .container-foto .foto-video {
+    .container-foto .foto-video {
         display: none;
     }
 
@@ -178,7 +174,6 @@
 
     .overlay {
         box-sizing: border-box;
-        width: 95%;
         margin: 15px 10px 0 10px;
     }
 
