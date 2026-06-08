@@ -386,7 +386,7 @@ header {
 }
 
 .painel-lateral.ativo {
-	transform: translateY(445px);
+	transform: translateY(420px);
 }
 
 .painel-lateral .player-container {
