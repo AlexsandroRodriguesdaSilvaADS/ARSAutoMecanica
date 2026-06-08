@@ -161,7 +161,7 @@
     }
 
     .painel-lateral.ativo {
-        transform: translateY(660px);
+        transform: translateY(670px);
     }
 
     .player-container li {
@@ -173,6 +173,7 @@
     }
 
     .overlay {
+        top: 70px;
         box-sizing: border-box;
         margin: 15px 10px 0 10px;
     }
