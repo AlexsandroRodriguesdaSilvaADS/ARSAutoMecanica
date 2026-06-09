@@ -27,8 +27,9 @@ header {
 
 .logo img {
     margin-top: 5px;
-    width: 130px;
+    width: 150px;
     box-shadow: 0 0 10px #fff;
+    padding: 2px;
 }
 
 nav a {
@@ -38,7 +39,6 @@ nav a {
 }
 
 nav a:hover {
-    padding-bottom: 10px;
     border-bottom: 1px #fff solid;
 }
 
@@ -233,6 +233,14 @@ aside {
 
 /* Responsividade (Telas menores/Celular) */
 @media (max-width: 768px) {
+    header {
+        height: 25%;
+    }
+
+    .logo img {
+        width: 125px;
+    }
+
     .main-container {
         grid-template-columns: 1fr;
         /* Transforma em uma única coluna no celular */
@@ -241,6 +249,11 @@ aside {
     .header-container {
         flex-direction: column;
         gap: 15px;
+    }
+
+    nav {
+        padding-bottom: 15px;
+
     }
 
     nav a {
