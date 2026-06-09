@@ -94,6 +94,10 @@
 }
 
 @media (max-width: 426px) {
+    header {
+        height: auto;
+    }
+
     .main .logo {
         display: flex;
         margin: 10px auto;
@@ -102,6 +106,10 @@
         width: 130px;
         box-shadow: 0 0 10px #fff;
         z-index: 3;
+    }
+
+    .cabecalho {
+        padding: 5px;
     }
 
     .cabecalho nav.menu {
@@ -121,6 +129,12 @@
         display: none;
     }
 
+    .cabecalho .menu a.botao {
+        font-size: 14px;
+        color: #fff;
+        padding: 10px;
+    }
+
     .home {
         padding: 30px 0;
     }
@@ -131,12 +145,6 @@
 
     .home .informacoes p {
         font-size: 18px;
-    }
-
-    .cabecalho .menu a.botao {
-        font-size: 14px;
-        color: #fff;
-        padding: 10px;
     }
 
     .home .container-foto-principal .foto-video {

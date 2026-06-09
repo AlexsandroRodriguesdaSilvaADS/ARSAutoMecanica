@@ -15,24 +15,28 @@ body {
 }
 
 header {
-	background-color: rgb(21, 60, 93, 0.9);
+	background-color: rgb(21, 60, 93, 0.7);
+	/*width: 1300px;*/
+	margin: auto;
 	border-bottom: 2px rgb(21, 60, 93) solid;
 	position: sticky;
 	top: 0;
+	height: 120px;
 	z-index: 10;
 }
 
 .cabecalho {
 	max-width: 1100px;
 	margin: 0 auto;
-	padding: 2px;
+	padding: 20px 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .cabecalho .logo {
-	margin-top: 5px;
+	position: absolute;
+	top: 5px;
 	width: 130px;
 	box-shadow: 0 0 10px #fff;
 	padding: 2px;
@@ -82,7 +86,7 @@ header {
 	box-shadow: 0 0 10px #fff;
 }
 
-.cabecalho .menu a #seta {
+.cabecalho .menu img.seta {
 	margin-top: 8px;
 	width: 35px;
 	height: 35px;
@@ -91,12 +95,12 @@ header {
 	box-shadow: 0 0 10px #fff;
 	border-radius: 50%;
 	transform: rotate(-90deg);
-	transition: transform 0.7s ease;
+	transition: transform 0.5s ease;
 }
 
-.cabecalho .menu a #seta.girar {
+.cabecalho .menu img.seta.girar {
 	transform: rotate(90deg);
-	transition: transform 0.7s ease;
+	transition: transform 0.5s ease;
 }
 
 .cabecalho .menu a.botao.selecionado {
@@ -106,6 +110,7 @@ header {
 }
 
 .main {
+/*	background-color: rgba(21, 60, 93, 0.7);*/
 	max-width: 1300px;
 	margin: auto;
 	padding: 0 100px;
@@ -135,7 +140,7 @@ header {
 
 /* SESSÃO HOME */
 .home {
-	padding: 70px 0;
+	padding: 50px 0;
 	display: flex;
 	min-height: calc(100vh - 125px);
 	align-items: center;
@@ -482,7 +487,7 @@ header {
 
 /* SESSÃO SERVIÇOS */
 .servicos {
-	padding: 100px 30px;
+	padding: 50px 0;
 }
 
 .servicos .container-engrenagem {
@@ -505,7 +510,7 @@ header {
 .servicos .titulo {
 	position: relative;
 	text-align: center;
-	padding: 20px 0 40px 0;
+	padding: 0 0 50px;
 	font-size: 45px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -670,54 +675,11 @@ header {
 }
 
 
-/* SESSÃO BLOG/NOTICIAS 
-.noticias {
-	padding: 50px 0;
-}
-
-.noticias .titulo {
-	text-align: center;
-	padding: 20px 0;
-	font-size: 45px;
-	font-weight: 500;
-	text-transform: uppercase;
-}
-
-.noticias .media {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 10px 0;
-	width: 100%;
-	text-align: center;
-	justify-content: center;
-	margin: auto;
-	gap: 40px;
-}
-
-.noticias .media iframe {
-	background-color: rgba(224, 224, 224, 0.3);
-	width: 500px;
-	height: 250px;
-	margin: 10px 0;
-}
-
-.noticias .media .title {
-	font-size: 18px;
-	font-weight: normal;
-	transition: 0.3s;
-	text-decoration: underline;
-}
-
-.noticias .media .title:hover {
-	font-weight: bold;
-}*/
-
-
 /* RODAPÉ */
 .footer {
+/*	background-color: rgba(21, 60, 93, 0.7);*/
 	max-width: 1300px;
 	margin: auto;
-	/*background-color: rgba(21, 60, 93, 0.7);*/
 	font-family: "Raleway", sans-serif;
 	padding: 50px;
 	text-align: center;
